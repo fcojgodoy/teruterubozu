@@ -1,0 +1,44 @@
+// Ver // Buttons en _variables
+/* General buttons style */
+.btn {
+  color: $brand-primary-light;
+  margin: 10px 0;
+  border-color: $brand-primary-light-alt;
+
+  font-family: $font-family-sans-serif;
+  font-size: 1.3rem;
+  line-height: 31.5px;
+
+
+  transition: all 0.2s ease;
+
+  &:active,
+  &.active {
+    // @include box-shadow(none);
+  }
+  @include hover-focus {
+    color: #889093;
+    border-color: #98a0a4;
+  }
+
+  @include media-breakpoint-up(sm) {
+    margin: 0;
+  }
+}
+
+/* Extend btn class to posts_navigation links */
+.nav-next a,
+.nav-previous a {
+  @extend .btn;
+  @extend .btn-primary;
+}
+
+/* Add arrow */
+// FIXME: Estas flechas deberían ser 'aria-hidden'
+.nav-next a:after{
+  content: " \2192";
+  }
+
+.nav-previous a:before{
+  content: "← ";
+  }

@@ -1,0 +1,281 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+
+// Table of Contents
+//
+// Specials for Sage
+// Colors
+// Options
+// Spacing
+// Body
+// Links
+// Grid breakpoints
+// Grid containers
+// Grid columns
+// Fonts
+// Components
+
+
+// Special for Sage
+//
+
+// Paths
+$ttb-iconfont-path:        "../../assets/fonts/";
+
+// Grid settings
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+
+
+// Colors
+//
+
+/* Apuntes de colores originales
+ * Fonts: 			#3A4145
+ * Fonts secondary: #9EABB3
+ * Select fonts: 	#D6EDFF
+ * Hs:  			#2E2E2E
+ * Hs link: 		#4A4A4A
+ *  &:hover:		 #111111
+ * Links: 			#4A4A4A
+ *  &hover: 		 #111111
+ *
+ *
+ * MOLECULES
+ *
+ * Linea deco.
+ *  line: 		#EBF2F6
+ *  circle: 	#E7EEF2
+ *
+ * Buttons
+ *  font: 		#9EABB3
+ *   &:hover:  	 #889093
+ *  border: 	#BFC8CD
+ *   &:hover:  	 #98A0A4
+ *
+ * ORGANISMS
+ *
+ * Blockquotes
+ *  Vertical-line:  #4A4A4A
+ *
+ * Jumbotron
+ *  H1 home:  		#ffffff
+ *  H1 home subt.: 	rgba(255, 255, 255, 0.8)
+ *  Arrow: 		rgba(255, 255, 255, 0.7)
+ *   &hover: 	#ccc
+ *
+ * Footer
+ *  font: 		#BBC7CC
+ *  links:  	#BBC7CC
+ *
+ */
+
+$brand-primary:           #4A4A4A;
+$brand-primary-dark:      ($brand-primary - 28); // #2E2E2E
+$brand-primary-darker:    ($brand-primary - 57); // #111
+$brand-primary-light:           #9EABB3;
+$brand-primary-light-alt:       #BFC8CD;
+
+$brand-secondary:       	#3A4145;
+$brand-secondary-light:  	lighten($brand-secondary, 13.5%); // #
+$brand-secondary-lighter: lighten($brand-secondary, 40%); // #
+
+$brand-third:       	    #D6EDFF;
+
+$brand-fifth:       	    #3A4145;
+
+$brand-success:           #5cb85c;
+$brand-info:              #5bc0de;
+$brand-warning:           #f0ad4e;
+$brand-danger:            #d9534f;
+
+//** Global text color on `<body>`.
+$text-color:            $brand-fifth;
+//** Global textual link color.
+$link-color:            $brand-primary;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      darken($link-color, 22.35%); // #11111
+
+
+// Options
+//
+
+// Spacing
+//
+
+$spacer:   1rem;
+
+
+// Body
+//
+
+$body-color: $text-color;
+
+// Links
+//
+
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:      12;
+$grid-gutter-width: 32px;
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 501px,
+  md: 901px,
+  lg: 1000px,
+  xl: 1200px
+);
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 80%,
+  md: 710px,
+  lg: 710px,
+  xl: 710px
+);
+
+
+// Fonts
+//
+
+$font-family-sans-serif: -apple-system, "Open Sans", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-serif:      "Merriweather", Georgia, "Times New Roman", Times, serif;
+$font-family-monospace:  Inconsolata, monospace, sans-serif;
+$font-family-base:       $font-family-serif;
+
+// Pixel value used to responsively scale all typography. Applied to the `<html>` element.
+$font-size-root: 10px; // FIXME: 16.2px, pero habrá que mirar tmb los headers
+
+$font-size-base: 1.625rem;
+// $font-size-lg:   1.25rem;
+// $font-size-sm:   .89463rem;
+// $font-size-sm:   .92336rem;
+// $font-size-xs:   .80024rem; //13px
+
+// // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
+// $font-size-root: 18px;
+//
+// $font-size-base: 1rem;
+// $font-size-lg:   1.25rem;
+// $font-size-sm:   .875rem;
+// $font-size-xs:   .75rem;
+
+$line-height-base: 1.75;
+
+$font-size-h1: 2.8rem;
+$font-size-h2: 2.4rem;
+$font-size-h3: 2.1rem;
+$font-size-h4: 1.9rem;
+$font-size-h5: 1.8rem;
+$font-size-h6: 1.8rem;
+// $font-size-h1: 1.72361rem;
+// $font-size-h2: 1.47738rem;
+// $font-size-h3: 1.2927rem;
+// $font-size-h4: 1.1696rem;
+// $font-size-h5: 1.10803rem;
+// $font-size-h6: 1.10803rem;
+
+$headings-margin-bottom:  ($spacer / 2);
+$headings-font-family:    $font-family-sans-serif;
+$headings-font-weight:    700;
+$headings-line-height:    1.15;
+$headings-color:          #2E2E2E;
+
+// $blockquote-small-color:  $gray-light;
+$blockquote-font-size:    ($font-size-base * 1.25);
+$blockquote-border-color: $brand-primary;
+$blockquote-border-width: .91rem;
+
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$line-height-lg:         (4 / 3) !default;
+$line-height-sm:         1.5 !default;
+
+$border-radius:          .4rem !default;
+$border-radius-lg:       .5rem !default;
+$border-radius-sm:       .2rem !default;
+
+$component-active-color: #fff !default;
+$component-active-bg:    $brand-primary !default;
+
+$caret-width:            .3em !default;
+$caret-width-lg:         $caret-width !default;
+
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background and border color.
+
+$btn-padding-x:                  15px;
+$btn-padding-y:                  0;
+$btn-line-height:                3;
+
+$btn-primary-color:              darken($brand-primary, 5%);
+$btn-primary-bg:                 transparent;
+$btn-primary-border:             $brand-primary;
+
+$btn-success-color:              darken($brand-success, 5%);
+$btn-success-bg:                 transparent;
+$btn-success-border:             $brand-success;
+
+$btn-info-color:                 darken($brand-info, 5%);
+$btn-info-bg:                    transparent;
+$btn-info-border:                $brand-info;
+
+$btn-warning-color:              darken($brand-warning, 5%);
+$btn-warning-bg:                 transparent;
+$btn-warning-border:             $brand-warning;
+
+$btn-danger-color:               darken($brand-danger, 5%);
+$btn-danger-bg:                  transparent;
+$btn-danger-border:              $brand-danger;
+
+
+
+
+
+
+$blockquote-font-size:        	 $font-size-base;
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width:         30px;
+
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Small screen / tablet
+$container-tablet:             (710px + $grid-gutter-width);
+//** For `$screen-sm-min` and up.
+$container-sm:                 $container-tablet;
+
+// Code
+
+$code-font-size:              0.85rem;
+$code-padding-x:              .4rem;
+$code-padding-y:              .2rem;
+$code-color:                  $text-color;
+$code-bg:                     #f7fafb;

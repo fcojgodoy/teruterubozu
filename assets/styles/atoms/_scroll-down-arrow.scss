@@ -1,0 +1,48 @@
+.scroll-down-arrow {
+  display: none;
+  z-index: 100;
+  
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  margin-left: -22px;
+
+  width: 34px;
+  height: 34px;
+
+  font-size: 34px;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(255,255,255,0.7);
+
+  transform: rotate(-90deg);
+  animation: bounce 4s 2s infinite;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.home:not(.paged) .scroll-down-arrow {
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+}
+
+@keyframes bounce {
+    0%, 10%, 25%, 40%, 50% {
+        -webkit-transform: translateY(0) rotate(-90deg);
+                transform: translateY(0) rotate(-90deg);
+    }
+    20% {
+        -webkit-transform: translateY(-10px) rotate(-90deg);
+                transform: translateY(-10px) rotate(-90deg);
+    }
+    30% {
+        -webkit-transform: translateY(-5px) rotate(-90deg);
+                transform: translateY(-5px) rotate(-90deg);
+    }
+}

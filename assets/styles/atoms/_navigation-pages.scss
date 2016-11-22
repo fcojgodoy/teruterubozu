@@ -1,0 +1,15 @@
+.navigation-pages {
+  color: $brand-primary-light;
+
+  padding: 2px 0;
+  margin-bottom: 10px;
+
+  font-family: $font-family-sans-serif;
+  font-size: 1.3rem;
+  line-height: 3.15rem;;
+  text-align: center;
+
+  @include media-breakpoint-up(sm) {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,17 @@
+.banner-texts {
+  width: 80%;
+  max-width: 710px;
+  margin: 2rem auto;
+  // margin-top: 20px;
+  // margin-bottom: 20px;
+  @extend .m-x-auto;
+  text-align: center;
+
+  @include media-breakpoint-up(sm) {
+    margin: 0 auto;
+  }
+
+  @include media-breakpoint-up(md) {
+    width: 100%;
+  }
+}

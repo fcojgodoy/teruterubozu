@@ -1,0 +1,15 @@
+// Orden de reglas: este archivo, variables propias, variables BS
+.entry-content a {
+  text-decoration: underline;
+  transition: color 0.3s ease;
+
+//   &:hover,
+//   &:focus {
+//     color: $link-hover-color;
+//     text-decoration: $link-hover-decoration;
+//   }
+
+//   &:focus {
+//     @include tab-focus;
+//   }
+}

@@ -1,0 +1,106 @@
+//
+// Typography
+// --------------------------------------------------
+
+// Generics
+// -------------------------
+
+body {
+  // letter-spacing: $letter-spacing-base;
+  font-feature-settings: 'kern' 1;
+  text-rendering: geometricPrecision;
+  letter-spacing: .01rem;
+}
+
+::selection {
+    background: #D6EDFF;
+}
+
+// Types
+// -------------------------
+.content {
+	word-wrap: break-word;
+}
+
+// Lists
+// -------------------------
+
+// Unordered and Ordered lists
+ul,
+ol {
+  padding-left: 3rem;
+  // margin-top: 0;
+  // margin-bottom: ($line-height-computed / 2);
+  ul,
+  ol {
+    // margin-bottom: 0;
+    padding-left: 2em;
+    li {
+      margin: 0px;
+    }
+  }
+}
+
+li {
+  margin: 0.4em 0px;
+}
+
+// Add .dl-horizontal to all descriptions
+dl {
+  // @extend .dl-horizontal;
+}
+
+
+// Misc
+// -------------------------
+
+
+// Blockquotes
+blockquote {
+  padding: 0 0 0 $line-height-base;
+  margin: 0 0 $line-height-base;
+  font-size: $blockquote-font-size;
+  font-style: italic;
+  border-left: 0.4em solid $blockquote-border-color;
+}
+
+/* Small devices (tablets, 768px and up) */
+@include media-breakpoint-up(md) {
+  blockquote {
+    margin: 0 0 $line-height-base -2.1em;
+  }
+}
+
+// Images
+// -------------------------
+// img{
+// 	@extend .img-responsive;
+// 	// @extend .center-block;
+// }
+
+
+// Tables
+// -------------------------
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: $line-height-base;
+  // Cells
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border-top: none;
+      }
+    }
+  }
+}
+
+// Embed
+// -------------------------
+iframe {
+  @extend .m-x-auto;
+	max-width: 100%;
+}

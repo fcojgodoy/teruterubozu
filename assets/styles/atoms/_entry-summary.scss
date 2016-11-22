@@ -1,0 +1,18 @@
+.entry-summary {
+  font-size: 1.45333rem;
+  line-height: 1.7em;
+  p {
+    margin-bottom: 0;
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  @include media-breakpoint-up(sm) {
+    font-size: 1.53833rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: 1.62rem;
+    letter-spacing: .1px;
+  }
+}

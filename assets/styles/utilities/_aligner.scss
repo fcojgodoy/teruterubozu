@@ -1,0 +1,7 @@
+.aligner {
+  display: table;
+  .vertical {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}

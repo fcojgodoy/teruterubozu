@@ -1,0 +1,19 @@
+// See // Code in _variables.scss
+code {
+  padding: 1px 3px;
+  border: 1px solid #e3edf3;
+  border-radius: 2px;
+  white-space: pre-wrap;
+}
+
+pre {
+  background-color: $code-bg;
+  padding: 10px;
+  border: 1px solid #e3edf3;
+
+  code {
+    border: none;
+    font-size: 0.9469rem;
+    line-height: 28.3px;
+  }
+}

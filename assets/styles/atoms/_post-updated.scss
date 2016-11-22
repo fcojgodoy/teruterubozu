@@ -1,0 +1,12 @@
+.post-updated {
+  display: none;
+  font-family: $font-family-sans-serif;
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+  @extend .text-uppercase;
+  color: $brand-primary-light;
+
+  @include media-breakpoint-up(sm) {
+    display: inline-block;
+  }
+}

@@ -1,0 +1,12 @@
+.entry-resume {
+  padding-bottom: 9px;
+  margin: 2rem 0;
+
+  @include media-breakpoint-up(sm) {
+    padding-bottom: 28px;
+    margin: {
+      top: 0;
+      bottom: 4rem;
+    }
+  }
+}

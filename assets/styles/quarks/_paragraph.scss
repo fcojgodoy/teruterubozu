@@ -1,0 +1,16 @@
+// See Fonts in _variables.scss
+p {
+  margin: 0 0 1.75em;
+
+  letter-spacing: 0.1px;
+  line-height: 1.75em;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 1.71rem;
+    line-height: 1.8415;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 1.8rem;
+    line-height: 1.75;
+  }
+}

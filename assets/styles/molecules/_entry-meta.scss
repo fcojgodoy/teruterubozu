@@ -1,0 +1,24 @@
+/* Modify author-link */
+// .entry-meta .author-link {
+//   font-size: $font-size-xs;
+// }
+
+.entry-meta {
+  margin: 1rem 0 0;
+  line-height: 2.2rem;
+
+  @include media-breakpoint-up(sm) {
+    margin-top: 1.75rem;
+  }
+}
+/* 'avatar' position */
+.entry-meta .avatar {
+  margin-right: 6px;
+  position: relative;
+}
+/* Add borderleft separator to 'post-updated' */
+.entry-meta .post-updated {
+  padding-left: 12px;
+  margin-left: 8px;
+  border-left: 1px solid #d5dbde;
+}

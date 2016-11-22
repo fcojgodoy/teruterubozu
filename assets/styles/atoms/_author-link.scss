@@ -1,0 +1,9 @@
+.author-link {
+    font-family: $font-family-sans-serif;
+    font-size: 1.3rem;
+    color: $brand-primary-light;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 1.5rem;
+    }
+}

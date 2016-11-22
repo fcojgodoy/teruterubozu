@@ -1,0 +1,19 @@
+/* Container */
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+  // width: 710px; // FIXME: desde 710 a 900 el container se desborda
+
+  @include media-breakpoint-up(sm) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Pagination */
+.page-navigation {
+  margin: {
+    top: 2rem;
+    bottom: 2rem;
+  }
+}

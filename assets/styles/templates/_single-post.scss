@@ -1,0 +1,8 @@
+.single-post {
+  .banner {
+    margin-bottom: 1.5rem;
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 5rem;
+    }
+  }
+}

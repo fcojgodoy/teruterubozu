@@ -1,0 +1,62 @@
+// FIXME: Hay muchas declaraciones que deberían ir en sus respectivos átomos
+.entry-footer {
+  /* Grid */
+  @extend .row;
+  /* Border top & avatar style */
+  margin: 6rem 0px 0px;
+  padding: 6rem 0px 0px;
+  border-top: 1px solid #EBF2F6;
+  /* text center */
+  text-align: center;
+  .author-wrap {
+    @extend .col-md-6;
+  }
+  .share {
+    @extend .col-md-4;
+  }
+  .avatar-wrap {
+    text-align: center;
+    margin-top: -10rem;
+  }
+  .avatar {
+    box-sizing: content-box;
+    /* Add border to avatar */
+    padding: 6px;
+    background-color: #fff; // FIXME: Se podría cambiar por la variable del
+    // color del fondo del body.
+    border: 1px solid #EBF2F6;
+  }
+  /* Title style */
+  h4 {
+    font-size: $font-size-base;
+  }
+  /* p style */
+  .entry-footer p {
+    font-size: $font-size-sm;
+  }
+  /* Style for 'author-location' & 'author-url' */
+  .author-location,
+  .author-web {
+    display: block;
+    margin: {
+      top: 1.5rem;
+      bottom: 1.5rem;
+    }
+  }
+}
+
+/* Media query $screen-md-min */
+@include media-breakpoint-up(md) {
+  .entry-footer {
+    text-align: left;
+    /* 'author-location' margin right */
+    .author-location {
+      margin-right: 2rem;
+    }
+    /* Style for 'author-location' & 'author-url' */
+    .author-location,
+    .author-url {
+      display: inline-block;
+    }
+  }
+}
