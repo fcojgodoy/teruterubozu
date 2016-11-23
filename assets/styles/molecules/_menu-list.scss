@@ -1,0 +1,13 @@
+ul.nav {
+  padding: 90px 9% 5%;
+  list-style: none;
+  counter-reset: item;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  .menu-item {
+    margin: 0;
+  }
+}

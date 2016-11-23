@@ -1,0 +1,11 @@
+.custom-logo-link {
+  padding: 5px;
+  img {
+    width: auto;
+    max-height: 35px;
+    padding: 4px 0;
+  }
+  @include media-breakpoint-up(sm) {
+    height: 40px;;
+  }
+}

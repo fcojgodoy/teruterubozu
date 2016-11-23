@@ -1,18 +1,3 @@
-<!-- Pushy Menu -->
-<!-- Molecule: nav-primary -->
-<nav class="nav-primary pushy pushy-right">
-  <?php
-  if (has_nav_menu('primary_navigation')) :
-    wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
-  endif;
-  ?>
-</nav>
-
-<!-- Site Overlay -->
-<div class="site-overlay"></div>
-
-<!-- Your Content -->
-
   <?php if (is_front_page()) : ?>
 
   <!-- Atom: front-page-banner (Add background-image style if is_front_page) -->
@@ -31,18 +16,16 @@
     <nav class="main-nav navbar">
 
       <!-- Atom: custom-logo-link -->
-      <a class="brand navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php the_custom_logo() ?></a>
+      <?php the_custom_logo() ?>
       <?php if (!has_custom_logo()) : ?>
       <!-- No Custom Logo, just display the site's name -->
-      <a class="brand navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+      <a class="navbar-brand a2" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
       <?php endif; ?>
 
       <!-- Molecule: menu-button -->
-      <a class="btn menu-btn">&#9776; Menu</a>
+      <a class="btn menu-btn icon-menu" href="#"> <span class="word">Menu</span> </a>
 
     </nav>
-
-
 
 
     <!-- Molecule: banner-texts (Add content if is_front_page) -->
@@ -67,7 +50,7 @@
       <?php if ( !is_paged() ) : ?>
 
       <!-- Atom: scroll-down-arrow -->
-      <a class="scroll-down-arrow icon-arrow-left js-scrolltoid radial-gradient" href="#js-scrollto" data-offset="-45"><span hidden="true">Scroll Down</span></a>
+      <a class="scroll-down-arrow icon-arrow-left js-scrolltoid radial-gradient" href="#js-scrollto" data-offset="45"><span hidden="true">Scroll Down</span></a>
 
       <?php else: ?>
       <?php endif; ?>

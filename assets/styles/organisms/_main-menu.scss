@@ -13,25 +13,21 @@ $menu_width: 240px;
     height: 100%;
     top: 0;
     z-index: 9999;
-    background: #000;
+    background: #111;
     overflow: auto;
     visibility: hidden;
     -webkit-overflow-scrolling: touch; /* enables momentum scrolling in iOS overflow elements */
 
-    a{
-        display: block;
-        color: #b3b3b1;
-        padding: 15px 30px;
-        text-decoration: none;
-        outline: 0;
-    }
+    // a{
+    //     display: block;
+    //     color: #b3b3b1;
+    //     padding: 15px 30px;
+    //     text-decoration: none;
+    //     outline: 0;
+    // }
 
     a:hover{
         color: #FFF;
-    }
-
-    ul:first-child{
-        margin-top: 10px;
     }
 
     &.pushy-left{

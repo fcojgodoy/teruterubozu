@@ -1,0 +1,36 @@
+.menu-btn {
+  @extend .pull-xs-right;
+  margin: 0;
+
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 35px;
+  white-space: nowrap;
+
+
+  &:before {
+    color: #fff;
+    position: relative;
+    top: 1px;
+    margin-right: 2px;
+    font-weight: bold;
+  }
+
+  .word {
+    color: #fff;
+  }
+
+  @include media-breakpoint-down(xs) {
+    padding: 0 5px;
+    border: none;
+  }
+
+  // Modify: when Pushi menu push right is Open
+  .pushy-open-right & {
+    background-color: #111;
+    border: none;
+
+    transform: translate3D(94px, 0, 0);
+  }
+}
