@@ -8,6 +8,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "https://github.com/twbs/bootstrap.git#v4.0.0-alpha.4",
-    "scrolltoid": "*"
+    "scrolltoid": "*",
+    "pushy": "^1.0.0"
   }
 }

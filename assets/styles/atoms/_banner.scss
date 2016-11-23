@@ -30,7 +30,7 @@
 }
 
 /* Banner in front page */
-.home > .banner {
+.home .banner {
 	@extend .aligner;
 	height: 40vh;
 	min-height: 240px;
