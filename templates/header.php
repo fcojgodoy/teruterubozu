@@ -19,7 +19,7 @@
     <a class="brand navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php the_custom_logo() ?></a>
     <?php if (!has_custom_logo()) : ?>
       <!-- No Custom Logo, just display the site's name -->
-      <a class="brand navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?>
+      <a class="brand navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
     <?php endif; ?>
 
     <!-- Molecule: nav-primary -->
