@@ -27,10 +27,10 @@
 
     </nav>
 
-
-    <!-- Molecule: banner-texts (Add content if is_front_page) -->
+    <!-- If is_front_page -->
     <?php if (is_front_page()) : ?>
 
+    <!-- Molecule: banner-texts -->
     <div class="vertical">
       <hgroup class="banner-texts">
 
@@ -46,7 +46,7 @@
       <?php else: ?>
       <?php endif; ?>
 
-      <!-- first page of pagination -->
+      <!-- If is first page of pagination -->
       <?php if ( !is_paged() ) : ?>
 
       <!-- Atom: scroll-down-arrow -->
