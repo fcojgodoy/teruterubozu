@@ -52,9 +52,10 @@
 @import "atoms/author-web";
 @import "atoms/author-bio";
 
-@import "atoms/share-post-facebook";
-@import "atoms/share-post-twitter";
-@import "atoms/share-post-google";
+@import "atoms/share-title";
+// @import "atoms/share-post-facebook";
+// @import "atoms/share-post-twitter";
+// @import "atoms/share-post-google";
 
 @import "atoms/entry-summary-title";
 @import "atoms/entry-summary";
@@ -83,6 +84,7 @@
 @import "molecules/entry-resume";
 @import "molecules/entry-footer";
 @import "molecules/entry-meta";
+@import "molecules/entry-author-wrap";
 @import "molecules/share-icons";
 @import "molecules/banner-texts";
 

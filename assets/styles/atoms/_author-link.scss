@@ -6,4 +6,10 @@
     @include media-breakpoint-up(sm) {
       font-size: 1.5rem;
     }
+
+    // author-link in entry-footer
+    .entry-footer & {
+      margin: 0;
+      font-size: 1.8rem;
+    }
 }

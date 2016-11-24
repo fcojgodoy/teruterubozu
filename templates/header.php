@@ -5,7 +5,7 @@
 
   <?php else: ?>
 
-  <!-- Atom: page-banner (Select thumbnail size according to wp_is_mobile) -->
+  <!-- Atom: post-thumbnail (size according to wp_is_mobile) -->
   <header class="banner" style="background-image: url('<?php if (wp_is_mobile()) {the_post_thumbnail_url('medium');}
         else {the_post_thumbnail_url('');}
       ?>

@@ -3,16 +3,16 @@
   /* Grid */
   @extend .row;
   /* Border top & avatar style */
-  margin: 6rem 0px 0px;
-  padding: 6rem 0px 0px;
+  margin-top: 6rem;
+  padding-top: 6rem;
   border-top: 1px solid #EBF2F6;
   /* text center */
   text-align: center;
   .author-wrap {
-    @extend .col-md-6;
+    @extend .col-md-9;
   }
   .share {
-    @extend .col-md-4;
+    @extend .col-md-3;
   }
   .avatar-wrap {
     text-align: center;
@@ -25,10 +25,6 @@
     background-color: #fff; // FIXME: Se podría cambiar por la variable del
     // color del fondo del body.
     border: 1px solid #EBF2F6;
-  }
-  /* Title style */
-  h4 {
-    font-size: $font-size-base;
   }
   /* p style */
   .entry-footer p {
