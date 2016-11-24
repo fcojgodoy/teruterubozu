@@ -6,3 +6,6 @@ node_modules
 npm-debug.log
 vendor
 DEVLOG.md
+
+# Dolphin's folder config file
+.directory

@@ -1,15 +1,15 @@
 {
-  "name": "sage",
-  "version": "8.5.0",
-  "author": "Ben Word <ben@benword.com>",
-  "homepage": "https://roots.io/sage/",
+  "name": "teruterubozu",
+  "version": "0",
+  "author": "Francisco Godoy <Francisco.godoy@openmailbox.org>",
+  "homepage": "https://github.com/fcojgodoy/teruterubozu",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/roots/sage.git"
+    "url": "git://github.com/fcojgodoy/teruterubozu.git"
   },
   "bugs": {
-    "url": "https://github.com/roots/sage/issues"
+    "url": "https://github.com/fcojgodoy/teruterubozu/issues"
   },
   "licenses": [
     {
