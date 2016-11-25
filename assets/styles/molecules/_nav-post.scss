@@ -1,0 +1,59 @@
+[class^=nav-post] {
+  background-size: cover;
+
+    a {
+      display: block;
+      position: relative;
+      background-size: cover;
+
+      min-height: 220px;
+      padding: 6rem 0;
+
+      // Background transparency
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,0.7);
+        transition: all 0.5s ease;
+      }
+      // Background transparency on hover
+      &:hover:before {
+        background: rgba(0,0,0,0.8);
+      }
+
+      .wrap {
+        position: relative;
+        width: 80%;
+        // padding: 6rem 0;
+        margin: 0 auto 4rem;
+
+        text-align: center;
+
+        // Title
+        h2 {
+          color:#fff;
+        }
+
+        // span
+        span {
+          color: #fff;
+          text-transform: uppercase;
+
+          transition: all 0.5s ease;
+        }
+      }
+      // span on hover
+      &:hover span {
+        color: #222;
+        background-color:#fff;
+
+        transition: all 0.2s ease;
+      }
+    }
+
+}

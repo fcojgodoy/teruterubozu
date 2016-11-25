@@ -76,45 +76,66 @@
   </article>
 
   <!-- ??: Post navigation -->
-  <div class="post-navigation-fixme">
-    <div id="post-nav" class="navigation">
-      <?php
-        $prevPost = get_previous_post(true);
-        if($prevPost)
-      ?>
+  <div class="posts-navigation">
 
-      <div class="nav-box previousº">
+    <?php $nextPost = get_next_post(); if($nextPost): ?>
+      <?php if (has_post_thumbnail( $nextPost->ID ) ): ?>
+        <?php $nextthumbnail = wp_get_attachment_image_src( get_post_thumbnail_id($nextPost->ID), '' ); $nextthumbnail = $nextthumbnail[0]; ?>
+      <?php else :
+        $nextthumbnail = get_stylesheet_directory_uri() . '/images/default-featured.jpg'; ?>
+      <?php endif; ?>
 
-        <a href="#" class="btn">YOU MIGHT ENJOY</a>
+      <!-- ?? -->
+      <div class="nav-post-newer" style="background-image:url(<?php echo $nextthumbnail; ?>);">
 
-        <?php if (wp_is_mobile()) {
-          $prevthumbnail = get_the_post_thumbnail($prevPost->ID, 'medium' );
-        }
-        else {
-          $prevthumbnail = get_the_post_thumbnail($prevPost->ID, 'full' );
-        }
-        previous_post_link('%link',"$prevthumbnail <p>%title</p>", FALSE); ?>
+        <div class="wrap">
+          <span class="btn"><?php echo __('Read this next', 'sage') ?></span>
+          <h2>
+            <a href="<?php echo get_permalink(get_adjacent_post(false, '', false)); ?>">
+              <?php echo get_the_title( $nextPost->ID ) ?>
+            </a>
+          </h2>
+          <!-- <?php setup_postdata( $nextPost ); the_excerpt(); wp_reset_postdata(); ?> -->
+        </div>
+
       </div>
 
-      <?php
-        $nextPost = get_next_post(true);
-        if($nextPost)
-      ?>
+      <!-- <div class="entry">
+        <div class="label">Next post</div>
+        <h4><?php next_post_link('%link'); ?></h4>
+        <?php setup_postdata( $nextPost ); the_excerpt(); wp_reset_postdata(); ?>
+      </div> -->
 
-      <div class="nav-box next">
+    <?php endif; ?>
 
-        <a href="#" class="btn">YOU MIGHT ENJOY</a>
+    <?php $prevPost = get_previous_post(); if($prevPost): ?>
+      <?php if (has_post_thumbnail( $prevPost->ID ) ): ?>
+        <?php $prevthumbnail = wp_get_attachment_image_src( get_post_thumbnail_id($prevPost->ID), '' ); $prevthumbnail = $prevthumbnail[0]; ?>
+      <?php else :
+        $prevthumbnail = get_stylesheet_directory_uri() . '/images/default-featured.jpg'; ?>
+      <?php endif; ?>
 
-        <?php if (wp_is_mobile()) {
-          $nextthumbnail = get_the_post_thumbnail($nextPost->ID, 'medium' );
-        }
-        else {
-          $nextthumbnail = get_the_post_thumbnail($nextPost->ID, 'full' );
-        }
-        next_post_link('%link',"$nextthumbnail <p>%title</p>", FALSE); ?>
+      <!--  -->
+      <div class="nav-post-older">
+
+        <a href="<?php echo get_permalink(get_adjacent_post( false, '', true)); ?>" style="background-image:url(<?php echo $prevthumbnail; ?>);">
+          <div class="wrap">
+            <span class="btn"><?php echo __('You might enjoy', 'sage') ?></span>
+            <h2><?php echo get_the_title( $prevPost->ID ) ?></h2>
+            <!-- <?php setup_postdata( $prevPost ); the_excerpt(); wp_reset_postdata(); ?> -->
+          </div>
+        </a>
+
       </div>
 
-    </div><!--#post-nav div -->
+      <!-- <div class="entry">
+        <div class="label">Previous post</div>
+        <h4><?php previous_post_link('%link'); ?></h4>
+        <?php setup_postdata( $prevPost ); the_excerpt(); wp_reset_postdata(); ?>
+      </div> -->
+
+    <?php endif; ?>
+
   </div>
 
 <?php endwhile; ?>
