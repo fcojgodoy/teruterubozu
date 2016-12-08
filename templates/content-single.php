@@ -87,24 +87,19 @@
         $nextthumbnail = get_stylesheet_directory_uri() . '/images/default-featured.jpg'; ?>
       <?php endif; ?>
 
-      <!-- ?? -->
       <div class="nav-post-newer">
 
         <a href="<?php echo get_permalink(get_adjacent_post( false, '', false)); ?>" style="background-image:url(<?php echo $nextthumbnail; ?>);">
           <div class="wrap">
-            <span class="btn"><?php echo __('Read this next', 'sage') ?></span>
+
+            <!-- Atom: nav-post-button -->
+            <span class="nav-post-button btn"><?php echo __('Read this next', 'sage') ?></span>
             <h2><?php echo get_the_title( $nextPost->ID ) ?></h2>
             <!-- <?php setup_postdata( $nextPost ); the_excerpt(); wp_reset_postdata(); ?> -->
           </div>
         </a>
 
       </div>
-
-      <!-- <div class="entry">
-        <div class="label">Next post</div>
-        <h4><?php next_post_link('%link'); ?></h4>
-        <?php setup_postdata( $nextPost ); the_excerpt(); wp_reset_postdata(); ?>
-      </div> -->
 
     <?php endif; ?>
 
@@ -121,19 +116,15 @@
 
         <a href="<?php echo get_permalink(get_adjacent_post( false, '', true)); ?>" style="background-image:url(<?php echo $prevthumbnail; ?>);">
           <div class="wrap">
-            <span class="btn"><?php echo __('You might enjoy', 'sage') ?></span>
+
+            <!-- Atom: nav-post-button -->
+            <span class="nav-post-button btn"><?php echo __('You might enjoy', 'sage') ?></span>
             <h2><?php echo get_the_title( $prevPost->ID ) ?></h2>
             <!-- <?php setup_postdata( $prevPost ); the_excerpt(); wp_reset_postdata(); ?> -->
           </div>
         </a>
 
       </div>
-
-      <!-- <div class="entry">
-        <div class="label">Previous post</div>
-        <h4><?php previous_post_link('%link'); ?></h4>
-        <?php setup_postdata( $prevPost ); the_excerpt(); wp_reset_postdata(); ?>
-      </div> -->
 
     <?php endif; ?>
 
