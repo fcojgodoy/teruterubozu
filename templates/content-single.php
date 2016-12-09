@@ -89,7 +89,7 @@
 
       <div class="nav-post-newer">
 
-        <a href="<?php echo get_permalink(get_adjacent_post( false, '', false)); ?>" style="background-image:url(<?php echo $nextthumbnail; ?>);">
+        <a class="nav-post-link" href="<?php echo get_permalink(get_adjacent_post( false, '', false)); ?>" style="background-image:url(<?php echo $nextthumbnail; ?>);">
           <div class="wrap">
 
             <!-- Atom: nav-post-button -->
@@ -115,14 +115,14 @@
 
       <div class="nav-post-older">
 
-        <a href="<?php echo get_permalink(get_adjacent_post( false, '', true)); ?>" style="background-image:url(<?php echo $prevthumbnail; ?>);">
+        <a class="nav-post-link" href="<?php echo get_permalink(get_adjacent_post( false, '', true)); ?>" style="background-image:url(<?php echo $prevthumbnail; ?>);">
           <div class="wrap">
 
             <!-- Atom: nav-post-button -->
             <span class="nav-post-button btn"><?php echo __('You might enjoy', 'sage') ?></span>
             <!-- Atom: nav-post-title -->
             <h2 class="nav-post-title"><?php echo get_the_title( $prevPost->ID ) ?></h2>
-            <!-- <?php setup_postdata( $prevPost ); the_excerpt(); wp_reset_postdata(); ?> -->
+            <!-- <?php echo get_the_excerpt( $prevPost->ID ) ?> -->
           </div>
         </a>
 
