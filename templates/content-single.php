@@ -94,7 +94,8 @@
 
             <!-- Atom: nav-post-button -->
             <span class="nav-post-button btn"><?php echo __('Read this next', 'sage') ?></span>
-            <h2><?php echo get_the_title( $nextPost->ID ) ?></h2>
+            <!-- Atom: nav-post-title -->
+            <h2 class="nav-post-title"><?php echo get_the_title( $nextPost->ID ) ?></h2>
             <!-- <?php setup_postdata( $nextPost ); the_excerpt(); wp_reset_postdata(); ?> -->
           </div>
         </a>
@@ -119,7 +120,8 @@
 
             <!-- Atom: nav-post-button -->
             <span class="nav-post-button btn"><?php echo __('You might enjoy', 'sage') ?></span>
-            <h2><?php echo get_the_title( $prevPost->ID ) ?></h2>
+            <!-- Atom: nav-post-title -->
+            <h2 class="nav-post-title"><?php echo get_the_title( $prevPost->ID ) ?></h2>
             <!-- <?php setup_postdata( $prevPost ); the_excerpt(); wp_reset_postdata(); ?> -->
           </div>
         </a>

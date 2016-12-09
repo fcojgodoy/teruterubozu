@@ -33,11 +33,10 @@
         margin: 0 auto 4rem;
 
         text-align: center;
-
-        // Title
-        h2 {
-          color:#fff;
-        }
+      }
+      
+      &:hover {
+        text-decoration: none;
       }
     }
 }
