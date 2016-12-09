@@ -1,9 +1,5 @@
-.nav-post-newer,
-.nav-post-older {
-  background-size: cover;
+.posts-navigation{
   width: calc(100% + 32px);
-  height: 100%;
-  min-height: 214.188px;
   max-width: 100vw;
   margin-left: -16px;
 
@@ -12,9 +8,24 @@
     margin-left: -12.5%;
   }
 
-  @include media-breakpoint-up(md){
+  @include media-breakpoint-up(md) {
+    display: flex;
+    align-items: stretch;
+
     width: 100vw;
     margin-left: calc((-100vw + 695.5px) / 2);
+  }
+}
+
+.nav-post-newer,
+.nav-post-older {
+  background-size: cover;
+  height: auto;
+  min-height: 214.188px;
+
+  @include media-breakpoint-up(md) {
+    max-width: 50%;
+    width: 50%;
   }
 
   .nav-post-link {
@@ -22,9 +33,9 @@
     position: relative;
     background-size: cover;
     background-position: center;
-
     min-height: 220px;
     height: 100%;
+    overflow: auto;
 
     &:before {
       content: "";
