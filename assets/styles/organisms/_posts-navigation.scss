@@ -1,0 +1,17 @@
+.posts-navigation{
+  width: calc(100% + 32px);
+  max-width: 100vw;
+  margin-left: -16px;
+
+  @include media-breakpoint-up(sm) {
+    width: 125%;
+    margin-left: -12.5%;
+  }
+
+  @include media-breakpoint-up(md) {
+    display: flex;
+
+    width: 100vw;
+    margin-left: calc((-100vw + 695.5px) / 2);
+  }
+}
