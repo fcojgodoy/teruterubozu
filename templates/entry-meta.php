@@ -17,6 +17,6 @@
   <?php endif; ?>
 
   <!-- Atom: post-updated -->
-  <time class="post-updated" datetime="<?= get_post_time('d F Y', true); ?>"><?= get_the_date('d F Y', true); ?></time>
+  <time class="post-updated" datetime="<?= get_post_time('d F Y'); ?>"><?= get_the_date('d F Y'); ?></time>
 
 </p>

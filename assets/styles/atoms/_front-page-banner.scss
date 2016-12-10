@@ -3,12 +3,13 @@
  min-height: 240px;
  padding: 15% 0;
  box-sizing: border-box;
-}
-/* When home is not in its first page */
-.front-page-banner {
-	height: 55px;
-	min-height: 0px;
-	margin-bottom: 0px;
+
+ /* When home is not in its first page */
+ .paged & {
+   height: 55px;
+   min-height: 0px;
+   margin-bottom: 0px;
+ }
 }
 
 @include media-breakpoint-up(sm) {

@@ -2,6 +2,28 @@
   <?php get_template_part('templates/page', 'header'); ?>
 <?php endif; ?>
 
+
+<?php if (is_paged()): ?>
+  <!-- Molecule: Pagination -->
+  <nav class="page-navigation">
+    <!-- Atom: Button -->
+    <div class="nav-previous">
+      <?php previous_posts_link( __('Newer Posts', 'Sage') )  ?>
+    </div>
+    <!-- Atom: Navigation pages -->
+    <div class="navigation-pages">
+      <span>
+        <?php echo __('Page', 'Sage') . ' ' . $paged . ' ' . __('of', 'Sage') . ' ' . $wp_query -> max_num_pages; ?>
+      </span>
+    </div>
+    <!-- Atom: Button -->
+    <div class="nav-next">
+      <?php next_posts_link( __('Older Posts', 'Sage') )  ?>
+    </div>
+  </nav>
+<?php endif; ?>
+
+
 <?php if (!have_posts()) : ?>
   <div class="alert alert-warning">
     <?php _e('Sorry, no results were found.', 'sage'); ?>
