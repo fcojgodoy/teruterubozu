@@ -20,18 +20,29 @@
         </div>
 
         <div class="author-wrap">
+
+          <!-- Atom: author-link -->
           <h4>
-            <!-- Atom: author-link -->
             <a class="author-link" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author"><?php echo get_the_author(); ?></a>
           </h4>
+
+          <!-- Atom: author-bio -->
           <p class="author-bio">
-            <!-- Atom: author-bio -->
             <?php echo get_the_author_meta( 'description' ); ?>
           </p>
-          <em class="author-location icon-location"><?php echo get_the_author_meta( 'city' ); ?></em>
-          <em>
-            <a class="author-web icon-link" href="<?php echo get_the_author_meta( 'url' ); ?>"><?php echo get_the_author_meta( 'url' ); ?></a>
-          </em>
+
+          <!-- Atom: author-location -->
+          <?php if (get_the_author_meta('city')) : ?>
+            <em class="author-location icon-location"><?php echo get_the_author_meta( 'city' ); ?></em>
+          <?php endif ; ?>
+
+          <!-- Atom: author-web -->
+          <?php if (get_the_author_meta( 'url' )) : ?>
+            <em>
+              <a class="author-web icon-link" href="<?php echo get_the_author_meta( 'url' ); ?>"><?php echo get_the_author_meta( 'url' ); ?></a>
+            </em>
+          <?php endif; ?>
+
         </div>
       <!-- </div> -->
 
