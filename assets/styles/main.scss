@@ -34,11 +34,13 @@
 
 // Atoms
 @import "atoms/iconfonts";
-@import "atoms/buttons";
-@import "atoms/navigation-pages";
 @import "atoms/decorative-line";
 @import "atoms/scroll-down-arrow";
 @import "atoms/radial-gradient";
+
+@import "atoms/navigation-pages";
+@import "atoms/nav-page-link";
+
 
 @import "atoms/menu-btn";
 @import "atoms/nav-title";

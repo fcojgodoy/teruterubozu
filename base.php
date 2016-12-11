@@ -26,6 +26,9 @@ use Roots\Sage\Wrapper;
         wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
       endif;
       ?>
+
+      <a href="<?php echo site_url('rss'); ?>" type="button" class="btn btn-secondary btn-block">Block level button</a>
+
     </nav>
 
     <!-- Site Overlay (Pushy) -->

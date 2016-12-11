@@ -23,7 +23,7 @@
       <?php endif; ?>
 
       <!-- Molecule: menu-button -->
-      <a class="btn menu-btn icon-menu" href="#"> <span class="word">Menu</span> </a>
+      <a class="menu-btn icon-menu" href="#"> <span class="word">Menu</span> </a>
 
     </nav>
 

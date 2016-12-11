@@ -1,7 +1,11 @@
-// Ver // Buttons en _variables
-/* General buttons style */
-.btn {
+/* Extend btn class to posts_navigation links */
+.nav-page-link a {
+  @extend .btn;
+  @extend .btn-outline-primary;
+// Extra style
   color: $brand-primary-light;
+  padding-top: 0;
+  padding-bottom: 0;
   margin: 10px 0;
   border-color: $brand-primary-light-alt;
 
@@ -9,14 +13,10 @@
   font-size: 1.3rem;
   line-height: 31.5px;
 
-
   transition: all 0.2s ease;
 
-  &:active,
-  &.active {
-    // @include box-shadow(none);
-  }
   @include hover-focus {
+    background-color: transparent;
     color: #889093;
     border-color: #98a0a4;
   }
@@ -24,13 +24,6 @@
   @include media-breakpoint-up(sm) {
     margin: 0;
   }
-}
-
-/* Extend btn class to posts_navigation links */
-.nav-next a,
-.nav-previous a {
-  @extend .btn;
-  @extend .btn-primary;
 }
 
 /* Add arrow */

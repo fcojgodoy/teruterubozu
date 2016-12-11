@@ -183,12 +183,7 @@ $font-size-h3: 2.1rem;
 $font-size-h4: 1.9rem;
 $font-size-h5: 1.8rem;
 $font-size-h6: 1.8rem;
-// $font-size-h1: 1.72361rem;
-// $font-size-h2: 1.47738rem;
-// $font-size-h3: 1.2927rem;
-// $font-size-h4: 1.1696rem;
-// $font-size-h5: 1.10803rem;
-// $font-size-h6: 1.10803rem;
+
 
 $headings-margin-bottom:  ($spacer / 2);
 $headings-font-family:    $font-family-sans-serif;
@@ -224,29 +219,29 @@ $caret-width-lg:         $caret-width !default;
 //
 // For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-padding-x:                  15px;
-$btn-padding-y:                  0;
-$btn-line-height:                3;
+// $btn-padding-x:                  15px;
+$btn-padding-y:                     8px;
+// $btn-line-height:                3;
+//
+// $btn-primary-color:              darken($brand-primary, 5%);
+// $btn-primary-bg:                 transparent;
+// $btn-primary-border:             $brand-primary;
 
-$btn-primary-color:              darken($brand-primary, 5%);
-$btn-primary-bg:                 transparent;
-$btn-primary-border:             $brand-primary;
-
-$btn-success-color:              darken($brand-success, 5%);
-$btn-success-bg:                 transparent;
-$btn-success-border:             $brand-success;
-
-$btn-info-color:                 darken($brand-info, 5%);
-$btn-info-bg:                    transparent;
-$btn-info-border:                $brand-info;
-
-$btn-warning-color:              darken($brand-warning, 5%);
-$btn-warning-bg:                 transparent;
-$btn-warning-border:             $brand-warning;
-
-$btn-danger-color:               darken($brand-danger, 5%);
-$btn-danger-bg:                  transparent;
-$btn-danger-border:              $brand-danger;
+// $btn-success-color:              darken($brand-success, 5%);
+// $btn-success-bg:                 transparent;
+// $btn-success-border:             $brand-success;
+//
+// $btn-info-color:                 darken($brand-info, 5%);
+// $btn-info-bg:                    transparent;
+// $btn-info-border:                $brand-info;
+//
+// $btn-warning-color:              darken($brand-warning, 5%);
+// $btn-warning-bg:                 transparent;
+// $btn-warning-border:             $brand-warning;
+//
+// $btn-danger-color:               darken($brand-danger, 5%);
+// $btn-danger-bg:                  transparent;
+// $btn-danger-border:              $brand-danger;
 
 
 
