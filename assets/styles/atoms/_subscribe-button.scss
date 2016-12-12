@@ -1,0 +1,28 @@
+.subscribe-button {
+  @extend .btn;
+  @extend .btn-secondary;
+
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  right: 30px;
+
+  color:#111 !important; // BUG: In Pushy, remove .pushy a
+  background-color: #fff;
+  padding: 0 20px 3px !important; // BUG: In Pushy, remove .pushy a
+  border: none;
+  border-radius: 3px;
+
+  font-family: $font-family-sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 35px;
+
+  // Remove normalize.scss rule for match with Casper in Webkit
+  -webkit-appearance: initial !important;
+
+  @include hover-focus {
+      background-color: #fff;
+  }
+
+}
