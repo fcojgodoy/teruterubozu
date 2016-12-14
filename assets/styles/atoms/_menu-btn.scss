@@ -45,15 +45,21 @@
   // Modify: when Pushi menu push right is Open
   .pushy-open-right & {
     background-color: #111;
-    border: none;
+    padding: 0 12px 0 13px;
+    border: 1px solid #111;
 
     transform: translate3D(94px, 0, 0);
+
+    &:before {
+      color: #fff !important;
+    }
   }
 
   // When the post have not featured image
   .no-featured-image & {
     color: #9EABB3;
     border-color: #BFC8CD;
+    line-height: 36px;
 
     .word,
     &:before {

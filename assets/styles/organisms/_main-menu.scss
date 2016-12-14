@@ -77,7 +77,7 @@ $menu_width: 240px;
 #container,
 .pushy,
 .push{
-    transition: transform .3s linear(.16, .68, .43, .99);
+    transition: transform 0.5s cubic-bezier(.16, .68, .43, .99);
 }
 
 /* Site Overlay */
