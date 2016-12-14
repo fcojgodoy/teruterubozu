@@ -19,7 +19,7 @@ use Roots\Sage\Wrapper;
     <div class="site-overlay"></div>
 
     <!-- Container for (Pushy) -->
-    <div id="container">
+    <div id="container" class="main-container">
       <!-- FIXME: colocar #container en su sitio y usar
       este tip: https://github.com/christophery/pushy#tips -->
 

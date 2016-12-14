@@ -1,3 +1,5 @@
 .avatar {
   @extend .img-circle;
+  position: relative;
+  top: -4px;
 }

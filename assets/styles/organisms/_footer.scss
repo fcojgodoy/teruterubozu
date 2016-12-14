@@ -1,8 +1,18 @@
-footer {
-  margin: 1rem 0 0 0;
+footer.content-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: 1rem 0;
+  margin: 0;
+  // margin: 1rem 0 0 0;
 
   @include media-breakpoint-up(sm) {
     margin-top: 6rem;
+  }
+
+  // if is home page
+  .home & {
+    position: relative;
   }
 }

@@ -20,6 +20,13 @@
     border-color: #98a0a4;
   }
 
+  // Fix Bootstrap btn style on :hover:active
+  &:hover:active {
+    background-color: transparent;
+    color: #889093;
+    border-color: #98a0a4;
+  }
+
   @include media-breakpoint-up(sm) {
     margin: 0;
   }

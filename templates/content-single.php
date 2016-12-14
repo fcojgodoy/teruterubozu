@@ -22,8 +22,8 @@
         <div class="author-wrap">
 
           <!-- Atom: author-link -->
-          <h4>
-            <a class="author-link" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author"><?php echo get_the_author(); ?></a>
+          <h4 class="author-link">
+            <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author"><?php echo get_the_author(); ?></a>
           </h4>
 
           <!-- Atom: author-bio -->

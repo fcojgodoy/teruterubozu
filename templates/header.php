@@ -5,7 +5,7 @@
 
   <?php else: ?>
 
-  <!-- Atom: post-thumbnail (size according to wp_is_mobile) -->
+  <!-- Organism: header-banner (size according to wp_is_mobile) -->
   <header class="banner" style="background-image: url('<?php if (wp_is_mobile()) {the_post_thumbnail_url('medium');}
         else {the_post_thumbnail_url('');}
       ?>
@@ -13,7 +13,7 @@
 
   <?php endif; ?>
 
-    <!-- Organism: Navbar -->
+    <!-- Molecule: Navbar -->
     <nav class="navbar">
 
       <!-- Atom: custom-logo-link -->

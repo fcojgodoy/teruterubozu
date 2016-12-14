@@ -76,8 +76,6 @@
 @import "atoms/copyright";
 @import "atoms/poweredby";
 
-// @import "atoms/front-page-banner";
-@import "atoms/banner";
 @import "atoms/banner-title";
 @import "atoms/banner-description";
 
@@ -89,6 +87,7 @@
 @import "molecules/menu-list";
 
 @import "molecules/page-navigation";
+@import "molecules/navbar";
 @import "molecules/nav-post";
 @import "molecules/entry-resume";
 @import "molecules/entry-footer";
@@ -98,11 +97,12 @@
 @import "molecules/banner-texts";
 
 // Organisms
-@import "organisms/header";
+@import "organisms/header-banner";
 @import "organisms/main";
+@import "organisms/main-container";
 @import "organisms/footer";
 @import "organisms/post-body";
-@import "organisms/navbar";
+@import "organisms/entry-post";
 @import "organisms/main-menu";
 @import "organisms/posts-navigation";
 
