@@ -22,9 +22,11 @@
     </div>
   </nav>
 
+  <!-- Atom: decorative-line -->
+  <hr class="decorative-line">
+
 <?php endif; ?>
 
-<hr class="decorative-line">
 
 <?php if (!have_posts()) : ?>
   <div class="alert alert-warning">
