@@ -21,8 +21,10 @@
       <?php next_posts_link( __('Older Posts', 'Sage') )  ?>
     </div>
   </nav>
+
 <?php endif; ?>
 
+<hr class="decorative-line">
 
 <?php if (!have_posts()) : ?>
   <div class="alert alert-warning">

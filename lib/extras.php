@@ -78,6 +78,6 @@ function wp_pagination() {
  * https://codex.wordpress.org/Plugin_API/Filter_Reference/excerpt_length
  */
 function custom_excerpt_length( $length ) {
-	return 25;
+	return 26;
 }
 add_filter( 'excerpt_length',  __NAMESPACE__ . '\\custom_excerpt_length', 999 );

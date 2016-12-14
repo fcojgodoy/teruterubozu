@@ -15,3 +15,5 @@
   <?php get_template_part('templates/entry-meta'); ?>
 
 </article>
+
+<hr class="decorative-line">

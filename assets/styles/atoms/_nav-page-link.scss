@@ -4,8 +4,7 @@
   @extend .btn-outline-primary;
 // Extra style
   color: $brand-primary-light;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0 15px;
   margin: 10px 0;
   border-color: $brand-primary-light-alt;
 
@@ -15,7 +14,7 @@
 
   transition: all 0.2s ease;
 
-  @include hover-focus {
+  @include hover-focus-active {
     background-color: transparent;
     color: #889093;
     border-color: #98a0a4;
