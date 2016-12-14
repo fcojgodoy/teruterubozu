@@ -25,6 +25,20 @@ function body_class($classes) {
 add_filter('body_class', __NAMESPACE__ . '\\body_class');
 
 /**
+ * Add <body> class if post haven't thumbnail
+ */
+ function add_no_featured_image_body_class( $classes ) {
+   global $post;
+
+   if ( isset ( $post->ID ) && !get_the_post_thumbnail($post->ID)) {
+     $classes[] = 'no-featured-image';
+   }
+
+   return $classes;
+}
+add_filter( 'body_class', __NAMESPACE__ . '\\add_no_featured_image_body_class' );
+
+/**
  * Clean up the_excerpt()
  */
 function excerpt_more() {

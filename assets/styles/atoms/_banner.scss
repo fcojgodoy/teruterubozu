@@ -54,13 +54,14 @@
 }
 
 /* Banner in post without thumbnail */
-.no-thumbnail > .banner {
+.no-featured-image .banner {
 	height: 55px;
 	min-height: 0px;
 }
 
-@include media-breakpoint-up(md) {
-	.no-thumbnail > .banner {
-		height: 85px;
+@include media-breakpoint-up(sm) {
+	.no-featured-image .banner {
+		height: 88px;
+		margin-bottom: 5rem;
 	}
 }
