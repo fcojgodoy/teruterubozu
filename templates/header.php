@@ -13,7 +13,8 @@
 
   <?php endif; ?>
 
-    <nav class="main-nav navbar">
+    <!-- Organism: Navbar -->
+    <nav class="navbar">
 
       <!-- Atom: custom-logo-link -->
       <?php the_custom_logo() ?>
@@ -22,7 +23,7 @@
       <a class="navbar-brand a2" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
       <?php endif; ?>
 
-      <!-- Molecule: menu-button -->
+      <!-- Atom: menu-button -->
       <a class="menu-btn icon-menu" href="#"> <span class="word">Menu</span> </a>
 
     </nav>

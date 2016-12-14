@@ -12,7 +12,7 @@ use Roots\Sage\Wrapper;
 
     <?php
       do_action('get_nav');
-      get_template_part('templates/nav');
+      get_template_part('templates/menu');
     ?>
 
     <!-- Site Overlay (Pushy) -->

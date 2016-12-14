@@ -1,8 +1,8 @@
-.nav-close {
+.menu-close {
   color: #B8B8B8;
 
   position: absolute;
-  top: 38px;
+  top: 18px;
   right: 15px;
   width: 20px;
   height: 20px;
@@ -29,5 +29,9 @@
 
   &:after {
     transform: rotate(-45deg);
+  }
+
+  @include media-breakpoint-up(sm){
+    top: 38px;
   }
 }

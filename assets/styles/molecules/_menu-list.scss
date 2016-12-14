@@ -1,5 +1,5 @@
 ul.nav {
-  padding: 90px 9% 5%;
+  padding: 60px 9% 5%;
   list-style: none;
   counter-reset: item;
 
@@ -9,5 +9,9 @@ ul.nav {
 
   .menu-item {
     margin: 0;
+  }
+
+  @include media-breakpoint-up(sm) {
+    padding: 90px 9% 5%;
   }
 }
