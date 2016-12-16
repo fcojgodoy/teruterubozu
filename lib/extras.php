@@ -81,3 +81,13 @@ function custom_excerpt_length( $length ) {
 	return 26;
 }
 add_filter( 'excerpt_length',  __NAMESPACE__ . '\\custom_excerpt_length', 999 );
+
+/**
+ * Responsive embed with Bootstrap on 16by9 aspect radio
+ * https://lorut.no/responsive-youtube-vimeo-embed-bootstrap-roots-io-wordpress/
+ */
+function bootstrap_wrap_oembed( $html ){
+  $html = preg_replace( '/(width|height)="\d*"\s/', "", $html ); // Strip width and height #1
+  return'<div class="embed-responsive embed-responsive-16by9">'.$html.'</div>'; // Wrap in div element and return #3 and #4
+}
+add_filter( 'embed_oembed_html', __NAMESPACE__ . '\\bootstrap_wrap_oembed',10,1);
