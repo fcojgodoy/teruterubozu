@@ -6,7 +6,7 @@
 // endbower
 
 @import "components/fonts";
-@import "common/global";
+// @import "common/global";
 @import "components/comments";
 @import "components/forms";
 @import "components/grid";
@@ -30,7 +30,8 @@
 @import "quarks/code";
 @import "quarks/hr";
 @import "quarks/blockquote";
-
+@import "quarks/kbd";
+@import "quarks/mark";
 
 // Atoms
 @import "atoms/iconfonts";
@@ -95,6 +96,9 @@
 @import "molecules/entry-author-wrap";
 @import "molecules/share-icons";
 @import "molecules/banner-texts";
+
+@import "molecules/table";
+@import "molecules/embed";
 
 // Organisms
 @import "organisms/header-banner";
