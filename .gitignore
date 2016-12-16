@@ -9,3 +9,6 @@ DEVLOG.md
 
 # Dolphin's folder config file
 .directory
+
+# Personal log file
+LOG.md
