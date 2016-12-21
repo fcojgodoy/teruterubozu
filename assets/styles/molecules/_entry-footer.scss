@@ -9,12 +9,7 @@
   border-top: 1px solid #EBF2F6;
   /* text center */
   text-align: center;
-  .author-wrap {
-    @extend .col-md-9;
-  }
-  .share {
-    @extend .col-md-3;
-  }
+
   .avatar-wrap {
     text-align: center;
     margin-top: -10rem;
@@ -41,10 +36,22 @@
       bottom: 1.5rem;
     }
   }
+
+  @include media-breakpoint-up(sm) {
+    .author-wrap {
+      margin-right: 180px;
+    }
+    .share {
+      position: absolute;
+      top: 5rem;
+      right: 0;
+      width: 140px;
+   }
+  }
 }
 
 /* Media query $screen-md-min */
-@include media-breakpoint-up(md) {
+@include media-breakpoint-up(sm) {
   .entry-footer {
     text-align: left;
     /* 'author-location' margin right */
