@@ -37,16 +37,11 @@
     }
   }
 
-  @include media-breakpoint-up(sm) {
-    .author-wrap {
-      margin-right: 180px;
-    }
-    .share {
-      position: absolute;
-      top: 5rem;
-      right: 0;
-      width: 140px;
-   }
+  .author-wrap {
+    @extend .col-sm-7;
+  }
+  .share {
+    @extend .col-sm-5;
   }
 }
 
