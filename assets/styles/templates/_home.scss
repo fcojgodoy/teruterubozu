@@ -4,4 +4,12 @@
     margin-bottom: 15px;
   }
 
+  footer.content-info {
+    margin-top: 3rem;
+
+    @include media-breakpoint-up(sm) {
+      margin-top: 8rem;
+    }
+  }
+
 }
