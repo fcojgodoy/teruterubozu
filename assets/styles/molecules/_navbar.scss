@@ -13,4 +13,8 @@
     padding: 35px 40px;
     margin: 0 0 3rem 0;
   }
+
+  .no-featured-image & {
+    background: none;
+  }
 }
