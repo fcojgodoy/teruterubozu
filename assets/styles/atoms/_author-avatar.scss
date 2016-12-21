@@ -1,5 +1,9 @@
 .avatar {
-  @extend .img-circle;
+  @extend .rounded-circle;
   position: relative;
   top: -4px;
+
+  // Add border to avatar
+  background-color: #fff; // FIXME: Se podría cambiar por la variable del color del fondo del body
+  padding: 3px;
 }

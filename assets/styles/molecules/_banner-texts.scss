@@ -4,7 +4,7 @@
   margin: 2rem auto;
   // margin-top: 20px;
   // margin-bottom: 20px;
-  @extend .m-x-auto;
+  @extend .mx-auto;
   text-align: center;
 
   @include media-breakpoint-up(sm) {

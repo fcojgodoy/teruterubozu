@@ -17,10 +17,7 @@
   }
   .avatar {
     box-sizing: content-box;
-    /* Add border to avatar */
     padding: 6px;
-    background-color: #fff; // FIXME: Se podría cambiar por la variable del
-    // color del fondo del body.
     border: 1px solid #EBF2F6;
   }
   /* p style */
