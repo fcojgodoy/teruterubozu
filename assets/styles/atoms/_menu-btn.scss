@@ -1,58 +1,53 @@
 .menu-btn {
   @extend .btn;
   @extend .pull-xs-right;
+
   display: inline-block;
-  margin: 0;
-  padding: 0 15px 1px 15px;
-  border-color: rgba(255, 255, 255, 0.6);
+
+  color: #fff;
+  padding: 0 5px 2px;
+  border-width: 0;
 
   font-family: $font-family-sans-serif;
   font-size: 1.2rem;
-  text-align: center;
   text-transform: uppercase;
-  line-height: 35px;
+  letter-spacing: 0.1px;
+  line-height: 36px;
   white-space: nowrap;
 
   transition: all 0.5s ease;
 
   &:before {
-    color: #fff;
     position: relative;
     top: 1px;
     margin-right: 2.7px;
     font-weight: bold;
   }
 
-  @include hover-focus {
-    background-color: #fff;
-    color: #222;
-
-    .word,
-    &:before {
-      color: #222;
-    }
-
-  }
-
-  .word {
+  @include hover-focus-active {
     color: #fff;
   }
 
-  @include media-breakpoint-down(xs) {
-    padding: 0 5px;
-    border: none;
+  @include media-breakpoint-up(sm) {
+    padding: 0 15px 0 16px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+
+    @include hover-focus-active {
+      color: #222;
+      background-color: #fff;
+    }
   }
 
   // Modify: when Pushi menu push right is Open
   .pushy-open-right & {
-    background-color: #111;
-    padding: 0 12px 0 13px;
-    border: 1px solid #111;
-
     transform: translate3D(94px, 0, 0);
 
-    &:before {
-      color: #fff !important;
+    @include media-breakpoint-up(sm) {
+      color: #fff;
+      background-color: #111;
+      padding-right: 12px;
+      padding-left: 13px;
+      border-color: #111;
     }
   }
 
@@ -60,15 +55,9 @@
   .no-featured-image & {
     color: #9EABB3;
     border-color: #BFC8CD;
-    line-height: 36px;
 
-    .word,
-    &:before {
-      color: inherit;
-    }
-
-    @include hover-focus {
-      color: #555;
+    @include hover-focus-active {
+      color: #fff;
       border-color: #555;
     }
   }
