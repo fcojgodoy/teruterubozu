@@ -24,98 +24,98 @@
 @import "utilities/remove-dotted-line-links";
 
 // Quarkz
-@import "quarks/paragraph";
-@import "quarks/titles";
-@import "quarks/abbr";
-@import "quarks/code";
-@import "quarks/hr";
-@import "quarks/blockquote";
-@import "quarks/kbd";
-@import "quarks/mark";
+@import "01-quarks/paragraph";
+@import "01-quarks/titles";
+@import "01-quarks/abbr";
+@import "01-quarks/code";
+@import "01-quarks/hr";
+@import "01-quarks/blockquote";
+@import "01-quarks/kbd";
+@import "01-quarks/mark";
 
 // Atoms
-@import "atoms/iconfonts";
-@import "atoms/decorative-line";
-@import "atoms/scroll-down-arrow";
-@import "atoms/radial-gradient";
+@import "02-atoms/iconfonts";
+@import "02-atoms/decorative-line";
+@import "02-atoms/scroll-down-arrow";
+@import "02-atoms/radial-gradient";
 
-@import "atoms/navigation-pages";
-@import "atoms/nav-page-link";
+@import "02-atoms/navigation-pages";
+@import "02-atoms/nav-page-link";
 
 
-@import "atoms/menu-btn";
-@import "atoms/menu-title";
-@import "atoms/menu-close";
-@import "atoms/menu-item";
-@import "atoms/subscribe-button";
+@import "02-atoms/menu-btn";
+@import "02-atoms/menu-title";
+@import "02-atoms/menu-close";
+@import "02-atoms/menu-item";
+@import "02-atoms/subscribe-button";
 
-@import "atoms/custom-logo";
+@import "02-atoms/custom-logo";
 
-@import "atoms/author-link";
-@import "atoms/author-avatar";
-@import "atoms/author-location";
-@import "atoms/author-web";
-@import "atoms/author-bio";
-@import "atoms/author-stats";
+@import "02-atoms/author-link";
+@import "02-atoms/author-avatar";
+@import "02-atoms/author-location";
+@import "02-atoms/author-web";
+@import "02-atoms/author-bio";
+@import "02-atoms/author-stats";
 
-@import "atoms/share-title";
-// @import "atoms/share-post-facebook";
-// @import "atoms/share-post-twitter";
-// @import "atoms/share-post-google";
+@import "02-atoms/share-title";
+// @import "02-atoms/share-post-facebook";
+// @import "02-atoms/share-post-twitter";
+// @import "02-atoms/share-post-google";
 
-@import "atoms/entry-summary-title";
-@import "atoms/entry-summary";
-@import "atoms/excerpt-more";
+@import "02-atoms/entry-summary-title";
+@import "02-atoms/entry-summary";
+@import "02-atoms/excerpt-more";
 
-@import "atoms/entry-title";
-@import "atoms/post-updated";
-@import "atoms/post-image";
+@import "02-atoms/entry-title";
+@import "02-atoms/post-updated";
+@import "02-atoms/post-image";
 
-@import "atoms/tags-links";
-@import "atoms/categories-links";
-@import "atoms/link-in-post";
+@import "02-atoms/tags-links";
+@import "02-atoms/categories-links";
+@import "02-atoms/link-in-post";
 
-@import "atoms/copyright";
-@import "atoms/poweredby";
+@import "02-atoms/copyright";
+@import "02-atoms/poweredby";
 
-@import "atoms/banner-title";
-@import "atoms/banner-description";
+@import "02-atoms/banner-title";
+@import "02-atoms/banner-description";
 
-@import "atoms/nav-post-button";
-@import "atoms/nav-post-title";
+@import "02-atoms/nav-post-button";
+@import "02-atoms/nav-post-title";
 
 
 // Molecules
-@import "molecules/menu-list";
+@import "03-molecules/menu-list";
 
-@import "molecules/page-navigation";
-@import "molecules/navbar";
-@import "molecules/nav-post";
-@import "molecules/entry-resume";
-@import "molecules/entry-footer";
-@import "molecules/entry-meta";
-@import "molecules/entry-author-wrap";
-@import "molecules/share-icons";
-@import "molecules/banner-texts";
+@import "03-molecules/page-navigation";
+@import "03-molecules/navbar";
+@import "03-molecules/nav-post";
+@import "03-molecules/entry-resume";
+@import "03-molecules/entry-footer";
+@import "03-molecules/entry-meta";
+@import "03-molecules/entry-author-wrap";
+@import "03-molecules/share-icons";
+@import "03-molecules/banner-texts";
 
-@import "molecules/author-meta";
+@import "03-molecules/author-meta";
 
 
-@import "molecules/table";
-@import "molecules/embed";
+@import "03-molecules/table";
+@import "03-molecules/embed";
 
 // Organisms
-@import "organisms/header-banner";
-@import "organisms/main";
-@import "organisms/main-container";
-@import "organisms/footer";
-@import "organisms/post-body";
-@import "organisms/entry-post";
-@import "organisms/main-menu";
-@import "organisms/posts-navigation";
-@import "organisms/author-profile";
+@import "04-organisms/header-banner";
+@import "04-organisms/main";
+@import "04-organisms/main-container";
+@import "04-organisms/footer";
+@import "04-organisms/post-body";
+@import "04-organisms/entry-post";
+@import "04-organisms/main-menu";
+@import "04-organisms/posts-navigation";
+@import "04-organisms/author-profile";
 
 // Templates
-@import "templates/home";
-@import "templates/single-post";
-@import "templates/page-template-default";
+@import "05-templates/home";
+@import "05-templates/single-post";
+@import "05-templates/page-template-default";
