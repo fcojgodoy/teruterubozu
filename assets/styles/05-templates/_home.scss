@@ -2,6 +2,10 @@
 
   header.banner {
     margin-bottom: 15px;
+
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 50px;
+    }
   }
 
   footer.content-info {

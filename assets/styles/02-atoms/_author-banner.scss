@@ -1,0 +1,7 @@
+.author-banner {
+  height: 30vh;
+
+  @include media-breakpoint-up(md) {
+    height: 40vh;
+  }
+}

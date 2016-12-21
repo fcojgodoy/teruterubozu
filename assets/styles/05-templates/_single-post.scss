@@ -1,10 +1,12 @@
 .single-post {
 
-  // banner
-  .banner {
-    margin-bottom: 1.5rem;
-    @include media-breakpoint-up(sm) {
-      margin-bottom: 5rem;
+  &:not(.no-featured-image) {
+
+    .banner {
+      margin-bottom: 1.5rem;
+      @include media-breakpoint-up(sm) {
+        margin-bottom: 5rem;
+      }
     }
   }
 

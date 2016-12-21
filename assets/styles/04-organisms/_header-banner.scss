@@ -2,18 +2,8 @@
 header.banner {
 	position: relative;
 	width: 100%;
-	height: 30vh;
-	min-height: 180px;
 	background: transparent none no-repeat scroll center center / cover;
 	overflow: hidden;
-
-	@include media-breakpoint-up(sm) {
-		height: 45vh;
-	}
-
-	@include media-breakpoint-up(md) {
-		height: 65vh;
-	}
 
 	/* Banner in front page */
 	.home & {
@@ -54,7 +44,7 @@ header.banner {
 
 /* Banner in post without thumbnail */
 .no-featured-image .banner {
-	height: 55px;
+	height: 70px;
 	min-height: 0px;
 }
 

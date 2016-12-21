@@ -3,10 +3,13 @@
   <!-- Atom: front-page-banner (Add background-image style if is_front_page) -->
   <header class="banner front-page-banner" style="background-image: url('http://demo.ghost.io/content/images/2014/09/testimg-home-1.jpg')">
 
+  <?php elseif (is_author()) : ?>
+  <header class="banner author-banner" style="background-image: url('http://demo.ghost.io/content/images/2014/09/testimg-home-1.jpg')">
+
   <?php else: ?>
 
   <!-- Organism: header-banner (size according to wp_is_mobile) -->
-  <header class="banner" style="background-image: url('<?php if (wp_is_mobile()) {the_post_thumbnail_url('medium');}
+  <header class="banner entry-banner" style="background-image: url('<?php if (wp_is_mobile()) {the_post_thumbnail_url('medium');}
         else {the_post_thumbnail_url('');}
       ?>
       ')">

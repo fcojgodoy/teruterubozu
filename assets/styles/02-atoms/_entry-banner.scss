@@ -1,0 +1,12 @@
+.entry-banner {
+  min-height: 180px;
+  height: 30vh;
+
+  @include media-breakpoint-up(sm) {
+    height: 45vh;
+  }
+
+  @include media-breakpoint-up(md) {
+    height: 65vh;
+  }
+}

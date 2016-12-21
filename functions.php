@@ -9,6 +9,8 @@
  *
  * @link https://github.com/roots/sage/pull/1042
  */
+
+
 $sage_includes = [
   'lib/assets.php',    // Scripts and stylesheets
   'lib/extras.php',    // Custom functions
@@ -17,7 +19,8 @@ $sage_includes = [
   'lib/wrapper.php',   // Theme wrapper class
   'lib/customizer.php', // Theme customizer
   'lib/userfields.php', // Add user's fields
-  'lib/custom-logo.php' // Add Theme logo support
+  'lib/custom-logo.php', // Add Theme logo support
+  'lib/piklist-checker.php' // Add Piklist Checker
 ];
 
 foreach ($sage_includes as $file) {

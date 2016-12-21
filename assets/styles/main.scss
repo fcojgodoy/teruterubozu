@@ -52,6 +52,7 @@
 
 @import "02-atoms/custom-logo";
 
+@import "02-atoms/author-banner";
 @import "02-atoms/author-link";
 @import "02-atoms/author-avatar";
 @import "02-atoms/author-location";
@@ -67,6 +68,7 @@
 @import "02-atoms/entry-summary-title";
 @import "02-atoms/entry-summary";
 @import "02-atoms/excerpt-more";
+@import "02-atoms/entry-banner";
 
 @import "02-atoms/entry-title";
 @import "02-atoms/post-updated";
@@ -92,6 +94,7 @@
 @import "03-molecules/page-navigation";
 @import "03-molecules/navbar";
 @import "03-molecules/nav-post";
+@import "03-molecules/page-header";
 
 @import "03-molecules/entry-resume";
 @import "03-molecules/entry-footer";
