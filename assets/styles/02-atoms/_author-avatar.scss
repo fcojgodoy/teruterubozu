@@ -1,19 +1,4 @@
-.a-avatar {
+.author-avatar {
   @extend .rounded-circle;
-
-  &.border-simple {
-    background-color: #fff; // FIXME: Se podría cambiar por la variable del color del fondo del body
-    padding: 3px;
-  }
-
-  &.border-double {
-    background-color: #fff; // FIXME: Se podría cambiar por la variable del color del fondo del body
-    padding: 6px;
-    border: 1px solid #EBF2F6;
-  }
-
-
-
-  // position: relative;
-  // top: -4px;
+  box-sizing: content-box;
 }

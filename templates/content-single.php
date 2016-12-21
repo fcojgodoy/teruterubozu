@@ -12,12 +12,8 @@
 
     <footer class="entry-footer">
 
-      <!-- Molecule: author-info -->
-      <!-- <div class="author-info"> -->
-        <div class="avatar-wrap">
-          <!-- Atom: author-avatar -->
-          <?php echo get_avatar( get_the_author_meta('ID'), 68 ); ?>
-        </div>
+        <!-- Atom: author-avatar -->
+        <?php echo get_avatar( get_the_author_meta('ID'), 68, null, null, array ( 'class' => array('author-avatar', 'border-double') ) ); ?>
 
         <div class="author-wrap">
 

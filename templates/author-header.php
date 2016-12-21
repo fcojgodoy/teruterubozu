@@ -3,7 +3,7 @@
 
   <div class="author-profile">
 
-    <?php echo get_avatar( get_the_author_meta('ID'), 114 ); ?>
+    <?php echo get_avatar( get_the_author_meta('ID'), 114, null, null, array ( 'class' => array ( 'author-avatar', 'border-simple') ) ); ?>
 
     <?php use Roots\Sage\Titles; ?>
 
@@ -38,5 +38,5 @@
   </div>
 
   <hr class="decorative-line">
-  
+
 </div>

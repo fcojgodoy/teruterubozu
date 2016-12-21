@@ -10,8 +10,9 @@
   /* text center */
   text-align: center;
 
-  .avatar-wrap {
-    text-align: center;
+  .author-avatar {
+    @extend .d-block;
+    @extend .mx-auto;
     margin-top: -10rem;
     margin-bottom: 8px;
   }

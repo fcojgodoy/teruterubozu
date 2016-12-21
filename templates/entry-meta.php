@@ -5,7 +5,7 @@
   <?php if (is_front_page() || is_author()) : ?>
 
     <!-- Atom: avatar -->
-    <?php echo get_avatar( get_the_author_meta('ID'), 24 ); ?>
+    <?php echo get_avatar( get_the_author_meta('ID'), 24, null, null, array('class' => 'author-avatar') ); ?>
 
     <!-- Atom: author-link -->
     <a class="author-link" rel="author" href="<?= get_author_posts_url(get_the_author_meta('ID')); ?>"><?= get_the_author(); ?></a>
