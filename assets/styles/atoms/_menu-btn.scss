@@ -57,8 +57,12 @@
     border-color: #BFC8CD;
 
     @include hover-focus-active {
-      color: #fff;
+      color: #555;
       border-color: #555;
     }
+  }
+
+  .no-featured-image.pushy-open-right & {
+    color: #fff;
   }
 }
