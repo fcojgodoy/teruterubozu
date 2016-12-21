@@ -2,7 +2,7 @@
 <p class="entry-meta">
 
   <!-- If is_front_page -->
-  <?php if (is_front_page()) : ?>
+  <?php if (is_front_page() || is_author()) : ?>
 
     <!-- Atom: avatar -->
     <?php echo get_avatar( get_the_author_meta('ID'), 24 ); ?>

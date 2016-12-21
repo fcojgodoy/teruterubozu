@@ -34,6 +34,13 @@
     }
   }
 
+  .author-bio {
+    margin: {
+      top: 1rem;
+      bottom: 1rem;
+    }
+  }
+
   .author-wrap {
     @extend .col-sm-7;
   }

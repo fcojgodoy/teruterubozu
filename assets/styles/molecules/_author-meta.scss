@@ -1,0 +1,5 @@
+.author-meta {
+  > * {
+    @extend .d-block;
+  }
+}

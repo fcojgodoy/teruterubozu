@@ -98,6 +98,9 @@
 @import "molecules/share-icons";
 @import "molecules/banner-texts";
 
+@import "molecules/author-meta";
+
+
 @import "molecules/table";
 @import "molecules/embed";
 
@@ -110,6 +113,7 @@
 @import "organisms/entry-post";
 @import "organisms/main-menu";
 @import "organisms/posts-navigation";
+@import "organisms/author-profile";
 
 // Templates
 @import "templates/home";
