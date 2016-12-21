@@ -1,0 +1,9 @@
+.page-template-default {
+
+  // Footer
+  footer.content-info {
+    @include media-breakpoint-up(sm) {
+      margin-top: 8rem;
+    }
+  }
+}
