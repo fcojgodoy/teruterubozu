@@ -1,10 +1,14 @@
   <?php if (is_front_page()) : ?>
-
-  <!-- Atom: front-page-banner (Add background-image style if is_front_page) -->
-  <header class="banner front-page-banner" style="background-image: url('http://demo.ghost.io/content/images/2014/09/testimg-home-1.jpg')">
+    <!-- Atom: front-page-banner (Add background-image style if is_front_page) -->
+    <header class="banner front-page-banner" style="background-image: url('http://demo.ghost.io/content/images/2014/09/testimg-home-1.jpg')">
 
   <?php elseif (is_author()) : ?>
-  <header class="banner author-banner" style="background-image: url('http://demo.ghost.io/content/images/2014/09/testimg-home-1.jpg')">
+
+    <!-- Get author info -->
+    <?php $author = get_user_by( 'slug', get_query_var( 'author_name' ) ); ?>
+
+    <!-- Atom: author-banner -->
+    <header class="banner author-banner" style="background-image: url(' <?php echo get_user_meta($author->ID, 'author_banner', true); ?> ')">
 
   <?php else: ?>
 
