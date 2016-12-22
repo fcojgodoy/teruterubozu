@@ -1,9 +1,7 @@
 .icon-twitter {
   color: #bbc7cc;
-  font-size: 19px;
-  display: inline-block;
-  margin: 10px 16px 16px 0;
-  &:hover {
+  font-size: 1.8rem;
+  @include hover-focus {
     color: #55acee;
     text-decoration: none;
   }
