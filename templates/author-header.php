@@ -24,8 +24,8 @@
 
       <!-- Atom: author-web -->
       <?php if (get_the_author_meta( 'url' )) : ?>
-        <em>
-          <a class="author-web icon-link" href="<?php echo get_the_author_meta( 'url' ); ?>"><?php echo get_the_author_meta( 'url' ); ?></a>
+        <em class="author-web icon-link">
+          <a href="<?php echo get_the_author_meta( 'url' ); ?>"><?php echo get_the_author_meta( 'url' ); ?></a>
         </em>
       <?php endif; ?>
 

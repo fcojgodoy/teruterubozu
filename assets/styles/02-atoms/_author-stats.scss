@@ -1,11 +1,7 @@
 .author-stats {
-  color: $brand-primary-light;
-  margin: 1.5rem 0;
+  @extend .author-location;
 
-  font-size: 1.4rem;
-  line-height: 1em;
-  letter-spacing: 0.1px;
-
+  // Correct icon spacing
   &:before {
     margin-right: 3px;
   }
