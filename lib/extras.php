@@ -91,3 +91,25 @@ function bootstrap_wrap_oembed( $html ){
   return'<div class="embed-responsive embed-responsive-16by9">'.$html.'</div>'; // Wrap in div element and return #3 and #4
 }
 add_filter( 'embed_oembed_html', __NAMESPACE__ . '\\bootstrap_wrap_oembed',10,1);
+
+/**
+ * Getting rid of archive “label”
+ * https://developer.wordpress.org/reference/functions/get_the_archive_title/
+ */
+ function getting_rid_archive_label( $title ) {
+    if ( is_category() ) {
+        $title = single_cat_title( '', false );
+    } elseif ( is_tag() ) {
+        $title = single_tag_title( '', false );
+    } elseif ( is_author() ) {
+        $title = '<span class="vcard">' . get_the_author() . '</span>';
+    } elseif ( is_post_type_archive() ) {
+        $title = post_type_archive_title( '', false );
+    } elseif ( is_tax() ) {
+        $title = single_term_title( '', false );
+    }
+
+    return $title;
+}
+
+add_filter( 'get_the_archive_title', __NAMESPACE__ . '\\getting_rid_archive_label' );
