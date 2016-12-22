@@ -40,9 +40,11 @@
 
   .author-wrap {
     @extend .col-sm-7;
+    @extend .col-md-9;
   }
   .share {
     @extend .col-sm-5;
+    @extend .col-md-3;
   }
 }
 
@@ -57,7 +59,11 @@
     /* Style for 'author-location' & 'author-url' */
     .author-location,
     .author-url {
-      display: inline-block;
+      display: block;
+
+      @include media-breakpoint-up (md) {
+        display: inline-block;
+      }
     }
   }
 }
