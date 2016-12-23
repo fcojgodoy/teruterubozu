@@ -1,8 +1,3 @@
-<?php if (!is_home()) : ?>
-  <?php get_template_part('templates/page', 'header'); ?>
-<?php endif; ?>
-
-
 <?php if (is_paged()): ?>
   <?php get_template_part('templates/page', 'navigation'); ?>
 

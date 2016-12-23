@@ -1,26 +1,7 @@
-<?php if (!is_home()) : ?>
-  <?php get_template_part('templates/author', 'header'); ?>
-<?php endif; ?>
-
+<?php get_template_part('templates/author', 'header'); ?>
 
 <?php if (is_paged()): ?>
-  <!-- Molecule: Pagination -->
-  <nav class="page-navigation">
-    <!-- Atom: Button -->
-    <div class="nav-page-link nav-previous">
-      <?php previous_posts_link( __('Newer Posts', 'Sage') )  ?>
-    </div>
-    <!-- Atom: Navigation pages -->
-    <div class="navigation-pages">
-      <span>
-        <?php echo __('Page', 'Sage') . ' ' . $paged . ' ' . __('of', 'Sage') . ' ' . $wp_query -> max_num_pages; ?>
-      </span>
-    </div>
-    <!-- Atom: Button -->
-    <div class="nav-page-link nav-next">
-      <?php next_posts_link( __('Older Posts', 'Sage') )  ?>
-    </div>
-  </nav>
+  <?php get_template_part('templates/page', 'navigation'); ?>
 
   <!-- Atom: decorative-line -->
   <hr class="decorative-line">
@@ -42,20 +23,4 @@
 <!-- <?php Roots\Sage\Extras\wp_pagination(); ?>
 <?php the_posts_navigation(); ?> -->
 
-<!-- Molecule: Pagination -->
-<nav class="page-navigation">
-  <!-- Atom: Button -->
-  <div class="nav-page-link nav-previous">
-    <?php previous_posts_link( __('Newer Posts', 'Sage') )  ?>
-  </div>
-  <!-- Atom: Navigation pages -->
-  <div class="navigation-pages">
-    <span>
-      <?php echo __('Page', 'Sage') . ' ' . $paged . ' ' . __('of', 'Sage') . ' ' . $wp_query -> max_num_pages; ?>
-    </span>
-  </div>
-  <!-- Atom: Button -->
-  <div class="nav-page-link nav-next">
-    <?php next_posts_link( __('Older Posts', 'Sage') )  ?>
-  </div>
-</nav>
+<?php get_template_part('templates/page', 'navigation'); ?>

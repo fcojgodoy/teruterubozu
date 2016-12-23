@@ -1,8 +1,6 @@
 <?php
-
 use Roots\Sage\Setup;
 use Roots\Sage\Wrapper;
-
 ?>
 
 <!doctype html>
@@ -20,14 +18,14 @@ use Roots\Sage\Wrapper;
 
     <!-- Container for (Pushy) -->
     <div id="container" class="main-container">
-      <!-- FIXME: colocar #container en su sitio y usar
-      este tip: https://github.com/christophery/pushy#tips -->
+      <!-- FIXME: colocar #container en su sitio y usar este tip: https://github.com/christophery/pushy#tips -->
 
       <!--[if IE]>
         <div class="alert alert-warning">
           <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage'); ?>
         </div>
       <![endif]-->
+
       <?php
         do_action('get_header');
         get_template_part('templates/header');
@@ -45,6 +43,7 @@ use Roots\Sage\Wrapper;
           <?php endif; ?>
         </div><!-- /.content -->
       </div><!-- /.wrap -->
+
       <?php
         do_action('get_footer');
         get_template_part('templates/footer');

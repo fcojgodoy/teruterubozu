@@ -2,67 +2,98 @@
     <!-- Atom: front-page-banner (Add background-image style if is_front_page) -->
     <header class="banner front-page-banner" style="background-image: url('http://demo.ghost.io/content/images/2014/09/testimg-home-1.jpg')">
 
+
   <?php elseif (is_author()) : ?>
 
-    <!-- Get author info -->
-    <?php $author = get_user_by( 'slug', get_query_var( 'author_name' ) ); ?>
+    <?php
+      // Get author banner url
+      $author = get_user_by( 'slug', get_query_var( 'author_name' ) );
+      $author_banner = get_user_meta($author->ID, 'author_banner', true);
+    ?>
 
-    <!-- Atom: author-banner -->
-    <header class="banner author-banner" style="background-image: url(' <?php echo get_user_meta($author->ID, 'author_banner', true); ?> ')">
+    <?php if ($author_banner) : ?>
+      <!-- Atom: author-banner -->
+      <header class="banner author-banner" style="background-image: url(' <?php echo $author_banner ?> ')">
+    <?php else: ?>
+      <header class="banner">
+    <?php endif; ?>
 
+
+  <?php elseif (is_tag()) : ?>
+
+    <?php
+      // Get term banner url
+      $term_banner = get_term_meta( get_queried_object()->term_id, 'taxonomy_banner', true);
+    ?>
+
+    <?php if ($term_banner) : ?>
+      <!-- Atom: term-banner -->
+      <header class="banner term-banner" style="background-image: url(' <?php echo $term_banner ?> ')">
+    <?php else: ?>
+      <header class="banner">
+    <?php endif; ?>
+      <!-- Molecule: banner-texts -->
+      <div class="vertical">
+        <hgroup class="banner-texts">
+
+          <!-- Atom: banner-title -->
+          <h1 class="banner-title"> <?php single_tag_title(); ?> </h1>
+
+          <!-- Atom: banner-description -->
+          <h2 class="banner-description"> <?php echo tag_description(); ?> </h2>
+
+        </hgroup>
+      </div>
   <?php else: ?>
 
-  <!-- Organism: header-banner (size according to wp_is_mobile) -->
-  <header class="banner entry-banner" style="background-image: url('<?php if (wp_is_mobile()) {the_post_thumbnail_url('medium');}
-        else {the_post_thumbnail_url('');}
-      ?>
-      ')">
+
+  <!-- Organism: entry-banner (size according to wp_is_mobile) -->
+  <header class="banner entry-banner" style="background-image: url('<?php if (wp_is_mobile()) {the_post_thumbnail_url('medium');} else {the_post_thumbnail_url('');} ?>')">
 
   <?php endif; ?>
 
-    <!-- Molecule: Navbar -->
-    <nav class="navbar">
 
-      <!-- Atom: custom-logo-link -->
-      <?php the_custom_logo() ?>
-      <?php if (!has_custom_logo()) : ?>
-      <!-- No Custom Logo, just display the site's name -->
-      <a class="navbar-brand a2" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-      <?php endif; ?>
+  <!-- Molecule: Navbar -->
+  <nav class="navbar">
 
-      <!-- Atom: menu-button -->
-      <a class="menu-btn icon-menu" href="#"> <span class="word">Menu</span> </a>
+    <!-- Atom: custom-logo-link -->
+    <?php the_custom_logo() ?>
+    <?php if (!has_custom_logo()) : ?>
+    <!-- No Custom Logo, just display the site's name -->
+    <a class="navbar-brand a2" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+    <?php endif; ?>
 
-    </nav>
+    <!-- Atom: menu-button -->
+    <a class="menu-btn icon-menu" href="#"> <span class="word">Menu</span> </a>
 
-    <!-- If is_front_page -->
-    <?php if (is_front_page()) : ?>
+  </nav>
 
-    <!-- Molecule: banner-texts -->
-    <div class="vertical">
-      <hgroup class="banner-texts">
+  <!-- If is_front_page -->
+  <?php if (is_front_page()) : ?>
 
-        <!-- Atom: banner-title -->
-        <h1 class="banner-title">Finding The Way Home</h1>
+  <!-- Molecule: banner-texts -->
+  <div class="vertical">
+    <hgroup class="banner-texts">
 
-        <!-- Atom: banner-description -->
-        <h2 class="banner-description">A beautiful narrative written with the world's most elegant publishing platform. The story begins here.</h2>
+      <!-- Atom: banner-title -->
+      <h1 class="banner-title">Finding The Way Home</h1>
 
-      </hgroup>
-      </div>
+      <!-- Atom: banner-description -->
+      <h2 class="banner-description">A beautiful narrative written with the world's most elegant publishing platform. The story begins here.</h2>
 
-      <?php else: ?>
-      <?php endif; ?>
+    </hgroup>
+  </div>
 
-      <!-- If is first page of pagination -->
-      <?php if ( !is_paged() ) : ?>
+  <?php endif; ?>
 
-      <!-- Atom: scroll-down-arrow -->
-      <a class="scroll-down-arrow icon-arrow-left js-scrolltoid radial-gradient" href="#js-scrollto" data-offset="45"><span hidden="true">Scroll Down</span></a>
+  <!-- If is first page of pagination -->
+  <?php if ( !is_paged() ) : ?>
 
-      <?php else: ?>
-      <?php endif; ?>
+  <!-- Atom: scroll-down-arrow -->
+  <a class="scroll-down-arrow icon-arrow-left js-scrolltoid radial-gradient" href="#js-scrollto" data-offset="45"><span hidden="true">Scroll Down</span></a>
 
-    <!-- </div> -->
+  <?php endif; ?>
 
-  </header>
+  <!-- </div> -->
+
+</header>
