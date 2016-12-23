@@ -1,5 +1,6 @@
   <?php if (is_front_page()) : ?>
-    <!-- Atom: front-page-banner (Add background-image style if is_front_page) -->
+
+    <!-- Organism: front-page-banner (Add background-image style if is_front_page) -->
     <header class="banner front-page-banner" style="background-image: url('http://demo.ghost.io/content/images/2014/09/testimg-home-1.jpg')">
 
 
@@ -12,7 +13,7 @@
     ?>
 
     <?php if ($author_banner) : ?>
-      <!-- Atom: author-banner -->
+      <!-- Organism: author-banner -->
       <header class="banner author-banner" style="background-image: url(' <?php echo $author_banner ?> ')">
     <?php else: ?>
       <header class="banner">
@@ -27,7 +28,7 @@
     ?>
 
     <?php if ($term_banner) : ?>
-      <!-- Atom: term-banner -->
+      <!-- Organism: term-banner -->
       <header class="banner term-banner" style="background-image: url(' <?php echo $term_banner ?> ')">
     <?php else: ?>
       <header class="banner">
@@ -44,11 +45,15 @@
 
         </hgroup>
       </div>
+
   <?php else: ?>
 
-
-  <!-- Organism: entry-banner (size according to wp_is_mobile) -->
-  <header class="banner entry-banner" style="background-image: url('<?php if (wp_is_mobile()) {the_post_thumbnail_url('medium');} else {the_post_thumbnail_url('');} ?>')">
+    <?php if (has_post_thumbnail()) : ?>
+      <!-- Organism: entry-banner (size according to wp_is_mobile) -->
+      <header class="banner entry-banner" style="background-image: url('<?php if (wp_is_mobile()) {the_post_thumbnail_url('medium');} else {the_post_thumbnail_url('');} ?>')">
+    <?php else: ?>
+      <header class="banner">
+    <?php endif; ?>
 
   <?php endif; ?>
 
@@ -71,26 +76,26 @@
   <!-- If is_front_page -->
   <?php if (is_front_page()) : ?>
 
-  <!-- Molecule: banner-texts -->
-  <div class="vertical">
-    <hgroup class="banner-texts">
+    <!-- Molecule: banner-texts -->
+    <div class="vertical">
+      <hgroup class="banner-texts">
 
-      <!-- Atom: banner-title -->
-      <h1 class="banner-title">Finding The Way Home</h1>
+        <!-- Atom: banner-title -->
+        <h1 class="banner-title">Finding The Way Home</h1>
 
-      <!-- Atom: banner-description -->
-      <h2 class="banner-description">A beautiful narrative written with the world's most elegant publishing platform. The story begins here.</h2>
+        <!-- Atom: banner-description -->
+        <h2 class="banner-description">A beautiful narrative written with the world's most elegant publishing platform. The story begins here.</h2>
 
-    </hgroup>
-  </div>
+      </hgroup>
+    </div>
 
   <?php endif; ?>
 
   <!-- If is first page of pagination -->
   <?php if ( !is_paged() ) : ?>
 
-  <!-- Atom: scroll-down-arrow -->
-  <a class="scroll-down-arrow icon-arrow-left js-scrolltoid radial-gradient" href="#js-scrollto" data-offset="45"><span hidden="true">Scroll Down</span></a>
+    <!-- Atom: scroll-down-arrow -->
+    <a class="scroll-down-arrow icon-arrow-left js-scrolltoid radial-gradient" href="#js-scrollto" data-offset="45"><span hidden="true">Scroll Down</span></a>
 
   <?php endif; ?>
 

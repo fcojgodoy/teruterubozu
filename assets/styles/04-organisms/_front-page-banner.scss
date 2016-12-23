@@ -1,0 +1,28 @@
+.front-page-banner {
+  @extend .aligner;
+  height: 40vh;
+  min-height: 240px;
+  padding: 15% 0;
+
+  @include media-breakpoint-up(sm) {
+    height: 60vh;
+  }
+  @include media-breakpoint-up(md) {
+    height: 100vh;
+  }
+
+ /* When home is not in its first page */
+ .paged & {
+  max-height: 20vh;
+  min-height: 160px;
+  padding: 10% 0;
+
+   @include media-breakpoint-up(sm) {
+     max-height: 30vh;
+   }
+
+   @include media-breakpoint-up(md) {
+     padding: 0;
+   }
+  }
+}
