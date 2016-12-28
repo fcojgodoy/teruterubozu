@@ -1,8 +1,12 @@
+
   <?php if (is_front_page()) : ?>
 
-    <!-- Organism: front-page-banner (Add background-image style if is_front_page) -->
-    <header class="banner front-page-banner" style="background-image: url('http://demo.ghost.io/content/images/2014/09/testimg-home-1.jpg')">
-
+    <?php if ( get_header_image() ) : ?>
+      <!-- Organism: front-page-banner (Add background-image style if is_front_page) -->
+      <header class="banner front-page-banner" style="background-image: url('<?php header_image(); ?>')">
+    <?php else: ?>
+      <header class="banner">
+    <?php endif; ?>
 
   <?php elseif (is_author()) : ?>
 

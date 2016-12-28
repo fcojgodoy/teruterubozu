@@ -1,9 +1,10 @@
 <?php
 
 /*
-* Add Piklist Checker
-* https://piklist.com/learn/doc/piklist-checker/
-*/
+ * Add Piklist Checker
+ * https://piklist.com/learn/doc/piklist-checker/
+ */
+
 function add_piklist_checker(){
   if(is_admin()){
     include_once('class-piklist-checker.php');
