@@ -96,7 +96,7 @@
   <?php endif; ?>
 
   <!-- If is first page of pagination -->
-  <?php if ( !is_paged() ) : ?>
+  <?php if ( !is_paged() && get_header_image() ) : ?>
 
     <!-- Atom: scroll-down-arrow -->
     <a class="scroll-down-arrow icon-arrow-left js-scrolltoid radial-gradient" href="#js-scrollto" data-offset="45"><span hidden="true">Scroll Down</span></a>
