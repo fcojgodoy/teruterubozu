@@ -3,9 +3,9 @@
 
     <?php if ( get_header_image() ) : ?>
       <!-- Organism: front-page-banner (Add background-image style if is_front_page) -->
-      <header class="banner front-page-banner" style="background-image: url('<?php header_image(); ?>')">
+      <header class="main-header main-header_home aligner" style="background-image: url('<?php header_image(); ?>')">
     <?php else: ?>
-      <header class="banner">
+      <header class="main-header main-header_home no-cover aligner">
     <?php endif; ?>
 
   <?php elseif (is_author()) : ?>
@@ -18,9 +18,9 @@
 
     <?php if ($author_banner) : ?>
       <!-- Organism: author-banner -->
-      <header class="banner author-banner" style="background-image: url(' <?php echo $author_banner ?> ')">
+      <header class="main-header main-header_author" style="background-image: url(' <?php echo $author_banner ?> ')">
     <?php else: ?>
-      <header class="banner">
+      <header class="main-header main-header_author no-cover">
     <?php endif; ?>
 
 
@@ -33,9 +33,9 @@
 
     <?php if ($term_banner) : ?>
       <!-- Organism: term-banner -->
-      <header class="banner term-banner" style="background-image: url(' <?php echo $term_banner ?> ')">
+      <header class="main-header main-header_tag aligner" style="background-image: url(' <?php echo $term_banner ?> ')">
     <?php else: ?>
-      <header class="banner">
+      <header class="main-header main-header_tag no-cover aligner">
     <?php endif; ?>
       <!-- Molecule: banner-texts -->
       <div class="vertical">
@@ -45,7 +45,7 @@
           <h1 class="banner-title"> <?php single_tag_title(); ?> </h1>
 
           <!-- Atom: banner-description -->
-          <h2 class="banner-description"> <?php echo tag_description(); ?> </h2>
+          <h2 class="banner-description"> <?php echo term_description(); ?> </h2>
 
         </hgroup>
       </div>
@@ -54,9 +54,9 @@
 
     <?php if (has_post_thumbnail()) : ?>
       <!-- Organism: entry-banner (size according to wp_is_mobile) -->
-      <header class="banner entry-banner" style="background-image: url('<?php if (wp_is_mobile()) {the_post_thumbnail_url('medium');} else {the_post_thumbnail_url('');} ?>')">
+      <header class="main-header main-header_entry" style="background-image: url('<?php if (wp_is_mobile()) {the_post_thumbnail_url('medium');} else {the_post_thumbnail_url('');} ?>')">
     <?php else: ?>
-      <header class="banner">
+      <header class="main-header main-header_entry no-cover">
     <?php endif; ?>
 
   <?php endif; ?>

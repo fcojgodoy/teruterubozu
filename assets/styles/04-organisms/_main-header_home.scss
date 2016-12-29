@@ -1,4 +1,4 @@
-.front-page-banner {
+.main-header_home{
   @extend .aligner;
   height: 40vh;
   min-height: 240px;
@@ -11,7 +11,23 @@
     height: 100vh;
   }
 
- /* When home is not in its first page */
+  // Modifier: no-cover
+  &.no-cover {
+    height: 30vh;
+    min-height: 160px;
+    background-color: #f5f8fa;
+
+    @include media-breakpoint-up(sm) {
+      height: 40vh;
+    }
+
+    @include media-breakpoint-up(md) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  // Modifier: home is not in its first page
  .paged & {
   max-height: 20vh;
   min-height: 160px;
@@ -19,6 +35,7 @@
 
    @include media-breakpoint-up(sm) {
      max-height: 30vh;
+     min-height: 180px;
    }
 
    @include media-breakpoint-up(md) {

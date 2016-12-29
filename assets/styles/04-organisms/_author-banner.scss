@@ -1,9 +1,0 @@
-.author-banner {
-  height: 20vh;
-  min-height: 180px;
-  padding: 15% 0;
-
-  @include media-breakpoint-up(md) {
-    height: 40vh;
-  }
-}

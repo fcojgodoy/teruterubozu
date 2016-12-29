@@ -1,0 +1,23 @@
+.main-header_entry {
+  min-height: 180px;
+  height: 30vh;
+
+  @include media-breakpoint-up(sm) {
+    height: 45vh;
+  }
+
+  @include media-breakpoint-up(md) {
+    height: 65vh;
+  }
+
+  // Modifier: no-cover
+  &.no-cover {
+    height: 70px;
+    min-height: 0;
+
+    @include media-breakpoint-up(sm) {
+      height: 138px;
+    }
+    
+  }
+}

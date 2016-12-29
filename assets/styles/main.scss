@@ -60,8 +60,6 @@
 @import "02-atoms/author-bio";
 @import "02-atoms/author-stats";
 
-@import "02-atoms/term-banner";
-
 @import "02-atoms/share-title";
 @import "02-atoms/share-post-facebook";
 @import "02-atoms/share-post-twitter";
@@ -112,6 +110,12 @@
 @import "03-molecules/embed";
 
 // Organisms
+@import "04-organisms/main-header";
+@import "04-organisms/main-header_home";
+@import "04-organisms/main-header_entry";
+@import "04-organisms/main-header_author";
+@import "04-organisms/main-header_tag";
+
 @import "04-organisms/main";
 @import "04-organisms/main-container";
 @import "04-organisms/footer";
@@ -119,11 +123,6 @@
 @import "04-organisms/entry-post";
 @import "04-organisms/main-menu";
 @import "04-organisms/posts-navigation";
-
-@import "04-organisms/banner";
-@import "04-organisms/entry-banner";
-@import "04-organisms/author-banner";
-@import "04-organisms/front-page-banner";
 
 @import "04-organisms/author-profile";
 
