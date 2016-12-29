@@ -37,15 +37,15 @@
     <?php else: ?>
       <header class="main-header main-header_tag no-cover aligner">
     <?php endif; ?>
-      <!-- Molecule: banner-texts -->
-      <div class="vertical">
-        <hgroup class="banner-texts">
 
-          <!-- Atom: banner-title -->
-          <h1 class="banner-title"> <?php single_tag_title(); ?> </h1>
+      <!-- Molecule: tag-page-hgroup -->
+      <div class="vertical">
+        <hgroup class="tag-page-hgroup">
+
+          <h1 class="tag-title"> <?php single_tag_title(); ?> </h1>
 
           <!-- Atom: banner-description -->
-          <h2 class="banner-description"> <?php echo term_description(); ?> </h2>
+          <h2 class="tag-description"> <?php echo term_description(); ?> </h2>
 
         </hgroup>
       </div>
@@ -80,15 +80,13 @@
   <!-- If is_front_page -->
   <?php if (is_front_page()) : ?>
 
-    <!-- Molecule: banner-texts -->
+    <!-- Molecule: site-hgroup -->
     <div class="vertical">
-      <hgroup class="banner-texts">
+      <hgroup class="site-hgroup">
 
-        <!-- Atom: banner-title -->
-        <h1 class="banner-title">Finding The Way Home</h1>
+        <h1 class="site-title"><?php bloginfo('name') ?></h1>
 
-        <!-- Atom: banner-description -->
-        <h2 class="banner-description">A beautiful narrative written with the world's most elegant publishing platform. The story begins here.</h2>
+        <h2 class="site-description"><?php bloginfo('description') ?></h2>
 
       </hgroup>
     </div>

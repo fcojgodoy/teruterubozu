@@ -80,8 +80,11 @@
 @import "02-atoms/copyright";
 @import "02-atoms/poweredby";
 
-@import "02-atoms/banner-title";
-@import "02-atoms/banner-description";
+@import "02-atoms/site-title";
+@import "02-atoms/site-description";
+
+@import "02-atoms/tag-title";
+@import "02-atoms/tag-description";
 
 @import "02-atoms/nav-post-button";
 @import "02-atoms/nav-post-title";
@@ -101,7 +104,9 @@
 @import "03-molecules/entry-author-wrap";
 
 @import "03-molecules/share-icons";
-@import "03-molecules/banner-texts";
+
+@import "03-molecules/site-hgroup";
+@import "03-molecules/tag-page-hgroup";
 
 @import "03-molecules/author-meta";
 
