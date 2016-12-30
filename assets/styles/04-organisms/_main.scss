@@ -1,18 +1,30 @@
-/* Container */
-.container {
-  padding-left: 16px;
-  padding-right: 16px;
+/* Main */
+.main {
 
-  @include media-breakpoint-up(sm) {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
+  .post.entry-resume {
+    margin: 2rem 0 0;
 
-/* Pagination */
-.page-navigation {
-  margin: {
-    top: 2rem;
-    bottom: 2rem;
+    @include media-breakpoint-up(sm) {
+      margin: {
+        top: 4rem;
+        bottom: 4rem;
+      }
+
+    }
+
   }
+
+  .page-navigation {
+    margin: {
+      top: 1.9rem;
+      bottom: 2rem;
+    }
+
+    @include media-breakpoint-up(sm) {
+      margin: {
+        top: 4rem;
+      }
+    }
+  }
+
 }

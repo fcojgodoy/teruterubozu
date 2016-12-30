@@ -1,6 +1,6 @@
 .home.blog {
 
-  header.banner {
+  header.main-header {
     margin-bottom: 15px;
 
     @include media-breakpoint-up(sm) {
@@ -9,10 +9,10 @@
   }
 
   footer.content-info {
-    margin-top: 3rem;
+    margin-top: 1rem;
 
     @include media-breakpoint-up(sm) {
-      margin-top: 8rem;
+      margin-top: 6rem;
     }
   }
 
