@@ -1,6 +1,7 @@
 .main-header_author {
   height: 20vh;
   min-height: 180px;
+  background-color: #fff;
   padding: 15% 0;
 
   @include media-breakpoint-up(sm) {

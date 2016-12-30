@@ -1,4 +1,4 @@
-<?php get_template_part('templates/author', 'header'); ?>
+<?php get_template_part('templates/author-page', 'header'); ?>
 
 <?php if (is_paged()): ?>
   <?php get_template_part('templates/posts', 'navigation'); ?>

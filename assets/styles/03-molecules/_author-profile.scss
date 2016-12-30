@@ -11,4 +11,12 @@
     }
   }
 
+  .author-bio {
+    margin-bottom: 2rem;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0.5rem;
+    }
+  }
+
 }

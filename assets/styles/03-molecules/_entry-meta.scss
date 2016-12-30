@@ -5,20 +5,22 @@
 
 .entry-meta {
   margin: 1rem 0 0;
-  line-height: 2.1rem;
+  line-height: 2.2rem;
 
   @include media-breakpoint-up(sm) {
     margin-top: 1.75rem;
   }
-}
-/* 'avatar' position */
-.entry-meta .avatar {
-  margin-right: 4px;
-  position: relative;
-}
-/* Add borderleft separator to 'post-updated' */
-.entry-meta .post-updated {
-  padding-left: 12px;
-  margin-left: 8px;
-  border-left: 1px solid #d5dbde;
+
+  /* 'avatar' position */
+  .avatar {
+    float: left;
+    margin-right: 9px;
+  }
+
+  /* Add borderleft separator to 'post-updated' */
+  .post-updated {
+    padding-left: 12px;
+    margin-left: 8px;
+    border-left: 1px solid #d5dbde;
+  }
 }

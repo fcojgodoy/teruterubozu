@@ -1,4 +1,4 @@
-<div class="page-header">
+<div class="author-page-header">
 
   <div class="author-profile">
 

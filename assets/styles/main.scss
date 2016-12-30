@@ -98,6 +98,7 @@
 @import "03-molecules/nav-post";
 @import "03-molecules/page-header";
 
+
 @import "03-molecules/entry-resume";
 @import "03-molecules/entry-footer";
 @import "03-molecules/entry-meta";
@@ -108,6 +109,7 @@
 @import "03-molecules/site-hgroup";
 @import "03-molecules/tag-page-hgroup";
 
+@import "03-molecules/author-profile";
 @import "03-molecules/author-meta";
 
 
@@ -131,9 +133,10 @@
 @import "04-organisms/main-menu";
 @import "04-organisms/posts-navigation";
 
-@import "04-organisms/author-profile";
+@import "04-organisms/author-page-header";
 
 // Templates
 @import "05-templates/home";
 @import "05-templates/single-post";
 @import "05-templates/page-template-default";
+@import "05-templates/tag";

@@ -18,6 +18,8 @@
   text-transform: uppercase;
   line-height: 35px;
 
+  transition: all ease 0.3s;
+
   // Remove normalize.scss rule for match with Casper in Webkit
   -webkit-appearance: initial !important;
 

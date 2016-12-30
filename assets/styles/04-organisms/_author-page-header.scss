@@ -1,0 +1,14 @@
+.author-page-header {
+
+  .author-profile {
+    margin-bottom: 0.5rem;
+
+    @include media-breakpoint-up (sm) {
+      margin-bottom: 2.5rem;
+    }
+
+    @include media-breakpoint-up (md) {
+      margin-bottom: 5rem;
+    }
+  }
+}
