@@ -15,6 +15,6 @@
   endif;
   ?>
 
-  <a href="<?php echo site_url('rss'); ?>" type="button" class="subscribe-button"><?php echo __('Subscribe', 'sage') ?></a>
+  <a href="<?php bloginfo('atom_url'); ?>" type="button" class="subscribe-button"><?php echo __('Subscribe', 'sage') ?></a>
 
 </nav>
