@@ -15,7 +15,6 @@
   &.no-cover {
     height: 30vh;
     min-height: 160px;
-    background-color: #f5f8fa;
 
     @include media-breakpoint-up(sm) {
       height: 40vh;

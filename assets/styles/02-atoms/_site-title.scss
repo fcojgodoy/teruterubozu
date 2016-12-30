@@ -34,4 +34,9 @@
     animation: fade-in-down 0.6s both;
     animation-delay: 0.2s;
   }
+
+  // Modifier: styles for no-cover in main-header
+  .no-cover & {
+    color: rgba(0, 0, 0, 0.8);
+  }
 }

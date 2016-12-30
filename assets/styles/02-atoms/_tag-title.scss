@@ -15,4 +15,9 @@
     font-size: 50px;
   }
 
+  // Modifier: styles for no-cover in main-header
+  .no-cover & {
+    color: rgba(0, 0, 0, 0.8);
+  }
+
 }

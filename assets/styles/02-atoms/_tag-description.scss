@@ -28,6 +28,11 @@
      animation-delay: 0.1s;
     }
 
+    // Modifier: styles for no-cover in main-header
+    .no-cover & {
+      color: rgba(0, 0, 0, 0.498039);
+    }
+
   }
-  
+
 }

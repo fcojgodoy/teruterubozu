@@ -52,7 +52,7 @@
   }
 
   // When the post have not featured image
-  .no-featured-image & {
+  .no-cover & {
     color: #9EABB3;
     border-color: #BFC8CD;
 
@@ -62,7 +62,7 @@
     }
   }
 
-  .no-featured-image.pushy-open-right & {
+  .pushy-open-right .no-cover & {
     color: #fff;
   }
 }
