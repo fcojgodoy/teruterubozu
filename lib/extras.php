@@ -51,7 +51,7 @@ add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
  * http://www.hudku.com/blog/add-numbered-page-navigation-wordpress-plugin/
  * http://codex.wordpress.org/Function_Reference/paginate_links
  */
-function wp_pagination() {
+function posts_pagination() {
   global $wp_query;
   $big = 12345678;
   $page_format = paginate_links( array(
@@ -64,12 +64,12 @@ function wp_pagination() {
   ) );
   if (is_array($page_format) ) {
   $paged = ( get_query_var('paged') == 0 ) ? 1 : get_query_var('paged');
-    echo '<div><ul>';
-    echo '<li><span>'. $paged . ' ' . __('of', 'sage') . ' ' . $wp_query->max_num_pages .'</span></li>';
+    // echo '<div><ul>';
+    echo '<span>' . __('Page', 'sage') . ' ' . $paged . ' ' . __('of', 'sage') . ' ' . $wp_query->max_num_pages .'</span></li>';
     // foreach ( $page_format as $page ) {
     //         echo "<li>$page</li>";
     // }
-    echo '</ul></div>';
+    // echo '</ul></div>';
   }
 }
 

@@ -6,9 +6,7 @@
   </div>
   <!-- Atom: Navigation pages -->
   <div class="navigation-pages">
-    <span>
-      <?php echo __('Page', 'Sage') . ' ' . $paged . ' ' . __('of', 'Sage') . ' ' . $wp_query -> max_num_pages; ?>
-    </span>
+    <?php Roots\Sage\Extras\posts_pagination(); ?>
   </div>
   <!-- Atom: Button -->
   <div class="nav-page-link nav-next">

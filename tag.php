@@ -1,5 +1,5 @@
 <?php if (is_paged()): ?>
-  <?php get_template_part('templates/page', 'navigation'); ?>
+  <?php get_template_part('templates/posts', 'navigation'); ?>
 
   <!-- Atom: decorative-line -->
   <hr class="decorative-line">
@@ -18,7 +18,4 @@
   <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
 <?php endwhile; ?>
 
-<!-- <?php Roots\Sage\Extras\wp_pagination(); ?>
-<?php the_posts_navigation(); ?> -->
-
-<?php get_template_part('templates/page', 'navigation'); ?>
+<?php get_template_part('templates/posts', 'navigation'); ?>
