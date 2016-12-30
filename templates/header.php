@@ -2,7 +2,7 @@
   <?php if (is_front_page()) : ?>
 
     <?php if ( get_header_image() ) : ?>
-      <!-- Organism: front-page-banner (Add background-image style if is_front_page) -->
+      <!-- Organism: Main header -->
       <header class="main-header main-header_home aligner" style="background-image: url('<?php header_image(); ?>')">
     <?php else: ?>
       <header class="main-header main-header_home no-cover aligner">
@@ -11,14 +11,14 @@
   <?php elseif (is_author()) : ?>
 
     <?php
-      // Get author banner url
+      // Get author cover image url
       $author = get_user_by( 'slug', get_query_var( 'author_name' ) );
-      $author_banner = get_user_meta($author->ID, 'author_banner', true);
+      $author_cover_image_url = get_user_meta($author->ID, 'author_cover_image', true);
     ?>
 
-    <?php if ($author_banner) : ?>
-      <!-- Organism: author-banner -->
-      <header class="main-header main-header_author" style="background-image: url(' <?php echo $author_banner ?> ')">
+    <?php if ($author_cover_image_url) : ?>
+      <!-- Organism: main-header_author -->
+      <header class="main-header main-header_author" style="background-image: url(' <?php echo $author_cover_image_url ?> ')">
     <?php else: ?>
       <header class="main-header main-header_author no-cover">
     <?php endif; ?>
@@ -27,13 +27,13 @@
   <?php elseif (is_tag()) : ?>
 
     <?php
-      // Get term banner url
-      $term_banner = get_term_meta( get_queried_object()->term_id, 'taxonomy_banner', true);
+      // Get term cover image url
+      $term_cover_image_url = get_term_meta( get_queried_object()->term_id, 'term_cover_image', true);
     ?>
 
-    <?php if ($term_banner) : ?>
-      <!-- Organism: term-banner -->
-      <header class="main-header main-header_tag aligner" style="background-image: url(' <?php echo $term_banner ?> ')">
+    <?php if ($term_cover_image_url) : ?>
+      <!-- Organism: main-header_tag -->
+      <header class="main-header main-header_tag aligner" style="background-image: url(' <?php echo $term_cover_image_url ?> ')">
     <?php else: ?>
       <header class="main-header main-header_tag no-cover aligner">
     <?php endif; ?>
@@ -44,7 +44,7 @@
 
           <h1 class="tag-title"> <?php single_tag_title(); ?> </h1>
 
-          <!-- Atom: banner-description -->
+          <!-- Atom: tag-description -->
           <h2 class="tag-description"> <?php echo term_description(); ?> </h2>
 
         </hgroup>
@@ -53,7 +53,7 @@
   <?php else: ?>
 
     <?php if (has_post_thumbnail()) : ?>
-      <!-- Organism: entry-banner (size according to wp_is_mobile) -->
+      <!-- Organism: main-header_entry (size according to wp_is_mobile) -->
       <header class="main-header main-header_entry" style="background-image: url('<?php if (wp_is_mobile()) {the_post_thumbnail_url('medium');} else {the_post_thumbnail_url('');} ?>')">
     <?php else: ?>
       <header class="main-header main-header_entry no-cover">

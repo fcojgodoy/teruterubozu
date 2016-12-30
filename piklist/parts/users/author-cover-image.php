@@ -5,8 +5,8 @@ Title:
 
 piklist('field', array(
   'type' => 'file'
-  ,'field' => 'taxonomy_banner'
-  ,'label' => __('Select the cover image', 'sage')
+  ,'field' => 'author_cover_image'
+  ,'label' => __('Select your cover image', 'sage')
   ,'options' => array(
     'modal_title' => 'Add File(s)'
     ,'button' => 'Add'

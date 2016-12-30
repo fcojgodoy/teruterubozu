@@ -2,7 +2,7 @@
 
   &:not(.no-featured-image) {
 
-    .banner {
+    .main-header {
       margin-bottom: 1.5rem;
       @include media-breakpoint-up(sm) {
         margin-bottom: 5rem;
