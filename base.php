@@ -31,7 +31,7 @@ use Roots\Sage\Wrapper;
         get_template_part('templates/header');
       ?>
 
-      <div class="wrap container" id="js-scrollto" role="document">
+      <div class="container" id="js-scrollto" role="document">
         <div class="content row">
           <main class="main">
             <?php include Wrapper\template_path(); ?>
