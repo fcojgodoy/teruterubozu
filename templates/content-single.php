@@ -103,7 +103,7 @@
             <span class="nav-post-button btn"><?php echo __('Read this next', 'sage') ?></span>
             <!-- Atom: nav-post-title -->
             <h2 class="nav-post-title"><?php echo get_the_title( $nextPost->ID ) ?></h2>
-            <!-- <?php setup_postdata( $nextPost ); the_excerpt(); wp_reset_postdata(); ?> -->
+            <!-- <?php echo get_the_excerpt( $nextPost->ID ) ?> -->
           </div>
         </a>
 
