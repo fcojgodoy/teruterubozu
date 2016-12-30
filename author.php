@@ -3,7 +3,6 @@
 <?php if (is_paged()): ?>
   <?php get_template_part('templates/posts', 'navigation'); ?>
 
-  <!-- Atom: decorative-line -->
   <hr class="decorative-line">
 
 <?php endif; ?>
