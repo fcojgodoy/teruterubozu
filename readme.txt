@@ -3,14 +3,14 @@
 Contributors: fcojgodoy
 Requires at least: 4.5
 Tested up to: 4.9.5
-Version: 1.0.0
+Version: 0.2.0-dev
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags: custom-header, custom-logo, custom-menu, editor-style, featured-images, featured-image-header, flexible-header, full-width-template, one-column, sticky-post, threaded-comments, translation-ready, blog, photography
 
 == Description ==
 
-A Wordpress theme based on Ghost's default theme.
+A Wordpress theme inspired by Casper, the Ghost default theme.
 
 For more information about Teruterubozu please go to https://github.com/fcojgodoy/teruterubozu.
 
@@ -86,7 +86,7 @@ Source: https://pixabay.com/
 
 == Changelog ==
 
-= 0.2 =
+= 0.2.0-dev =
 * Released: _______________
 - New dev structure.
 

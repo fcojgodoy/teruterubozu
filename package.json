@@ -1,10 +1,10 @@
 {
   "name": "teruterubozu",
-  "version": "0.0.1",
-  "description": "Extensible, scalable, Sass-based, WordPress starter theme with Gulp and NPM workflow.",
+  "version": "0.2.0-dev",
+  "description": "A Wordpress theme inspired by Casper, the Ghost default theme.",
   "main": "index.php",
   "author": "fcojgodoy",
-  "license": "MIT",
+  "license": "GPLv3",
   "devDependencies": {
     "WordPress-Coding-Standards": "https://github.com/WPTRT/WordPress-Coding-Standards#JRF/searchform",
     "autoprefixer": "^8.0.0",
