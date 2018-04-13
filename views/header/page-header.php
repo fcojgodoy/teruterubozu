@@ -85,7 +85,7 @@
 
 <nav class="navbar">
 
-    <div itemscope itemtype="http://schema.org/Organization">
+    <div class="custom-logo" itemscope itemtype="http://schema.org/Organization">
 
         <?php the_custom_logo() ?>
 

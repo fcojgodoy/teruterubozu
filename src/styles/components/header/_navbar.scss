@@ -24,11 +24,17 @@
 }
 
 
+.custom-logo {
+    display: inline-block;
+
+    // Make sure logo link wraps around logo image.
+    .custom-logo-link {
+    	display: inline-block;
+    }
+}
 
 
 .menu-btn {
-
-    display: inline-block;
     float: right;
     color: #fff;
     padding: 0 5px 2px;
