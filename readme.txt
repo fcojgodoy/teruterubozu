@@ -86,7 +86,9 @@ Source: https://pixabay.com/
 
 == Changelog ==
 
-= =
+= 0.2 =
+* Released: _______________
+- New dev structure.
 
 = 0.1.3 =
 * Released: Febrery 7, 2017
