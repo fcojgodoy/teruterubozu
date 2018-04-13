@@ -1,0 +1,29 @@
+/* ==========================================================================
+   #AUTHOR WEB
+   ========================================================================== */
+
+/*
+ * User profile web link
+ *
+ */
+
+/*
+ * 1. Completely round.
+ */
+
+.author-web {
+    line-height: 1em;
+    letter-spacing: 0.1px;
+
+    a {
+        color: #9eabb3;
+        transition: color 0.3s ease;
+
+        @include hover-focus-active {
+            color: #111;
+            text-decoration: none;
+        }
+
+    }
+
+}

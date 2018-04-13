@@ -1,0 +1,45 @@
+
+.entry-content {
+    @include inuit-clearfix();
+}
+
+.sticky {
+	display: block;
+}
+
+// Comment by post author
+.bypostauthor {
+  border-left: 4px solid #4a4a4a;
+  padding-left: 20px;
+}
+
+
+.updated:not( .published ) {
+	display: none;
+}
+
+// ENTRY HEADER
+@import "entry/entry-header";
+
+// ENTRY RESUME
+@import "entry/entry-resume";
+
+// ENTRY META
+@import "entry/entry-meta";
+
+// ENTRY META
+@import "entry/entry-footer";
+
+// POSTS NAVIGATION
+@import "posts-navigation";
+
+// MORE LINK
+@import "more-link";
+
+// DECORATIVE LINE
+@import "decorative-line";
+
+// Author
+@import "author/author.avatar";
+@import "author/author.bio";
+@import "author/author.web";

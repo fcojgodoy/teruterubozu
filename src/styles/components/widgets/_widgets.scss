@@ -1,0 +1,23 @@
+/* ==========================================================================
+   #WIDGET
+   ========================================================================== */
+
+/**
+ * The widgets areas and the widgets inside them.
+ *
+ * 1. Make sure select elements fit in widgets.
+ *
+ */
+
+// .widget-area {
+// Style for the widgets area here.
+// }
+
+
+.widget {
+	margin-bottom: $inuit-global-spacing-unit;
+
+	select {
+		max-width: 100%; /* [1] */
+	}
+}

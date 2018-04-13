@@ -1,0 +1,88 @@
+/* ==========================================================================
+   #COMMENTS
+   ========================================================================== */
+
+/* Comment List
+   ========================================================================== */
+
+/*
+ * 1. Remove list style from main list and childrens lists.
+ */
+
+.comment-list,
+.children {
+    list-style: none; /* [1] */
+}
+
+
+
+
+
+/* Comment Respond
+========================================================================== */
+
+.comment-respond  {
+
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="password"],
+    input[type="search"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="range"],
+    input[type="date"],
+    input[type="month"],
+    input[type="week"],
+    input[type="time"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="color"],
+    textarea {
+    	width: 100%;
+    }
+
+    label {
+        display: inline-block;
+        margin-bottom: $inuit-global-spacing-unit-tiny;
+    }
+
+}
+
+
+
+
+
+/* Comment Notes
+  ========================================================================== */
+
+.comment-notes {
+    font-family: $font-family-sans-serif;
+    @include inuit-font-size( 14px );
+}
+
+
+
+
+
+/* Looged In As Text
+  ========================================================================== */
+
+.logged-in-as {
+    font-family: $font-family-sans-serif;
+    @include inuit-font-size( 14px );
+}
+
+
+
+
+
+/* Comment Reply Link
+========================================================================== */
+
+#cancel-comment-reply-link {
+    @extend .c-btn;
+    @extend .c-btn--secondary;
+    @extend .c-btn--small;
+    font-weight: 400;
+}

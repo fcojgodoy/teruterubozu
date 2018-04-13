@@ -1,34 +1,101 @@
 <?php
 /**
- * Sage includes
+ * teruterubozu functions and definitions.
  *
- * The $sage_includes array determines the code library included in your theme.
- * Add or remove files to the array as needed. Supports child theme overrides.
+ * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * Please note that missing files will produce a fatal error.
- *
- * @link https://github.com/roots/sage/pull/1042
+ * @package teruterubozu
  */
 
 
-$sage_includes = [
-  'lib/assets.php',    // Scripts and stylesheets
-  'lib/extras.php',    // Custom functions
-  'lib/setup.php',     // Theme setup
-  'lib/titles.php',    // Page titles
-  'lib/wrapper.php',   // Theme wrapper class
-  'lib/customizer.php', // Theme customizer
-  'lib/userfields.php', // Add user's fields
-  'lib/custom-logo.php', // Add Theme logo support
-  'lib/piklist-checker.php', // Add Piklist Checker
-  'lib/custom-headers.php' // Add Custom Headers support
-];
+/**
+ * Initialize theme default settings
+ */
+require get_template_directory() . '/inc/setup.php';
 
-foreach ($sage_includes as $file) {
-  if (!$filepath = locate_template($file)) {
-    trigger_error(sprintf(__('Error locating %s for inclusion', 'sage'), $file), E_USER_ERROR);
-  }
 
-  require_once $filepath;
+/**
+ * Register widget area.
+ */
+// require get_template_directory() . '/inc/widgets.php';
+
+
+/**
+ * Set content width.
+ */
+require get_template_directory() . '/inc/content-width.php';
+
+
+/**
+ * Enqueue scripts and styles..
+ */
+require get_template_directory() . '/inc/enqueue.php';
+
+
+/**
+ * Implement the Custom Header feature.
+ */
+require get_template_directory() . '/inc/custom-header.php';
+
+
+/**
+ * Custom template tags for this theme.
+ */
+require get_template_directory() . '/inc/template-tags.php';
+
+
+/**
+ * Functions which enhance the theme by hooking into WordPress.
+ */
+require get_template_directory() . '/inc/template-functions.php';
+
+
+/**
+ * Customizer additions.
+ */
+require get_template_directory() . '/inc/customizer.php';
+
+
+/**
+ * Load Jetpack compatibility file.
+ */
+if ( defined( 'JETPACK__VERSION' ) ) {
+	require get_template_directory() . '/inc/jetpack.php';
 }
-unset($file, $filepath);
+
+
+/**
+ * Customizer additions.
+ */
+require get_template_directory() . '/inc/googlefonts.php';
+
+
+/**
+ * Custom the excerpt.
+ */
+require get_template_directory() . '/inc/the-excerpt.php';
+
+
+/**
+ * Modify editor.
+ */
+require get_template_directory() . '/inc/editor.php';
+
+
+/**
+ * Add classes to `li` elements in navigations.
+ */
+require get_template_directory() . '/inc/add-classes-menu-items.php';
+
+
+/**
+ * Add user contact methods
+ */
+require get_template_directory() . '/inc/user-contactmethods.php';
+
+
+/**
+ * Required plugins activation.
+ */
+require get_template_directory() . '/inc/plugins-activation/class-tgm-plugin-activation.php';
+require get_template_directory() . '/inc/plugins-activation/tgm-plugins-activation.php';

@@ -1,22 +1,28 @@
-<?php get_template_part('templates/author-page', 'header'); ?>
+<?php
+/**
+ * The template for displaying single author page
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#author-display
+ *
+ * @package teruterubozu
+ */
 
-<?php if (is_paged()): ?>
-  <?php get_template_part('templates/posts', 'navigation'); ?>
+get_header(); ?>
 
-  <hr class="decorative-line">
+<div id="content" class="content o-wrapper u-margin-bottom-large u-margin-bottom-huge@tablet">
 
-<?php endif; ?>
+	<div class="o-layout">
 
+		<main id="primary" class="site-main o-layout__item u-1/1">
 
-<?php if (!have_posts()) : ?>
-  <div class="alert alert-warning">
-    <?php _e('Sorry, no results were found.', 'sage'); ?>
-  </div>
-  <?php get_search_form(); ?>
-<?php endif; ?>
+			<?php get_template_part( 'views/post/content', 'author' ); ?>
 
-<?php while (have_posts()) : the_post(); ?>
-  <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
-<?php endwhile; ?>
+		</main><!-- #primary -->
 
-<?php get_template_part('templates/posts', 'navigation'); ?>
+	</div><!-- .content-area -->
+
+</div><!-- #content -->
+
+<?php
+
+get_footer();

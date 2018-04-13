@@ -1,0 +1,272 @@
+/**
+ * This is the teruterubozu styles manifest file.
+ */
+// TODO: update toc
+/**
+ * TABLE OF CONTENT
+ *
+ *
+ * SETTINGS
+ * Config...............Project-level configuration and feature switches.
+ * Core.................inuitcss’ core and setup settings.
+ * Global...............Project-wide variables and settings.
+ *
+ *
+ * TOOLS
+ * Font-size............A mixin which guarantees baseline-friendly line-heights.
+ * Clearfix.............Micro clearfix mixin.
+ * Hidden...............Mixin for hiding elements.
+ * Sass MQ..............inuitcss’ default media query manager.
+ * Proyect wide.........Proyect-wide tools.
+ *
+ *
+ * GENERIC
+ * Box-sizing...........Better default `box-sizing`.
+ * Normalize.css........A level playing field using @necolas’ Normalize.css.
+ * Reset................A tiny reset to complement Normalize.css.
+ * Shared...............Sensibly and tersely share some global commonalities
+ *                      (particularly useful when managing vertical rhythm).
+ *
+ *
+ * ELEMENTS
+ * Page.................Set up our document’s default `font-size` and
+ *                      `line-height`.
+ * Headings.............Very minimal (i.e. only font-size information) for
+ *                      headings 1 through 6.
+ * Images...............Base image styles.
+ * Tables...............Simple table styles.
+ * Tables...............Simple table styles.
+ * Proyect wide.........Proyect-wide elements.
+ *
+ *
+ * OBJECTS
+ * Wrapper..............Page constraint object.
+ * Layout...............Generic layout module.
+ * Media................Image- and text-like content side by side. The
+ *                      poster-child of OOCSS.
+ * Flag.................Table-layout-based advancement on the Media object.
+ * List-bare............Lists with no bullets or indents.
+ * List-inline..........A list whose items all site in a line.
+ * Box..................Simple boxing abstraction.
+ * Block................Image-on-top-of-text object.
+ * Ratio................A container for maintaining aspect ratio of content.
+ * Crop.................Provide a cropping context for media (images, etc.).
+ * Table................Classes for manipulating `table`s.
+ * Pack.................Pack items into available horizontal space.
+ *
+ *
+ * UTILITIES
+ * Clearfix.............Bind our clearfix onto a utility class.
+ * Widths...............Simple width helper classes.
+ * Headings.............Reassigning our heading styles to helper classes.
+ * Spacings.............Nudge bits of the DOM around with these spacing
+ *                      classes.
+ * Responsive-Spacings..Enhances the function of normal spacings for
+ *                      responsive usage.
+ * Print................Reset-like styles taken from the HTML5 Boilerplate.
+ * Hide.................Helper classes to hide content.
+ * Proyect wide.........Proyect-wide utilities.
+ *
+ *
+ * VENDORS
+ * Pushy................Pushy nav menu styles (vendor library).
+ *
+ */
+
+
+
+
+
+ /*--------------------------------------------------------------
+ # VENDORS
+ --------------------------------------------------------------*/
+
+ // Pushy
+ $menu_width: 240px;
+ @import "../../node_modules/@cmyee/pushy/scss/pushy";
+
+
+
+
+
+ /*--------------------------------------------------------------
+ # SETTINGS
+ --------------------------------------------------------------*/
+
+@import "settings/settings.config";
+@import "../../node_modules/inuitcss/settings/settings.core";
+@import "settings/settings.global";
+
+
+
+
+
+/*--------------------------------------------------------------
+# TOOLS
+--------------------------------------------------------------*/
+
+@import "../../node_modules/inuitcss/tools/tools.font-size";
+@import "../../node_modules/inuitcss/tools/tools.clearfix";
+@import "../../node_modules/inuitcss/tools/tools.hidden";
+// Sass MQ
+
+// Name your breakpoints in a way that creates a ubiquitous language
+// across team members. It will improve communication between
+// stakeholders, designers, developers, and testers.
+// $mq-breakpoints: (
+//     mobile:  320px,
+//     tablet:  740px,
+//     desktop: 980px,
+//     wide:    1300px,
+//
+//     // Tweakpoints
+//     // desktopAd: 810px,
+//     // mobileLandscape: 480px
+// );
+
+// If you want to display the currently active breakpoint in the top
+// right corner of your site during development, add the breakpoints
+// to this list, ordered by width, e.g. (mobile, tablet, desktop).
+$mq-show-breakpoints: (mobile, tablet, desktop, wide);
+@import "../../node_modules/sass-mq/mq";
+
+// Proyect wide
+@import "tools/tools.main";
+
+
+
+
+
+/*--------------------------------------------------------------
+# GENERIC
+--------------------------------------------------------------*/
+
+@import "../../node_modules/inuitcss/generic/generic.box-sizing";
+@import "../../node_modules/inuitcss/generic/generic.normalize";
+@import "../../node_modules/inuitcss/generic/generic.reset";
+@import "../../node_modules/inuitcss/generic/generic.shared";
+
+// Proyect wide
+@import "generic/generic.accessibility";
+@import "generic/generic.alignments";
+@import "generic/generic.infinite-scroll";
+
+
+
+
+
+/*--------------------------------------------------------------
+# ELEMENTS
+--------------------------------------------------------------*/
+
+@import "../../node_modules/inuitcss/elements/elements.page";
+@import "../../node_modules/inuitcss/elements/elements.headings";
+@import "../../node_modules/inuitcss/elements/elements.images";
+@import "../../node_modules/inuitcss/elements/elements.tables";
+
+// Proyect wide
+@import "elements/elements.main";
+
+
+
+
+/*--------------------------------------------------------------
+# OBJECTS
+--------------------------------------------------------------*/
+
+// Uncomment and add to this section as necessary.
+@import "../../node_modules/inuitcss/objects/objects.wrapper";
+@import "../../node_modules/inuitcss/objects/objects.layout";
+@import "../../node_modules/inuitcss/objects/objects.media";
+@import "../../node_modules/inuitcss/objects/objects.flag";
+@import "../../node_modules/inuitcss/objects/objects.list-bare";
+@import "../../node_modules/inuitcss/objects/objects.list-inline";
+@import "../../node_modules/inuitcss/objects/objects.box";
+@import "../../node_modules/inuitcss/objects/objects.block";
+@import "../../node_modules/inuitcss/objects/objects.ratio";
+@import "../../node_modules/inuitcss/objects/objects.crop";
+@import "../../node_modules/inuitcss/objects/objects.table";
+@import "../../node_modules/inuitcss/objects/objects.pack";
+
+
+
+
+
+/*--------------------------------------------------------------
+# UTILITIES
+--------------------------------------------------------------*/
+
+@import "../../node_modules/inuitcss/utilities/utilities.clearfix";
+// Be aware that enabling offsets produces a large chunk of classes which might
+// bloat your CSS, depending of the amount of breakpoints you defined.
+// Only set this to `true` if you are absolutely sure about what you are doing.
+$inuit-offsets: false;
+@import "../../node_modules/inuitcss/utilities/utilities.widths";
+@import "../../node_modules/inuitcss/utilities/utilities.headings";
+@import "../../node_modules/inuitcss/utilities/utilities.spacings";
+// Responsive-Spacing
+$inuit-responsive-spacing-directions: (
+    "-bottom": "-bottom",
+);
+
+$inuit-responsive-spacing-properties: (
+    "margin": "margin",
+    "padding": "padding",
+);
+
+$inuit-responsive-spacing-sizes: (
+    "-small": $inuit-global-spacing-unit-small,
+    null: $inuit-global-spacing-unit,
+    "-large": $inuit-global-spacing-unit-large,
+    "-huge": $inuit-global-spacing-unit-huge,
+    "-none": 0,
+);
+@import "../../node_modules/inuitcss/utilities/utilities.responsive-spacings";
+@import "../../node_modules/inuitcss/utilities/utilities.print";
+@import "../../node_modules/inuitcss/utilities/utilities.hide";
+
+// Proyect wide
+@import "src/styles/utilities/utilities.double-border";
+
+
+
+
+
+/*--------------------------------------------------------------
+# COMPONENTS
+--------------------------------------------------------------*/
+
+// TODO: 'block.main' or 'block.root' or 'block', main name.
+
+// Blocks (Gutenberg blocks)
+@import "components/blocks/blocks.main";
+
+// Forms
+@import "components/forms/forms.main";
+
+// Navigation
+@import "components/navigation/navigation";
+
+// Widgets
+@import "components/widgets/widgets";
+
+// Media
+@import "components/media/media";
+
+// Extra
+@import "components/extra/extra.labels";
+
+// Header
+@import "components/header/header";
+
+// Pages
+@import "components/pages/pages";
+
+// Posts
+@import "components/posts/posts";
+
+// Comments
+@import "components/comments/comments.root";
+
+// Footer
+@import "components/footer/footer";

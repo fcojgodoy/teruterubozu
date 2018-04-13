@@ -1,14 +1,4 @@
-# Include your project-specific ignores in this file
-# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
-dist
-bower_components
-node_modules
-npm-debug.log
-vendor
-DEVLOG.md
-
-# Dolphin's folder config file
-.directory
-
-# Personal log file
-LOG.md
+TODO.md
+assets/
+node_modules/
+sassdoc/

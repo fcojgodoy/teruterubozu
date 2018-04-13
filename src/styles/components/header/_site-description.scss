@@ -1,0 +1,38 @@
+/* ==========================================================================
+   #SITE DESCRIPTION
+   ========================================================================== */
+ 
+.site-description {
+  color: rgba(255, 255, 255, 0.8);
+  display: none;
+  margin: 0;
+
+  font-family: $font-family-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: 0.01rem;
+
+  @include mq( $from: tablet ) {
+    display: block;
+    font-size: 18px;
+  }
+
+  @include mq( $from: desktop ) {
+    font-size: 20px;
+  }
+
+  // Modifier: animation only in front-page
+  .home:not(.paged) & {
+    display: block;
+
+    animation: fade-in-down 0.9s both;
+    animation-delay: 0.1s;
+  }
+
+  // Modifier: styles for no-cover in main-header
+  .no-cover & {
+    color: rgba(0, 0, 0, 0.498039);
+  }
+
+}

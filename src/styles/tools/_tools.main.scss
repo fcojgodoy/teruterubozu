@@ -1,0 +1,141 @@
+////
+/// @author fcojgodoy
+/// @group Tools
+////
+
+
+$wrapper-lateral-padding: $inuit-global-spacing-unit; /* [2] */
+
+
+// ----------------------------------------------------------------------
+
+// Full Bleed
+
+// ----------------------------------------------------------------------
+
+/// Full bleed for centered blocks.
+///
+/// 1. Overlap to possible previous rule.
+/// 2. Center content if this no cover all de screen width.
+///
+/// @name Full Bleed
+
+%full-bleed {
+	position: relative;
+	width: 100vw;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw !important; /* [1] */
+	margin-right: -50vw;
+	text-align: center; /* [2] */
+
+	> .jetpack-video-wrapper iframe {
+		margin-right: auto !important; /* [2] */
+		margin-left: auto !important; /* [2] */
+	}
+
+}
+
+
+
+
+
+// ----------------------------------------------------------------------
+
+  // Restore Bleed
+
+// ----------------------------------------------------------------------
+
+/// Restore bleed for elements inside full bleed blocks.
+/// @name Restore Bleed
+
+%restore-bleed {
+	margin: {
+		right: $wrapper-lateral-padding;
+		left: $wrapper-lateral-padding;
+	}
+
+}
+
+
+
+
+
+// ----------------------------------------------------------------------
+
+  // Extra Wide
+
+// ----------------------------------------------------------------------
+
+/// Extra wide for centered blocks.
+///
+/// 1. Overlap to possible previous rule.
+/// 2. Center content if this no cover all de screen width.
+///
+/// @name Extra Wide
+
+
+%extra-wide {
+	width: 116%;
+	margin-left: -8% !important; /* [1] */
+	text-align: center; /* [2] */
+
+	@include mq( $until: tablet ) {
+		width: 100vw;
+		margin-left: - $wrapper-lateral-padding !important;
+	}
+
+	> .jetpack-video-wrapper iframe {
+		margin-right: auto !important; /* [2] */
+		margin-left: auto !important; /* [2] */
+	}
+
+}
+
+
+
+
+
+/// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map-get( $columns, $numberColumns ) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}
+
+
+/// Hover
+@mixin hover {
+	&:hover { @content; }
+}
+
+/// Active
+@mixin active {
+	&:active { @content; }
+}
+
+/// Hover & focus
+@mixin hover-focus {
+	&:hover,
+	&:focus { @content;	}
+}
+
+/// Plain hover & focus
+@mixin plain-hover-focus {
+	&,
+	&:hover,
+	&:focus { @content;	}
+}
+
+/// Hover, focus & active
+@mixin hover-focus-active {
+	&:hover,
+	&:focus,
+	&:active { @content; }
+}

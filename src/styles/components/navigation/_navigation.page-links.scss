@@ -1,0 +1,50 @@
+/* ==========================================================================
+  #PAGE LINKS
+  ========================================================================== */
+
+/**
+ * The formatted output of a list of pages.
+ *
+ * @link https://developer.wordpress.org/reference/functions/wp_link_pages/
+ * WordPress function: wp_link_pages.
+ */
+
+
+ /* Main container
+    ========================================================================== */
+
+.page-links {
+    padding-top: $inuit-global-spacing-unit;
+    border-top: 1px dashed #ebf2f6;
+    text-align: center;
+}
+
+
+
+
+
+
+/* Text.
+   ========================================================================== */
+
+.page-links-text {
+    font-family: $font-family-sans-serif;
+}
+
+
+
+
+
+
+/* Prev and next links.
+   ========================================================================== */
+
+/**
+* 1. Allow us set equal buttons width.
+*/
+
+.page-links-links {
+    @extend .c-btn;
+    @extend .c-btn--small;
+    min-width: 110px; /* [1] */
+}

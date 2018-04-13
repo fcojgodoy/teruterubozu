@@ -1,0 +1,55 @@
+///* ========================================================================
+//   #GLOBAL
+//   ======================================================================== */
+// The global settings file contains any project-wide variables; things that
+// need to be made available to the entire codebase.
+
+
+
+// Paths.
+
+$path-local-fonts:    "../fonts/";
+
+
+
+// Standardise some UI treatments.
+
+$global-radius: 3px !default;
+$global-transition: all 300ms ease-in-out !default;
+
+
+
+// Replace variables in elements.headings
+
+$inuit-font-size-h1:  28px !default;
+$inuit-font-size-h2:  24px !default;
+$inuit-font-size-h3:  21px !default;
+$inuit-font-size-h4:  19px !default;
+$inuit-font-size-h5:  18px !default;
+$inuit-font-size-h6:  17px !default;
+
+
+
+// Images
+//
+// If a width and/or height attribute has been explicitly defined, let’s not
+// make the image fluid. In case you don't have control over generated width
+// and height attributes on <img> elements in your markup, but still want the
+// images to be fluid, set this to false:
+
+$inuit-static-images: false;
+
+
+
+// Etc
+$inuit-wrapper-width: 758px;
+
+
+
+
+// Imports
+
+@import "settings.colors";
+@import "settings.typography";
+@import "settings.columns";
+@import "settings.local-fonts";

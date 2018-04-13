@@ -1,0 +1,118 @@
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: $color__text-main;
+	font-family: $font-main;
+}
+
+
+
+
+
+body {
+	font-feature-settings: 'kern' 1;
+	text-rendering: geometricPrecision;
+	word-wrap: break-word;
+	// letter-spacing: .01rem; // BUG: Create bug on o-layout
+}
+
+
+
+
+
+
+p {
+	margin-bottom: $inuit-global-spacing-unit-small;
+}
+
+
+
+
+
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+
+
+
+
+
+// Blockquote
+blockquote {
+	color: $color-text-secondary;
+	padding-left: 30px;
+	border-left: 0.4em solid $color-text-secondary;
+	@include inuit-font-size( 14px );
+	font-style: italic;
+
+	@include mq( $from: tablet ) {
+		margin-left: -30px;
+	}
+
+}
+
+
+
+
+
+
+address {
+	margin-bottom: $inuit-global-spacing-unit-small;
+}
+
+
+
+
+
+abbr[title], {
+	cursor: help;
+}
+
+
+
+
+
+mark, ins {
+	background: $color-background-ins;
+	text-decoration: none;
+}
+
+
+
+
+
+
+code, kbd, var {
+	font-family: $font-code;
+	@include inuit-font-size( 14px );
+	padding: 1px 3px;
+	white-space: pre-wrap;
+}
+
+
+
+
+
+pre {
+	font-family: $font-code;
+	background-color: $color-code-bg;
+	padding: $inuit-global-spacing-unit;
+	border: 1px solid #e3edf3;
+	max-width: 100%;
+	overflow: auto;
+
+	@include inuit-font-size( 14px );
+}
+
+
+
+
+
+::selection {
+	background-color: $color-selection;
+}

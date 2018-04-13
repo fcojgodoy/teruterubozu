@@ -1,0 +1,48 @@
+/* ==========================================================================
+   #COMMENT
+   ========================================================================== */
+
+/* Comment Body
+  ========================================================================== */
+.comment-body {
+    margin-bottom: $inuit-global-spacing-unit-large;
+
+    //Comment Meta
+    .comment-meta {
+        margin-bottom: $inuit-global-spacing-unit-small;
+    }
+
+    // Avatar
+    .avatar {
+        margin-right: $inuit-global-spacing-unit-tiny;
+    }
+
+    // Comment Author
+    .comment-author {
+        font-family: $font-family-sans-serif;
+
+        // Comment author copy. Remove bold style
+        .fn {
+            font-weight: 400;
+        }
+    }
+
+    // Comment metadata (time)
+    .comment-metadata {
+        margin-top: -12px;
+        margin-left: 42px;
+
+        time {
+            @include inuit-font-size( 13px );
+            text-transform: lowercase;
+        }
+
+    }
+
+    // Reply Button
+    .comment-reply-link {
+        @extend .c-btn;
+        @extend .c-btn--ghost;
+        @extend .c-btn--small;
+    }
+}

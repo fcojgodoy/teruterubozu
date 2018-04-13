@@ -1,0 +1,243 @@
+/* ==========================================================================
+   #MAIN MENU
+   ========================================================================== */
+
+/*
+ * Main menu usign Pushy
+ *
+ * https://github.com/christophery/pushy/
+ *
+ * See variable in main sass file.
+ */
+
+
+/* Overwrite Pushy default styles
+========================================================================== */
+
+// Overlay background color.
+
+.pushy-open-left,
+.pushy-open-right{
+
+	.site-overlay{
+        background-color: rgba(0,0,0,0);
+    }
+
+}
+
+
+
+
+// Menu Transitions
+#container,
+.pushy,
+.push{
+    transition: transform .5s cubic-bezier(.16, .68, .43, .99);
+}
+
+.pushy-content{
+    transition: visibility .5s cubic-bezier(.16, .68, .43, .99);
+}
+
+
+/* Main Menu main container
+========================================================================== */
+
+.main-menu {
+	background: #111;
+}
+
+
+
+
+
+/* Main Menu Title
+========================================================================== */
+
+.main-menu-title {
+	position: absolute;
+	top: 25px;
+	left: 20px;
+
+	color: #fff;
+	@include inuit-font-size( 16px, $modifier: -1 );
+	font-weight: 100;
+	text-transform: uppercase;
+
+	@include mq( $from: tablet ) {
+		top: 45px;
+	}
+
+}
+
+
+
+
+
+/* Main Menu Close Button
+========================================================================== */
+
+.main-menu-close {
+	position: absolute;
+	top: 18px;
+	right: 15px;
+	width: 20px;
+	height: 20px;
+	padding: 0;
+
+	color: #B8B8B8;
+	@include inuit-font-size( 10px );
+
+	@include mq( $from: tablet ) {
+		top: 38px;
+	}
+
+	// Print X symbol
+	&:after,
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		width: 20px;
+		height: 1px;
+		background: rgb(150,150,150);
+		top: 15px;
+		-webkit-transition: background 0.15s ease;
+		transition: background 0.15s ease;
+	}
+
+	&:before {
+		transform: rotate(45deg);
+	}
+
+	&:after {
+		transform: rotate(-45deg);
+	}
+
+}
+
+
+
+
+
+/* Main Menu List
+========================================================================== */
+
+.main-menu-list {
+	height: calc( 100vh - 160px );
+	// padding: 60px 9% 5%;
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+	padding: {
+ 		right: 10px;
+ 		left: 20px;
+	}
+	margin: {
+ 		top: 60px !important;
+		left: 0;
+	}
+	list-style: none;
+	counter-reset: item;
+	overflow-x: hidden;
+	overflow-y: auto;
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	.menu-item {
+		margin: 0;
+	}
+
+	@include mq( $from: tablet ) {
+		height: calc( 100vh - 190px );
+		// padding: 90px 10% 5%;
+		margin-top: 90px !important;
+	}
+}
+
+
+
+
+
+/* Main Menu Items
+========================================================================== */
+
+.main-menu-item {
+	position: relative;
+	padding-right: 25px;
+
+	a {
+		overflow: hidden;
+		padding: 3px 0;
+
+		color: #B8B8B8;
+		@include inuit-font-size( 13px );
+		text-overflow: ellipsis;
+		text-decoration: none;
+		letter-spacing: 0.1px;
+		white-space: nowrap;
+		// line-height: 1.2rem;16.9px
+
+		transition: color 0.3s ease;
+
+		// &:after {
+		//   // display: inline-block;
+		//   content: " .......................................................";
+		//   color: rgba(255,255,255,0.2);
+		//   margin-left: 5px;
+	  // }
+
+	}
+
+  	a:not( [href] ) {
+    	color: #b8b8b8;
+
+		@include hover-focus-active {
+      		color: #b8b8b8;
+    	}
+
+	}
+
+	// If is current page menu item
+	&.current-menu-item {
+		> a {
+			color: #fff;
+		}
+
+		& > a:after {
+			content: " ";
+			border-bottom: rgba(255,255,255,0.5) 1px solid;
+			width: 100%;
+			height: 1px;
+		}
+
+	}
+
+	// Create lower roman numeric counter
+	&:before {
+		content: counter(item, lower-roman);
+		counter-increment: item;
+
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		color: #B8B8B8;
+
+		padding-left: 5px;
+
+		@include inuit-font-size( 13px );
+		text-align: right;
+		line-height: 31px;
+	}
+
+	&.current-menu-item:before {
+		color: #fff;
+	}
+
+	.sub-menu .menu-item:before {
+	  content: none;
+	}
+
+}

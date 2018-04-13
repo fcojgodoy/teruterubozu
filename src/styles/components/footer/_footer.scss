@@ -1,0 +1,27 @@
+.content-info {
+
+    .single-post & {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
+    }
+}
+
+.copyright {
+  font-family: $font-family-sans-serif;
+  font-size: 10px;
+  color: #bbc7cc;
+
+  a {
+    font-weight: bolder;
+    color: inherit;
+  }
+
+}
+
+.poweredby {
+  @extend .copyright;
+  text-align: right;
+}

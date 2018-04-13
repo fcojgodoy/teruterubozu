@@ -1,0 +1,25 @@
+// ----------------------------------------------------------------------
+
+  // Wp Block Separator
+
+// ----------------------------------------------------------------------
+
+////
+/// @author fcojgodoy
+/// @name Wp Block Separator
+/// @group Gutenberg Blocks
+////
+
+/// Styles for Gutenberg's block separator.
+///
+/// 1. Remove styles from default Gutenberg styles.
+///
+
+.wp-block-separator {
+    border-bottom: 1px solid $color-hr;
+    margin: {
+        top: $inuit-global-spacing-unit;
+        bottom: $inuit-global-spacing-unit;
+    }
+    max-width: 100%; /* [1] */
+}

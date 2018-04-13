@@ -1,0 +1,8 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    @extend .c-btn;
+    @extend .c-btn--primary;
+    @extend .c-btn--small;
+}

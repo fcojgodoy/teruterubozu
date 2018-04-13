@@ -1,0 +1,28 @@
+.alignleft {
+	display: inline;
+	float: left;
+	@extend .u-margin-right;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	@extend .u-margin-left;
+}
+
+.aligncenter {
+	clear: both;
+	@include center-block;
+}
+
+.alignfull {
+	@extend %full-bleed;
+
+	> figcaption {
+		@extend %restore-bleed;
+	}
+}
+
+.alignwide {
+	@extend %extra-wide;
+}

@@ -1,0 +1,19 @@
+// ----------------------------------------------------------------------
+
+  // Wp Block Gallery
+
+// ----------------------------------------------------------------------
+
+////
+/// @author fcojgodoy
+/// @name Wp Block Gallery
+/// @group Gutenberg Blocks
+////
+
+/// Styles for Gutenberg's button gallery.
+///
+/// 1. Remove the element level left margin of lists.
+
+.wp-block-gallery {
+    margin-left: 0; /* [1] */
+}

@@ -1,0 +1,50 @@
+/* ==========================================================================
+   #PAGES
+   ========================================================================== */
+
+/*
+ * 1. Allows absolute position in footer
+ */
+
+.container {
+	position: relative;/* [1] */
+}
+
+
+
+
+
+/*
+ * Create offset spacing for smooth scroll to.
+ */
+
+.content {
+	margin-top: -40px;
+	padding-top: 40px;
+}
+
+
+
+
+
+/*
+ * Custom styles fro o-wrapper object.
+ */
+.o-wrapper {
+    @include mq( $from: tablet, $until: desktop ) {
+        padding-right: $inuit-global-spacing-unit-large;
+        padding-left: $inuit-global-spacing-unit-large;
+    }
+}
+
+
+
+
+
+/*
+ * Page links.
+ */
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}

@@ -1,0 +1,40 @@
+/* ==========================================================================
+   #AVATAR
+   ========================================================================== */
+
+/*
+ * User profile avatar
+ *
+ * PHP example:
+ * <?php echo get_avatar( get_the_author_meta('ID'), 24, null, null, array('class' => 'author-avatar') ); ?>
+ *
+ * @link https://developer.wordpress.org/reference/functions/get_avatar/
+ */
+
+/*
+ * 1. Completely round.
+ */
+
+.author-bio {
+    @include inuit-font-size( 14px );
+}
+
+
+
+
+
+/* Element: author-bio
+========================================================================== */
+.author-bio--lg {
+    color: #50585d;
+    font-family: $font-family-sans-serif;
+    @include inuit-font-size( 16px );
+    font-weight: 200;
+    letter-spacing: 0;
+    line-height: 1.5em;
+
+    @include mq( $from: desktop ) {
+        @include inuit-font-size( 18px );
+    }
+
+}

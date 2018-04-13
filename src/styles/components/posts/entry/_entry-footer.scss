@@ -1,0 +1,179 @@
+/* ==========================================================================
+#ENTRY FOOTER
+========================================================================== */
+
+/**
+* This is the footer for entries.
+*/
+
+
+/* Main block
+   ========================================================================== */
+.entry-footer {
+    padding: {
+        top: 60px;
+        bottom: 30px;
+    }
+    margin: {
+        top: 60px;
+    }
+    border-top: 1px solid #EBF2F6;
+    text-align: center;
+
+    @include mq( $from: tablet ) {
+        text-align: left;
+    }
+
+
+
+
+
+    /* Element: author-avatar
+    ========================================================================== */
+    .avatar {
+        display: block;
+        margin: {
+            top: -90px;
+            right: auto;
+            left: auto;
+        }
+
+    }
+
+
+
+
+
+    /* Element: author-title
+    ========================================================================== */
+    .author-link {
+        @include inuit-font-size( 18px );
+    }
+
+
+
+
+
+    /* Element: author-links
+    ========================================================================== */
+    .author-links {
+        border-bottom: 1px dashed #ebf2f6;
+
+        /* Style for 'author-location' & 'author-url' */
+        .author-location,
+        .author-web {
+            display: block;
+
+            @include mq( $from: desktop ) {
+                display: inline-block;
+            }
+
+        }
+
+    }
+
+
+
+
+
+    /* Element: author-location
+    ========================================================================== */
+    .author-location {
+        color: #9eabb3;
+        @include inuit-font-size( 14px );
+        line-height: 1em;
+        letter-spacing: 0.1px;
+
+        @include mq( $from: desktop ) {
+            margin-right: 20px;
+        }
+
+    }
+
+
+
+
+
+    /* Element: author-web
+    ========================================================================== */
+    .author-web {
+        color: #9eabb3;
+        @include inuit-font-size( 14px );
+    }
+
+
+
+
+
+    /* Element: social-contact
+    ========================================================================== */
+    /* Media query $screen-md-min */
+    @include mq( $until: tablet ) {
+
+        .social-contact-inner {
+            max-width: 150px;
+            margin: {
+                right: auto;
+                left: auto;
+            }
+        }
+
+    }
+
+
+
+
+
+    /* Element: social-contact-title
+    ========================================================================== */
+    .social-contact-title {
+        @include inuit-font-size( 18px );
+    }
+
+
+
+
+
+    /* Element: general social-contact links
+    ========================================================================== */
+    .social-contact a {
+        @include inuit-font-size( 18px );
+    }
+
+
+
+
+
+    /* Element: social-contact buttons
+    ========================================================================== */
+    .icon-facebook {
+        color: #bbc7cc;
+
+        @include hover-focus-active  {
+            color: #3b5998;
+            text-decoration: none;
+        }
+
+    }
+
+    .icon-google-plus {
+        color: #bbc7cc;
+
+        @include hover-focus-active  {
+            color: #dd4b39;
+            text-decoration: none;
+        }
+
+    }
+
+    .icon-twitter {
+        color: #bbc7cc;
+
+        @include hover-focus {
+            color: #55acee;
+            text-decoration: none;
+        }
+
+    }
+
+}

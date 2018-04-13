@@ -1,0 +1,112 @@
+/* ==========================================================================
+   #POSTS NAVIGATION
+   ========================================================================== */
+
+/**
+ * This is the Posted On component.
+ */
+
+/**
+ * 1. Allow us to style box model properties.
+ * 2. Line different sized buttons up a little nicer.
+ * 3. Make buttons inherit font styles (often necessary when styling `input`s as
+ *    buttons).
+ * 4. Reset/normalize some styles.
+ * 5. Force all button-styled elements to appear clickable.
+ */
+ .posts-navigation{
+     height: 100%;
+ }
+
+
+
+
+.nav-post-newer,
+.nav-post-older {
+    height: 100%;
+    background-size: cover;
+    // flex: 1;
+
+  .nav-post-link {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    overflow: auto;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0,0,0,0.7);
+      transition: all 0.5s ease;
+    }
+
+    &:hover:before {
+      background: rgba(0,0,0,0.8);
+    }
+
+    .wrap {
+      position: relative;
+      width: 80%;
+      padding-top: 60px;
+      padding-bottom: 40px;
+      margin: {
+          right: auto;
+          left: auto;
+      }
+      // margin: 0 auto 20px;
+
+      text-align: center;
+
+      @include mq( $from: tablet ){
+          padding-bottom: 60px;
+        // margin-bottom: 40px;
+      }
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+
+
+.nav-post-title {
+  color: #fff;
+  margin-top: 1rem;
+}
+
+
+
+.nav-post-button {
+  color: rgba(255,255,255,0.8);
+
+  width: auto;
+  padding: 4px 10px 5px;
+  border: 1px solid rgba(255,255,255,0.5);
+  // border-color: rgba(255,255,255,0.5);
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @include inuit-font-size( 11px );
+  font-family: $font-family-sans-serif;
+  line-height: 15px;
+  text-transform: uppercase;
+
+  transition: all 0.5s ease;
+
+  a:hover > .wrap > & {
+    color: #222;
+    background-color:#fff;
+
+    transition: all 0.2s ease;
+  }
+}

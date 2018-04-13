@@ -1,0 +1,19 @@
+// ----------------------------------------------------------------------
+
+  // Wp Block Button
+
+// ----------------------------------------------------------------------
+
+////
+/// @author fcojgodoy
+/// @name Wp Block Button
+/// @group Gutenberg Blocks
+////
+
+/// Styles for Gutenberg's button block.
+///
+
+.wp-block-button .wp-block-button__link {
+    @extend .c-btn;
+    @extend .c-btn--primary;
+}

@@ -1,0 +1,42 @@
+/* ==========================================================================
+   #HEADER
+   ========================================================================== */
+
+
+/* Main
+   ========================================================================== */
+.author-header {
+    text-align: center;
+
+    .author-profile {
+        margin-bottom: 0.5rem;
+
+        @include mq( $from: tablet ) {
+            margin-bottom: 2.5rem;
+        }
+
+        @include mq( $from: desktop ) {
+            margin-bottom: 5rem;
+        }
+
+    }
+
+    .author-meta {
+        color: #9eabb3;
+        @include inuit-font-size( 16px );
+
+        @include mq( $from: tablet ) {
+            @include inuit-font-size( 17px );
+        }
+
+        ul > li {
+            margin-right: 5px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+    }
+
+}

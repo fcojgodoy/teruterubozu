@@ -1,0 +1,16 @@
+.comment-awaiting-moderation {
+    display: inline-block;
+    border-bottom: 4px solid #ffc107;
+    @include inuit-font-size( 15px );
+    font-family: $font-family-sans-serif;
+}
+
+.alert {
+    display: inline-block;
+    @include inuit-font-size( 15px );
+    font-family: $font-family-sans-serif;
+
+    &.alert-warning {
+        border-bottom: 4px solid #dc3545;
+    }
+}

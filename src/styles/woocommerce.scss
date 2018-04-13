@@ -1,0 +1,57 @@
+/*
+Theme Name: teruterubozu
+
+WooCommerce styles override
+*/
+
+/**
+ * WooCommerce color variables
+ */
+$woocommerce__color-error: #e2401c;
+$woocommerce__color-success: #0f834d;
+$woocommerce__color-info: #3D9CD2;
+
+/**
+ * Imports
+ */
+ // SETTINGS
+ @import "settings/settings.config";
+ @import "../../node_modules/inuitcss//settings/settings.core";
+ @import "settings/settings.global";
+
+ // TOOLS
+ @import "../../node_modules/inuitcss//tools/tools.font-size";
+ @import "../../node_modules/inuitcss//tools/tools.clearfix";
+ @import "../../node_modules/inuitcss//tools/tools.hidden";
+ @import "../../node_modules/sass-mq/mq";
+ @import "tools/tools.main";
+
+/**
+ * Shop tables
+ */
+@import "components/shop/tables";
+
+/**
+ * Products
+ */
+@import "components/shop/products";
+
+/**
+ * Single product
+ */
+@import "components/shop/single-product";
+
+/**
+ * Checkout
+ */
+@import "components/shop/checkout";
+
+/**
+ * General WooCommerce components
+ */
+@import "components/shop/components";
+
+/**
+ * WooCommerce widgets
+ */
+@import "components/shop/widgets";

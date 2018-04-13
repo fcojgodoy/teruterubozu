@@ -1,0 +1,42 @@
+/* ==========================================================================
+   #PAGE
+   ========================================================================== */
+
+/**
+ * Complement for Inuitcss elements.page styles.
+ *
+ */
+
+
+/* Html styles
+   ========================================================================== */
+
+html {
+	overflow-y: auto;
+
+	@include mq( $from: tablet ) {
+		@include inuit-font-size( 17px );
+	}
+
+	@include mq( $from: desktop ) {
+		@include inuit-font-size( 18px, $modifier: +1 );
+	}
+
+}
+
+
+
+
+
+/* Body styles
+   ========================================================================== */
+
+/**
+ * 1. Fallback for when there is no custom background color defined.
+ * 2. Allow full-bleed blocks whitout horizontal scroll.
+ */
+
+body {
+	background: $color__background-body; /* [1] */
+	overflow-x: hidden; /* [2] */
+}

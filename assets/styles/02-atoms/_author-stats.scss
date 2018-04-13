@@ -1,8 +1,0 @@
-.author-stats {
-  @extend .author-location;
-
-  // Correct icon spacing
-  &:before {
-    margin-right: 4px;
-  }
-}

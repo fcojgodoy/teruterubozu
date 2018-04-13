@@ -1,0 +1,56 @@
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-headers;
+	letter-spacing: -1px;
+}
+
+@include mq( $from: tablet ) {
+	h1 {
+		@include inuit-font-size( $inuit-font-size-h1 + 16 ); //45
+	}
+
+	h2 {
+		@include inuit-font-size( $inuit-font-size-h2 + 11 ); //36
+	}
+
+	h3 {
+		@include inuit-font-size( $inuit-font-size-h3 + 9 ); //31
+	}
+
+	h4 {
+		@include inuit-font-size( $inuit-font-size-h4 + 5 ); //25
+	}
+
+	h5 {
+		@include inuit-font-size( $inuit-font-size-h5 + 4 ); //22
+	}
+
+	h6 {
+		@include inuit-font-size( $inuit-font-size-h6 + 1 ); //18
+	}
+}
+
+@include mq( $from: desktop ) {
+	h1 {
+		@include inuit-font-size( $inuit-font-size-h1 + 19 );
+	}
+
+	h2 {
+		@include inuit-font-size( $inuit-font-size-h2 + 12 );
+	}
+
+	h3 {
+		@include inuit-font-size( $inuit-font-size-h3 + 10 );
+	}
+
+	h4 {
+		@include inuit-font-size( $inuit-font-size-h4 + 6 );
+	}
+
+	h5 {
+		@include inuit-font-size( $inuit-font-size-h5 + 5 );
+	}
+
+	h6 {
+		@include inuit-font-size( $inuit-font-size-h6 + 2 );
+	}
+}

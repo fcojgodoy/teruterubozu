@@ -1,8 +1,1 @@
-(function($) {
-  // Site title
-  wp.customize('blogname', function(value) {
-    value.bind(function(to) {
-      $('.brand').text(to);
-    });
-  });
-})(jQuery);
+!function(t){wp.customize("blogname",function(i){i.bind(function(i){t(".site-title").text(i)})}),wp.customize("blogdescription",function(i){i.bind(function(i){t(".site-description").text(i)})}),wp.customize("header_textcolor",function(i){i.bind(function(i){"blank"===i?t(".site-title, .site-description").css({clip:"rect(1px, 1px, 1px, 1px)",position:"absolute"}):(t(".site-title, .site-description").css({clip:"auto",position:"relative"}),t(".site-title, .site-description").css({color:i}))})})}(jQuery);

@@ -1,0 +1,129 @@
+/* ==========================================================================
+   #ENTRY META
+   ========================================================================== */
+
+/**
+ * This is the Entry Meta component.
+ *
+ */
+
+
+ /* Entry meta main wrapper
+    ========================================================================== */
+
+/**
+ * 1. Reduce font-size.
+ *
+ */
+
+.entry-meta {
+    @include inuit-font-size( 15px ); /* [1] */
+
+
+
+
+
+    /* Entry date
+    ========================================================================== */
+    .entry-date {
+        display: none;
+    }
+
+
+
+
+
+    /*
+    ========================================================================== */
+    @include mq( $from: tablet ) {
+
+        /* Add borderleft separator */
+        .tags {
+          margin-right: 8px;
+        }
+
+        .entry-date {
+            display: inline-block;
+        }
+
+    }
+
+}
+
+
+
+
+
+
+// Tags group
+.tags {
+    display: inline-block;
+    color: #9EABB3;
+
+    font-family: $font-family-sans-serif;
+    @include inuit-font-size( 14px );
+
+    @include mq( $from: tablet ) {
+        @include inuit-font-size( 15px );
+
+        &.right-separator {
+            padding-right: 12px;
+            border-right: 1px solid #d5dbde;
+        }
+
+    }
+
+}
+
+
+
+
+
+
+// Tag link
+a[rel="tag"] {
+    @extend %entry-tag-font;
+}
+
+
+
+
+
+// Tag time
+time {
+    text-transform: uppercase;
+    color: #9EABB3;
+    font-family: $font-family-sans-serif;
+    font-size: 0.8125rem;
+}
+
+// Author link
+.author-link {
+    @extend %entry-tag-font;
+    margin: 0;
+
+    @include hover-focus-active {
+        text-decoration: underline;
+        color: #9EABB3;
+    }
+
+    @include mq( $from: tablet ) {
+        font-size: 1.5rem;
+    }
+}
+
+%entry-tag-font {
+    color: #9EABB3;
+    font-family: $font-family-sans-serif;
+    font-size: 0.8125rem;
+
+    @include hover-focus-active {
+      text-decoration: underline;
+      color: #9EABB3;
+    }
+
+    @include mq( $from: tablet ) {
+      font-size: .9375rem;
+    }
+
+}

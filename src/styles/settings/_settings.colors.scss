@@ -1,0 +1,48 @@
+// Descriptive color variables
+
+$color-cod-gray: #111;
+$color-mine-shaft: #2e2e2e;
+$color-cape-cod: #3a4145;
+$color-oslo-gray: #889093;
+$color-gray-chateau: #98a0a4;
+$color-hit-gray: #9eabb3;
+$color-loblolly: #bfc8cd;
+$color-catskill-white: #ebf2f6;
+$color-pattens-blue: #d6edff;
+$color-champagne: #fbeed5;
+
+
+
+// Functional color variables
+
+$color-main: $color-mine-shaft;
+
+$color__background-body: #fff;
+$color__background-screen: #f1f1f1;
+$color-hr: $color-catskill-white;
+$color-background-ins: $color-champagne;
+
+// Texts
+$color-text: #000;
+$color-text-secondary: $color-cape-cod;
+$color-text-inverse: #fff;
+$color-code-bg: $color-catskill-white;
+$color-selection: $color-pattens-blue;
+$color__text-screen: #21759b;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__link: $color-main;
+$color__link-visited: $color-cod-gray;
+$color__link-hover: $color-cod-gray;
+$color__text-main: #404040;
+
+// Borders
+$color__border-input: #ccc;
+$color__border-abbr: #666;
+
+
+// Buttons
+$color-button: #fff;
+$color-button-bg: $color-hit-gray;
+$color-button-ghost: $color-hit-gray;
+$color-button-ghost-border: $color-loblolly;
