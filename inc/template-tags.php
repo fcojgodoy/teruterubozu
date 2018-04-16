@@ -141,8 +141,6 @@ endif;
 
 if ( ! function_exists( 'teruterubozu_post_thumbnail' ) ) :
 /**
- * OPTIONAL POST THUMBNAIL
- *
  * Displays an optional post thumbnail.
  *
  * Wraps the post thumbnail in an anchor element on index views, or a div
@@ -177,12 +175,23 @@ function teruterubozu_post_thumbnail() {
 endif;
 
 
+if ( ! function_exists( 'teruterubozu_term_cover' ) ) :
+/**
+ * Print tag cover in a img tag.
+ */
+function teruterubozu_term_cover() {
+    $term_cover_image_url = get_term_meta( get_queried_object()->term_id, 'term_cover_image', true);
+    ?>
+        <img class="xxx-img" src="<?php echo esc_url( $term_cover_image_url ) ?>" alt="">
+    <?php
+}
+endif;
+
+
 if ( ! function_exists( 'teruterubozu_post_navigation' ) ) :
 /**
- * Displays an optional post thumbnail.
+ * Displays a custom post navigation.
  *
- * Wraps the post thumbnail in an anchor element on index views, or a div
- * element when on single views.
  */
 function teruterubozu_post_navigation() {
 	the_post_navigation( array(

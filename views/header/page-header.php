@@ -1,6 +1,6 @@
 <?php if ( is_front_page() ) : ?>
 
-    <header class="xxx xmain-header xmain-header_home u-margin-bottom-large u-margin-bottom-huge@tablet">
+    <header class="xxx u-margin-bottom-large u-margin-bottom-huge@tablet">
 
         <?php the_header_image_tag( array('class' => 'xxx-img', ) ) ?>
 
@@ -12,44 +12,28 @@
         </div>
 
 
-<?php elseif ( is_author() ) :
+<?php elseif ( is_author() ) : ?>
 
-    // Get author cover image url
-    $author_cover_image_url = get_the_author_meta( 'author_cover_image' );
-    ?>
+    <header class="xxx u-margin-bottom-large u-margin-bottom-huge@tablet">
 
-    <?php if ($author_cover_image_url) : ?>
+        <img class="xxx-img" src="<?php the_author_meta( 'author_cover_image' ) ?>" alt="">
 
-        <header class="main-header main-header_author u-margin-bottom-large u-margin-bottom-huge@tablet" style="background-image: url(' <?php echo $author_cover_image_url ?> ')">
 
-    <?php else: ?>
-
-        <header class="main-header main-header_author no-cover u-margin-bottom-large u-margin-bottom-huge@tablet">
-
-    <?php endif; ?>
 
 
 <?php elseif ( is_tag() ) :
 
-    // Get term cover image url
-    $term_cover_image_url = get_term_meta( get_queried_object()->term_id, 'term_cover_image', true); ?>
+    ?>
+    <header class="xxx u-margin-bottom-large u-margin-bottom-huge@tablet">
 
-    <?php if ( $term_cover_image_url ) : ?>
+        <?php teruterubozu_term_cover() ?>
 
-        <header class="main-header main-header_tag aligner u-margin-bottom u-margin-bottom-large@tablet" style="background-image: url(' <?php echo $term_cover_image_url ?> ')">
-
-    <?php else: ?>
-
-        <header class="main-header main-header_tag aligner no-cover u-margin-bottom u-margin-bottom-large@tablet">
-
-    <?php endif; ?>
-
-    <div class="vertical">
-      <div class="label-page-hgroup">
-        <h1 class="label-title"> <?php single_tag_title(); ?> </h1>
-        <h2 class="label-description"> <?php echo term_description(); ?> </h2>
-      </div>
-    </div>
+        <div class="xxx-content">
+            <div class="label-page-hgroup">
+                <h1 class="label-title"> <?php single_tag_title(); ?> </h1>
+                <h2 class="label-description"> <?php echo term_description(); ?> </h2>
+            </div>
+        </div>
 
 
 <?php elseif (is_search()) : ?>
