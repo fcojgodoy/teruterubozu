@@ -15,8 +15,7 @@
 <?php elseif (is_author()) :
 
     // Get author cover image url
-    $author = get_user_by( 'slug', get_query_var( 'author_name' ) );
-    $author_cover_image_url = get_user_meta( $author->ID, 'author_cover_image', true );
+    $author_cover_image_url = get_the_author_meta( 'author_cover_image' );
     ?>
 
     <?php if ($author_cover_image_url) : ?>
