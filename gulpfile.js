@@ -19,7 +19,8 @@ const gulp = require ( 'gulp' ),
     postcss = require ( 'gulp-postcss' ),
     sass = require ( 'gulp-sass' ),
     sourcemaps = require ( 'gulp-sourcemaps' ),
-    sassdoc = require( 'sassdoc' );
+    sassdoc = require( 'sassdoc' ),
+    wpPot = require('gulp-wp-pot');
 
 
 /* -------------------------------------------------------------------------------------------------
@@ -27,6 +28,7 @@ Theme and working theme folders names
 -------------------------------------------------------------------------------------------------- */
 const GENERAL = {
     themeName: 'teruterubozu',
+    textDomain: 'teruterubozu',
     proxy: 'teruterubozu.test',
     port: 8080,
     node_dir: './node_modules/'
@@ -63,6 +65,20 @@ const VENDORS = {
     jquery_smooth_scroll: GENERAL.node_dir + 'animated-scroll-to/animated-scroll-to.js',
     pushy: GENERAL.node_dir + '@cmyee/pushy/js/pushy.js'
 };
+
+
+/* -------------------------------------------------------------------------------------------------
+Create .pot file
+-------------------------------------------------------------------------------------------------- */
+gulp.task('pot', function () {
+    return gulp.src( SOURCE.php )
+        .pipe(wpPot( {
+            domain: GENERAL.textDomain,
+            package: GENERAL.themeName
+        } ))
+        .pipe(gulp.dest( './languages/' + GENERAL.themeName + '.pot' ));
+});
+
 
 /* -------------------------------------------------------------------------------------------------
 Clean asset dir
