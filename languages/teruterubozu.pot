@@ -57,15 +57,15 @@ msgstr ""
 msgid "Google +"
 msgstr ""
 
-#: views/header/page-header.php:74
+#: views/header/page-header.php:72
 msgid "Blog"
 msgstr ""
 
-#: views/header/page-header.php:96
+#: views/header/page-header.php:94
 msgid "Menu"
 msgstr ""
 
-#: views/header/page-header.php:103
+#: views/header/page-header.php:101
 msgid "Scroll Down"
 msgstr ""
 
@@ -107,13 +107,17 @@ msgstr ""
 
 #: views/post/comments.php:43
 msgctxt "comments title"
-msgid "%1$s comments"
+msgid "%1$s comment"
 msgid_plural "%1$s comments"
 msgstr[0] ""
 msgstr[1] ""
 
 #: views/post/comments.php:61
 msgid "Comments are closed."
+msgstr ""
+
+#: views/post/content-author.php:16
+msgid "This author has not posts yet."
 msgstr ""
 
 #: views/post/content-none.php:14

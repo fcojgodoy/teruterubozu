@@ -40,7 +40,7 @@
 			} else {
 				printf( // WPCS: XSS OK.
 					/* translators: 1: comment count number */
-					esc_html( _nx( '%1$s comments', '%1$s comments', $comment_count, 'comments title', 'teruterubozu' ) ),
+					esc_html( _nx( '%1$s comment', '%1$s comments', $comment_count, 'comments title', 'teruterubozu' ) ),
 					number_format_i18n( $comment_count )
 				);
 			}
