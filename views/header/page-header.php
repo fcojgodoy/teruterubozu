@@ -52,9 +52,9 @@
 
     <header class="main-header main-header_tag aligner no-cover u-margin-bottom-large u-margin-bottom-huge@tablet">
 
-        <div class="vertical">
+        <div class="xxx-content">
             <div class="site-hgroup">
-                <h1 class="blog-title"><?php _e( 'Blog', 'teruterubozu' ) ?></h1>
+                <h1 class="blog-title"><?php esc_html_e( 'Blog', 'teruterubozu' ) ?></h1>
                 <!-- <h2 class="site-title u-h4"><?php bloginfo('name') ?></h2> -->
             </div>
         </div>
