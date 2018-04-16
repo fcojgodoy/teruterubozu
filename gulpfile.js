@@ -40,7 +40,8 @@ const SOURCE = {
     fonts: './src/fonts/**/*',
     php: [
         './*.php',
-        './views/**/*.php'
+        './views/**/*.php',
+        './inc/**/*.php'
     ]
 };
 
