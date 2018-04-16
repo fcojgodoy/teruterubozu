@@ -18,12 +18,6 @@ function teruterubozu_body_classes( $classes ) {
 		$classes[] = 'is-archive';
 	}
 
-	// Adds classes if sidebar is active or not.
-	if ( is_active_sidebar( 'sidebar-1' ) ) {
-		$classes[] = 'has-sidebar';
-	} else {
-		$classes[] = 'no-sidebar';
-	}
 
 	if ( is_front_page() && ! get_header_image() ) :
 		$classes[] = 'no-cover';
