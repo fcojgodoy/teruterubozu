@@ -14,7 +14,7 @@
  }
 
  .site-title {
-   color: #fff;
+   color: rgba(0, 0, 0, 0.8);
    margin: 10px 0;
 
    font-family: $font-family-sans-serif;
@@ -36,8 +36,8 @@
      animation-delay: 0.2s;
    }
 
-   // Modifier: styles for no-cover in main-header
-   .no-cover & {
-     color: rgba(0, 0, 0, 0.8);
+   // Modifier: styles if main-header has thumbnail.
+   body.has-thumbnail & {
+       color: #fff;
    }
  }

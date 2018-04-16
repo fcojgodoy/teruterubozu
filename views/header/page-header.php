@@ -2,7 +2,7 @@
 
     <header class="xxx u-margin-bottom-large u-margin-bottom-huge@tablet">
 
-        <?php the_header_image_tag( array('class' => 'xxx-img', ) ) ?>
+        <?php the_header_image_tag( array( 'class' => 'xxx-img' ) ) ?>
 
         <div class="xxx-content">
             <div class="site-hgroup">
@@ -12,13 +12,23 @@
         </div>
 
 
-<?php elseif ( is_author() ) : ?>
+<?php elseif ( is_home() && ! is_front_page() ) : ?>
 
     <header class="xxx u-margin-bottom-large u-margin-bottom-huge@tablet">
 
-        <img class="xxx-img" src="<?php the_author_meta( 'author_cover_image' ) ?>" alt="">
+        <div class="xxx-content">
+            <div class="site-hgroup">
+                <h1 class="blog-title"><?php esc_html_e( 'Blog', 'teruterubozu' ) ?></h1>
+                <h2 class="site-title u-h4"><?php bloginfo('name') ?></h2>
+            </div>
+        </div>
 
 
+<?php elseif ( is_singular() && has_post_thumbnail() ) : ?>
+
+    <header class="xxx u-margin-bottom-large u-margin-bottom-huge@tablet">
+
+        <?php the_post_thumbnail('full',  array( 'class' => 'xxx-img' )); ?>
 
 
 <?php elseif ( is_tag() ) :
@@ -36,28 +46,17 @@
         </div>
 
 
+<?php elseif ( is_author() ) : ?>
+
+    <header class="xxx u-margin-bottom-large u-margin-bottom-huge@tablet">
+
+        <img class="xxx-img" src="<?php the_author_meta( 'author_cover_image' ) ?>" alt="">
+
+
 <?php elseif (is_search()) : ?>
 
     <header class="u-margin-bottom-large u-margin-bottom-huge@tablet main-header main-header_search no-cover aligner">
 
-
-
-<?php elseif ( is_singular() && has_post_thumbnail() ) : ?>
-
-    <header class="u-margin-bottom-large u-margin-bottom-huge@tablet main-header main-header_entry" style="background-image: url('<?php if (wp_is_mobile()) {the_post_thumbnail_url('medium');} else {the_post_thumbnail_url('');} ?>')">
-
-
-
-<?php elseif ( is_home() && ! is_front_page() ) : ?>
-
-    <header class="xxx u-margin-bottom-large u-margin-bottom-huge@tablet">
-
-        <div class="xxx-content">
-            <div class="site-hgroup">
-                <h1 class="blog-title"><?php esc_html_e( 'Blog', 'teruterubozu' ) ?></h1>
-                <h2 class="site-title u-h4"><?php bloginfo('name') ?></h2>
-            </div>
-        </div>
 
 <?php else: ?>
 
@@ -81,9 +80,9 @@
 </nav>
 
 
-<?php if ( !is_paged() && get_header_image() ) : ?>
+<?php if ( ! is_paged() && get_header_image() ) : ?>
 
-    <a class="scroll-down-arrow icon-arrow-left radial-gradient" href="#content" onclick="animateScrollTo( document.querySelector( '#content' ) )"><span hidden><?php _e( 'Scroll Down', 'teruterubozu' ) ?></span></a>
+    <a class="scroll-down-arrow icon-arrow-left radial-gradient" href="#content" onclick="animateScrollTo( document.querySelector( '#content' ) )"><span hidden><?php esc_html_e( 'Scroll Down', 'teruterubozu' ) ?></span></a>
 
 <?php endif; ?>
 

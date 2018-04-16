@@ -19,8 +19,8 @@ function teruterubozu_body_classes( $classes ) {
 	}
 
 
-	if ( is_front_page() && ! get_header_image() ) :
-		$classes[] = 'no-cover';
+	if ( is_front_page() && get_header_image() ) :
+		$classes[] = 'has-thumbnail';
 	endif;
 
     if ( is_tag() ) :

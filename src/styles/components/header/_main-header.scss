@@ -24,7 +24,7 @@
 	  height: 40vh;
 	}
 
-	body.home & {
+	body.home.has-thumbnail:not( .paged ) & {
 		height: 40vh;
 
 		@include mq( $from: tablet ) {
