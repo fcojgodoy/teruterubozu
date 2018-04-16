@@ -7,34 +7,44 @@
 * @package teruterubozu
 */
 
-?>
+get_template_part( 'views/header/author', 'header' ); ?>
 
-<?php if ( ! have_posts() ) : ?>
+<?php
+if ( is_paged() ):
 
-	<div class="alert alert-warning u-margin-bottom u-margin-bottom-large@tablet">
+	get_template_part( 'views/navigation/numeric-pagination' );
 
-		<?php esc_html_e('This author has not posts yet.', 'teruterubozu'); ?>
+endif; ?>
 
-	</div>
+<?php
+if ( have_posts() ) :
 
-	<?php get_search_form(); ?>
+    /* Start the Loop */
+    while ( have_posts() ) : the_post();
 
-<?php else : ?>
+        get_template_part('views/post/content', get_post_type() );
 
-    <?php get_template_part( 'views/header/author', 'header' ); ?>
+    endwhile;
 
-    <?php if ( is_paged() ): ?>
+else : ?>
 
-    	<?php get_template_part( 'views/navigation/numeric-pagination' ); ?>
+    <div class="alert alert-warning u-margin-bottom u-margin-bottom-large@tablet">
 
-    <?php endif; ?>
+        <?php
+            $author = get_user_by( 'slug', get_query_var( 'author_name' ) );
+            esc_html_e( 'This author has not posts yet.', 'teruterubozu' );
 
-    <?php while ( have_posts() ) : the_post(); ?>
+        ?>
 
-    	<?php get_template_part('views/post/content', get_post_type() ); ?>
+    </div>
 
-    <?php endwhile; ?>
+    <?php get_search_form();
 
-    <?php get_template_part( 'views/navigation/numeric-pagination' ); ?>
+endif; ?>
 
-<?php endif; ?>
+<?php
+if ( is_paged() ):
+
+	get_template_part( 'views/navigation/numeric-pagination' );
+
+endif; ?>

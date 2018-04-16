@@ -11,6 +11,55 @@
  *
  */
 
+.xxx {
+	position: relative;
+	// overflow: hidden;
+	height: 40vh;
+
+	@include mq( $from: tablet ) {
+	  height: 60vh;
+	}
+
+	@include mq( $from: desktop ) {
+	  height: 100vh;
+	}
+
+	.xxx-img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.xxx-content {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+}
+
+
+
+
+/* Site hgroup
+========================================================================== */
+.site-hgroup {
+	max-width: 710px;
+	text-align: center;
+}
+
+
+
+
+
+
+
 .main-header {
 	position: relative;
 	width: 100%;
@@ -174,41 +223,5 @@
   @include mq( $from: desktop ) {
     height: 40vh;
     padding: 0;
-  }
-}
-
-
-
-
-
-/* Default/mandatory classes
-========================================================================== */
-.site-hgroup {
-  width: 80%;
-  max-width: 710px;
-  margin: 2rem auto;
-
-  text-align: center;
-
-  @include mq( $from: tablet ) {
-    margin: 0 auto;
-  }
-
-  @include mq( $from: desktop ) {
-    width: 100%;
-  }
-}
-
-
-
-
-
-/* Default/mandatory classes
-========================================================================== */
-.aligner {
-  display: table;
-  .vertical {
-    display: table-cell;
-    vertical-align: middle;
   }
 }

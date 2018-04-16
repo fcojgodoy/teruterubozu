@@ -1,8 +1,10 @@
 <?php if ( is_front_page() ) : ?>
 
-    <header class="main-header main-header_home aligner u-margin-bottom-large u-margin-bottom-huge@tablet" style="background-image: url('<?php header_image(); ?>')">
+    <header class="xxx xmain-header xmain-header_home u-margin-bottom-large u-margin-bottom-huge@tablet">
 
-        <div class="vertical">
+        <?php the_header_image_tag( array('class' => 'xxx-img', ) ) ?>
+
+        <div class="xxx-content">
             <div class="site-hgroup">
                 <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
                 <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
@@ -14,7 +16,7 @@
 
     // Get author cover image url
     $author = get_user_by( 'slug', get_query_var( 'author_name' ) );
-    $author_cover_image_url = get_user_meta($author->ID, 'author_cover_image', true);
+    $author_cover_image_url = get_user_meta( $author->ID, 'author_cover_image', true );
     ?>
 
     <?php if ($author_cover_image_url) : ?>
