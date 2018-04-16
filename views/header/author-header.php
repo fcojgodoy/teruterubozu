@@ -14,17 +14,17 @@
 
             <ul class="o-list-inline">
 
-                <?php if (get_the_author_meta( 'location' ) ) : ?>
+                <?php if ( get_the_author_meta( 'location' ) ) : ?>
                     <li class="author-location icon-location o-list-inline__item u-margin-bottom u-margin-bottom-large@tablet"><?php echo esc_html( get_the_author_meta( 'location' ) ) ?></li>
                 <?php endif ; ?>
 
-                <?php if (get_the_author_meta( 'url' )) : ?>
+                <?php if ( get_the_author_meta( 'url' ) ) : ?>
                     <li class="author-web icon-link o-list-inline__item u-margin-bottom u-margin-bottom-large@tablet">
                         <a href="<?php echo esc_url( get_the_author_meta( 'url' ) ) ?>"><?php echo esc_html( get_the_author_meta( 'url' ) ) ?></a>
                     </li>
                 <?php endif; ?>
 
-                <?php if (get_the_author_posts()) : ?>
+                <?php if ( get_the_author_posts() ) : ?>
                     <li class="author-stats icon-stats o-list-inline__item u-margin-bottom u-margin-bottom-large@tablet"><?php echo esc_html( get_the_author_posts() ) . " " . esc_html__( 'posts', 'teruterubozu' ); ?> </li>
                 <?php endif; ?>
 
