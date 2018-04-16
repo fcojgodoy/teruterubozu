@@ -12,7 +12,7 @@
         </div>
 
 
-<?php elseif (is_author()) :
+<?php elseif ( is_author() ) :
 
     // Get author cover image url
     $author_cover_image_url = get_the_author_meta( 'author_cover_image' );
