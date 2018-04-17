@@ -23,10 +23,14 @@ function teruterubozu_body_classes( $classes ) {
 		$classes[] = 'has-thumbnail';
 	endif;
 
-    if ( is_tag() ) :
-        if ( get_term_meta( get_queried_object()->term_id, 'term_cover_image', true) ) :
-            $classes[] = 'has-thumbnail';
-        endif;
+
+    if ( is_tag() && get_term_meta( get_queried_object()->term_id, 'term_cover_image', true) ) :
+        $classes[] = 'has-thumbnail';
+    endif;
+
+
+    if ( is_author() && get_the_author_meta( 'author_cover_image' ) ) :
+        $classes[] = 'has-thumbnail';
     endif;
 
 
