@@ -15,6 +15,7 @@
 	position: relative;
 	// overflow: hidden;
 	height: 20vh;
+	background-color: #f5f8fa;
 
 	@include mq( $from: tablet ) {
 	  height: 30vh;
