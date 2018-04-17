@@ -1,44 +1,20 @@
-.label-page-hgroup {
-  width: 80%;
-  max-width: 710px;
-  margin: 2rem auto;
-
-  text-align: center;
-
-  @include mq( $from: tablet ) {
-    margin: 0 auto;
-  }
-
-  @include mq( $from: desktop ) {
-    width: 100%;
-  }
-}
-
-
-
-
-
 .label-title {
     color: rgba(0, 0, 0, 0.8);
-  margin: 10px 0;
+    margin-bottom: 10px;
 
-  font-family: $font-family-sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: -1px;
+    font-family: $font-family-sans-serif;
+    @include inuit-font-size( 22px );
+    font-weight: 700;
+    letter-spacing: -1px;
 
-  @include mq( $from: tablet ) {
-    font-size: 40px;
-  }
-
-  @include mq( $from: desktop ) {
-    font-size: 50px;
-  }
+    @include mq( $from: tablet ) {
+        @include inuit-font-size( 40px );
+    }
 
   // Modifier: styles for main-header with thumbnail.
-  body.has-thumbnail & {
-      color: #fff;
-  }
+    body.has-thumbnail & {
+        color: #fff;
+    }
 
 }
 
@@ -54,17 +30,14 @@
         margin-bottom: 0;
 
         font-family: $font-family-serif;
-        font-size: 16px;
+        @include inuit-font-size( 13px );
         font-weight: 400;
         line-height: 1.5em;
         letter-spacing: 0.01rem;
 
         @include mq( $from: tablet ) {
-            font-size: 18px;
-        }
-
-        @include mq( $from: desktop ) {
-            font-size: 20px;
+            @include inuit-font-size( 18px );
+            font-size: 17px;
         }
 
         // Modifier: styles for main-header with thumbnail.

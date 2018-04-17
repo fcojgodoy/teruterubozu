@@ -5,7 +5,7 @@
     the_header_image_tag( array( 'class' => 'xxx-img' ) ) ?>
 
     <div class="xxx-content">
-        <div class="site-hgroup">
+        <div class="o-wrapper">
             <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
             <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
         </div>
@@ -15,7 +15,7 @@
 <?php elseif ( is_home() && ! is_front_page() ) : ?>
 
     <div class="xxx-content">
-        <div class="site-hgroup">
+        <div class="o-wrapper">
             <h1 class="blog-title"><?php esc_html_e( 'Blog', 'teruterubozu' ) ?></h1>
             <h2 class="site-title u-h4"><?php bloginfo('name') ?></h2>
         </div>
@@ -32,7 +32,7 @@
     teruterubozu_term_cover() ?>
 
     <div class="xxx-content">
-        <div class="label-page-hgroup">
+        <div class="o-wrapper">
             <h1 class="label-title"> <?php single_tag_title(); ?> </h1>
             <h2 class="label-description"> <?php echo term_description(); ?> </h2>
         </div>

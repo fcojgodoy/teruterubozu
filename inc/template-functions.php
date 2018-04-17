@@ -34,8 +34,8 @@ function teruterubozu_body_classes( $classes ) {
     endif;
 
 
-	if ( ! get_the_post_thumbnail() ) :
-		$classes[] = 'no-post-thumbnail';
+	if ( ( is_single() || is_page() ) && get_the_post_thumbnail() ) :
+		$classes[] = 'has-thumbnail';
 	endif;
 
 	return $classes;

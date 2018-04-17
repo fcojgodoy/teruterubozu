@@ -13,33 +13,48 @@
 
 .xxx {
 	position: relative;
-	// overflow: hidden;
-	height: 20vh;
-	background-color: #f5f8fa;
+	min-height: 100px;
+	overflow: hidden;
 
-	@include mq( $from: tablet ) {
-	  height: 30vh;
+	body.home & {
+		min-height: 320px;
 	}
 
-	@include mq( $from: desktop ) {
-	  height: 40vh;
+	body.tag & {
+		min-height: 220px;
 	}
 
-	body.home.has-thumbnail:not( .paged ) & {
-		height: 40vh;
+	body.home &,
+	body.tag & {
+		background-color: #f5f8fa;
+	}
+
+	body.home &,
+	body.tag &,
+	body.has-thumbnail & {
+		height: 20vh;
 
 		@include mq( $from: tablet ) {
-		  height: 60vh;
+			height: 30vh;
 		}
 
 		@include mq( $from: desktop ) {
-		  height: 100vh;
+			height: 40vh;
 		}
+
 	}
 
-	body.error404 &,
-	body.search & {
-		height: 5vh;
+	body.home:not( .paged ) & {
+		height: 40vh;
+
+		@include mq( $from: tablet ) {
+			height: 60vh;
+		}
+
+		@include mq( $from: desktop ) {
+			height: 100vh;
+		}
+
 	}
 
 }
@@ -64,179 +79,5 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-
-
-/* Site hgroup
-========================================================================== */
-.site-hgroup {
-	max-width: 710px;
 	text-align: center;
-}
-
-
-
-
-
-
-
-// .main-header {
-// 	position: relative;
-// 	width: 100%;
-// 	background: transparent none no-repeat scroll center center / cover;
-// 	overflow: hidden;
-// }
-
-
-
-
-
-/* FOR ATUHOR PAGE
-   ========================================================================== */
-.main-header_author {
-  height: 20vh;
-  min-height: 180px;
-  background-color: #fff;
-  padding: 15% 0;
-
-  @include mq( $from: tablet ) {
-    height: 30vh;
-  }
-
-  @include mq( $from: desktop ) {
-    height: 40vh;
-  }
-
-  // Modifier: no-cover
-  &.no-cover {
-    height: 0;
-    min-height: 140px;
-    padding: 0;
-	margin-bottom: 0 !important;
-  }
-
-}
-
-
-
-
-
-/* Default/mandatory classes
-========================================================================== */
-.main-header_tag {
-  height: 20vh;
-  min-height: 180px;
-  padding: 15% 0;
-
-  @include mq( $from: tablet ) {
-    height: 30vh;
-  }
-
-  @include mq( $from: desktop ) {
-    height: 40vh;
-    padding: 0;
-  }
-}
-
-
-
-
-/* FOR ENTRIES
-========================================================================== */
-.main-header_entry {
-  min-height: 180px;
-  height: 30vh;
-
-  @include mq( $from: tablet ) {
-    height: 45vh;
-  }
-
-  @include mq( $from: desktop ) {
-    height: 65vh;
-  }
-
-  // Modifier: no-cover
-  &.no-cover {
-    height: 70px;
-    min-height: 0;
-
-    @include mq( $from: tablet ) {
-      height: 138px;
-    }
-
-  }
-}
-
-
-
-
-
-/* Default/mandatory classes
-========================================================================== */
-.main-header_home{
-  // @extend .aligner;
-  height: 40vh;
-  min-height: 240px;
-  background-color: #f5f8fa;
-  padding: 15% 0;
-
-  @include mq( $from: tablet ) {
-    height: 60vh;
-  }
-  @include mq( $from: desktop ) {
-    height: 100vh;
-  }
-
-  // Modifier: no-cover
-  .no-cover & {
-    height: 30vh;
-    min-height: 160px;
-
-    @include mq( $from: tablet ) {
-      height: 40vh;
-    }
-
-    @include mq( $from: desktop ) {
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-  }
-
-  // Modifier: home is not in its first page
- .paged & {
-  max-height: 20vh;
-  min-height: 160px;
-  padding: 10% 0;
-
-   @include mq( $from: tablet ) {
-     max-height: 30vh;
-     min-height: 180px;
-   }
-
-   @include mq( $from: desktop ) {
-     padding: 0;
-   }
-  }
-}
-
-
-
-
-
-/* Default/mandatory classes
-========================================================================== */
-.main-header_search {
-  height: 20vh;
-  min-height: 180px;
-  padding: 15% 0;
-
-  @include mq( $from: tablet ) {
-    height: 30vh;
-  }
-
-  @include mq( $from: desktop ) {
-    height: 40vh;
-    padding: 0;
-  }
 }
