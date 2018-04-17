@@ -24,8 +24,8 @@ function teruterubozu_body_classes( $classes ) {
 	endif;
 
     if ( is_tag() ) :
-        if ( ! get_term_meta( get_queried_object()->term_id, 'term_cover_image', true) ) :
-            $classes[] = 'no-cover';
+        if ( get_term_meta( get_queried_object()->term_id, 'term_cover_image', true) ) :
+            $classes[] = 'has-thumbnail';
         endif;
     endif;
 
