@@ -18,28 +18,13 @@ function teruterubozu_body_classes( $classes ) {
 		$classes[] = 'is-archive';
 	}
 
-    // TODO: all 'has-thumbnail' in the same if.
-	if ( is_home() && has_post_thumbnail( get_queried_object_id() ) ) :
-		$classes[] = 'has-thumbnail';
-	endif;
-
-
-	if ( is_front_page() && get_header_image() ) :
-		$classes[] = 'has-thumbnail';
-	endif;
-
-
-    if ( is_tag() && get_term_meta( get_queried_object()->term_id, 'term_cover_image', true) ) :
-        $classes[] = 'has-thumbnail';
-    endif;
-
-
-    if ( is_author() && get_the_author_meta( 'author_cover_image' ) ) :
-        $classes[] = 'has-thumbnail';
-    endif;
-
-
-	if ( ( is_single() || is_page() ) && get_the_post_thumbnail() ) :
+	if ( 
+        is_home() && has_post_thumbnail( get_queried_object_id() ) ||
+        is_front_page() && get_header_image() ||
+        is_tag() && get_term_meta( get_queried_object()->term_id, 'term_cover_image', true) ||
+        is_author() && get_the_author_meta( 'author_cover_image' ) ||
+        ( is_single() || is_page() ) && get_the_post_thumbnail()
+         ) :
 		$classes[] = 'has-thumbnail';
 	endif;
 
