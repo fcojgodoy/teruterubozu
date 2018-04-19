@@ -157,7 +157,7 @@ gulp.task ( 'styles', function () {
 
 
 /* -------------------------------------------------------------------------------------------------
-styles-prod TASK: Sass compressed
+styles-prod TASK: Sass compressed - Autoprefixer
 -------------------------------------------------------------------------------------------------- */
 gulp.task ( 'styles-prod', function () {
     return gulp.src ( SOURCE.styles )
@@ -169,17 +169,6 @@ gulp.task ( 'styles-prod', function () {
     ]))
     .pipe ( gulp.dest ( ASSETS_DIR.styles ) );
 });
-
-
-/* -------------------------------------------------------------------------------------------------
-Image optimization
--------------------------------------------------------------------------------------------------- */
-// gulp.task ( 'images', function () {
-//     return gulp.src ( img + 'RAW/**/*.{jpg, JPG, jpeg, JPEG, png}' )
-//     .pipe ( newer ( img ) )
-//     .pipe ( image () )
-//     .pipe ( gulp.dest ( img ) );
-// });
 
 
 /* -------------------------------------------------------------------------------------------------
