@@ -30,6 +30,9 @@
 
         </div>
 
+        <?php
+        if ( get_the_author_meta( 'twitter' ) || get_the_author_meta( 'facebook' ) || get_the_author_meta( 'googleplus' ) ) : ?>
+
         <div class="social-contact o-layout__item u-1/1 u-1/4@tablet u-margin-bottom">
             <h4 class="social-contact-title">
 
@@ -40,6 +43,8 @@
             <?php get_template_part( 'views/header/author-socialcontact' ) ?>
 
         </div>
+
+        <?php endif; ?>
 
     </div>
 
