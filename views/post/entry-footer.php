@@ -3,7 +3,7 @@
     <div class="o-layout">
 
         <div class="o-layout__item u-1/1">
-            <?php echo get_avatar( get_the_author_meta('ID'), 68, null, null, array ( 'class' => array('author-avatar', 'u-double-border') ) ); ?>
+            <?php echo get_avatar( get_the_author_meta( 'ID' ), 68, null, null, array ( 'class' => array( 'author-avatar', 'u-double-border' ) ) ); ?>
         </div>
 
         <div class="author-wrap o-layout__item u-1/1 u-3/4@tablet u-margin-bottom">
@@ -21,7 +21,7 @@
                     <em class="author-location icon-location u-margin-bottom-small"><?php echo esc_html( get_the_author_meta( 'location' ) ) ?></em>
                 <?php endif ; ?>
 
-                <?php if (get_the_author_meta( 'url' )) : ?>
+                <?php if ( get_the_author_meta( 'url' ) ) : ?>
                     <em class="author-web icon-link u-margin-bottom-small">
                         <a href="<?php echo esc_url( get_the_author_meta( 'url' ) ) ?>"><?php echo esc_html( get_the_author_meta( 'url' ) ) ?></a>
                     </em>
