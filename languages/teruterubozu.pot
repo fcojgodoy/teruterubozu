@@ -21,11 +21,11 @@ msgstr ""
 msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
 msgstr ""
 
-#: 404.php:34
+#: 404.php:36
 msgid "Most Used Categories"
 msgstr ""
 
-#: 404.php:51
+#: 404.php:53
 msgid "Try looking in the monthly archives. %1$s"
 msgstr ""
 
@@ -87,39 +87,39 @@ msgstr ""
 msgid "Posted in %1$s"
 msgstr ""
 
-#: inc/template-tags.php:190
+#: inc/template-tags.php:199
 msgid "Previous: "
 msgstr ""
 
-#: inc/template-tags.php:191
+#: inc/template-tags.php:200
 msgid "Previous post"
 msgstr ""
 
-#: inc/template-tags.php:194
+#: inc/template-tags.php:203
 msgid "Next: "
 msgstr ""
 
-#: inc/template-tags.php:195
+#: inc/template-tags.php:204
 msgid "Next post"
 msgstr ""
 
-#: inc/template-tags.php:227
+#: inc/template-tags.php:236
 msgid "Page"
 msgstr ""
 
-#: inc/template-tags.php:227
+#: inc/template-tags.php:236
 msgid "of"
 msgstr ""
 
-#: inc/template-tags.php:253
+#: inc/template-tags.php:262
 msgid "More pages: "
 msgstr ""
 
-#: inc/template-tags.php:259
+#: inc/template-tags.php:268
 msgid "Next &raquo"
 msgstr ""
 
-#: inc/template-tags.php:260
+#: inc/template-tags.php:269
 msgid "&laquo Previous"
 msgstr ""
 
@@ -541,15 +541,15 @@ msgstr ""
 msgid "Google +"
 msgstr ""
 
-#: views/header/page-header.php:72
+#: views/header/page-header.php:27
 msgid "Blog"
 msgstr ""
 
-#: views/header/page-header.php:94
+#: views/header/page-header.php:61
 msgid "Menu"
 msgstr ""
 
-#: views/header/page-header.php:101
+#: views/header/page-header.php:67
 msgid "Scroll Down"
 msgstr ""
 
@@ -596,7 +596,7 @@ msgstr[1] ""
 msgid "Comments are closed."
 msgstr ""
 
-#: views/post/content-author.php:16
+#: views/post/content-author.php:39
 msgid "This author has not posts yet."
 msgstr ""
 
@@ -621,7 +621,7 @@ msgstr ""
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
-#: views/post/entry-footer.php:36
+#: views/post/entry-footer.php:39
 msgid "Contact"
 msgstr ""
 
