@@ -20,17 +20,20 @@
 		min-height: 320px;
 	}
 
-	body.tag & {
+	body.tag &,
+	body.blog & {
 		min-height: 220px;
 	}
 
 	body.home &,
-	body.tag & {
+	body.tag &,
+	body.blog & {
 		background-color: #f5f8fa;
 	}
 
 	body.home &,
 	body.tag &,
+	body.blog &,
 	body.has-thumbnail & {
 		height: 20vh;
 

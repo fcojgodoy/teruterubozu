@@ -18,6 +18,11 @@ function teruterubozu_body_classes( $classes ) {
 		$classes[] = 'is-archive';
 	}
 
+    // TODO: all 'has-thumbnail' in the same if.
+	if ( is_home() && has_post_thumbnail( get_queried_object_id() ) ) :
+		$classes[] = 'has-thumbnail';
+	endif;
+
 
 	if ( is_front_page() && get_header_image() ) :
 		$classes[] = 'has-thumbnail';

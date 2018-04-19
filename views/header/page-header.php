@@ -14,17 +14,25 @@
 
 <?php elseif ( is_home() && ! is_front_page() ) : ?>
 
+    <?php
+    // $page_object = get_queried_object();
+    // $page_id     = get_queried_object_id();
+    // // echo $page_object;
+    // echo $page_id;
+    echo get_the_post_thumbnail( get_queried_object_id(), 'full', array( 'class' => 'xxx-img' ) );
+    ?>
+
     <div class="xxx-content">
         <div class="o-wrapper">
-            <h1 class="blog-title"><?php esc_html_e( 'Blog', 'teruterubozu' ) ?></h1>
-            <h2 class="site-title u-h4"><?php bloginfo('name') ?></h2>
+            <h1 class="site-title"><?php esc_html_e( 'Blog', 'teruterubozu' ) ?></h1>
+            <h2 class="site-title u-h4"><?php bloginfo( 'name' ) ?></h2>
         </div>
     </div>
 
 
 <?php elseif ( is_singular() && has_post_thumbnail() ) : ?>
 
-    <?php the_post_thumbnail('full',  array( 'class' => 'xxx-img' )); ?>
+    <?php the_post_thumbnail( 'full',  array( 'class' => 'xxx-img' ) ); ?>
 
 
 <?php elseif ( is_tag() ) :
