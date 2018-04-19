@@ -54,6 +54,10 @@
 			height: 60vh;
 		}
 
+	}
+
+	body.home.has-thumbnail:not( .paged ) & {
+
 		@include mq( $from: desktop ) {
 			height: 100vh;
 		}
