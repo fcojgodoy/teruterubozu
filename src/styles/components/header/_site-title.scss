@@ -39,5 +39,6 @@
    // Modifier: styles if main-header has thumbnail.
    body.has-thumbnail & {
        color: #fff;
+       text-shadow: 0px 0px 5px rgba(137, 137, 137, 1);
    }
  }

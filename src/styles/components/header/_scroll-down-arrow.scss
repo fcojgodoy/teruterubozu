@@ -6,19 +6,19 @@
   bottom: 45px;
   right: 0;
   left: 0;
+  width: 34px;
+  height: 34px;
   margin: {
     right: auto;
     left: auto;
   }
 
-  width: 34px;
-  height: 34px;
 
   font-size: 34px;
   text-align: center;
   text-decoration: none;
   color: rgba(255,255,255,0.7);
-
+  text-shadow: 0px 0px 5px rgba(137, 137, 137, 1);
   transform: rotate(-90deg);
   animation: bounce 4s 2s infinite;
 
