@@ -11,11 +11,11 @@ get_header(); ?>
 
 <div id="container" class="site-content o-wrapper u-margin-bottom-large u-margin-bottom-huge@tablet">
 
-	<div class="content-area">
+    <div class="o-layout">
 
 		<main id="primary" class="site-main">
 
-			<section class="error-404 not-found">
+            <main id="primary" class="site-main error-404 not-found o-layout__item u-1/1">
 
 				<header class="page-header">
 					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'teruterubozu' ); ?></h1>
@@ -24,9 +24,11 @@ get_header(); ?>
 				<div class="page-content">
 					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'teruterubozu' ); ?></p>
 
-					<?php
-						get_search_form();
+                    <div class="u-margin-bottom-large">
+                        <?php get_search_form() ?>
+                    </div>
 
+					<?php
 						the_widget( 'WP_Widget_Recent_Posts', array(), 'before_title=<h3 class="widget-title">' );
 					?>
 
@@ -58,10 +60,10 @@ get_header(); ?>
 
 			</section><!-- .error-404 -->
 
-		</main><!-- #primary -->
+        </main><!-- #primary -->
 
 	</div><!-- .content-area -->
 
-<?php
+</div><!-- #content -->
 
-get_footer();
+<?php get_footer();

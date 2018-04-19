@@ -19,13 +19,14 @@ get_header(); ?>
 			if ( have_posts() ) : ?>
 
 				<header class="page-header">
-					<h1 class="page-title"><?php
+					<h1 class="page-title u-margin-bottom-large u-margin-bottom-huge@tablet"><?php
 						/* translators: %s: search query. */
 						printf( esc_html__( 'Search Results for: %s', 'teruterubozu' ), '<span>' . get_search_query() . '</span>' );
 					?></h1>
 				</header><!-- .page-header -->
 
-				<?php
+                <?php get_template_part( 'views/navigation/numeric-pagination' );
+
 				/* Start the Loop */
 				while ( have_posts() ) : the_post();
 
@@ -34,11 +35,11 @@ get_header(); ?>
 					 * If you want to overload this in a child theme then include a file
 					 * called content-search.php and that will be used instead.
 					 */
-					get_template_part( 'views/post/content', 'search' );
+					get_template_part( 'views/post/content', get_post_type() );
 
 				endwhile;
 
-				the_posts_navigation();
+				get_template_part( 'views/navigation/numeric-pagination' );
 
 			else :
 
@@ -46,10 +47,10 @@ get_header(); ?>
 
 			endif; ?>
 
-		</main><!-- #primary -->
+        </main><!-- #primary -->
 
-	</section><!-- .content-area -->
+	</div><!-- .content-area -->
 
-<?php
+</div><!-- #content -->
 
-get_footer();
+<?php get_footer();
