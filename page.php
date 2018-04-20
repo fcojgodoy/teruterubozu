@@ -25,8 +25,6 @@ get_header(); ?>
 
 				get_template_part( 'views/page/content', 'page' );
 
-                comments_template( '/views/post/comments.php' );
-
 			endwhile; // End of the loop.
 			?>
 
