@@ -41,7 +41,13 @@
         <time class="entry-date" datetime="<?php the_time( 'c' ) ?>"><?php the_time( get_option( 'date_format' ) ) ?> </time>
 
         <!-- Entry Tags -->
-        <div class="tags"><?php the_tags( esc_html_e( 'on ', 'teruterubozu' ) ) ?></div>
+        <?php if ( has_tag() ) : ?>
+
+        <div class="tags">
+            <?php the_tags( '<span class="tags-on">' . esc_html_e( 'on ', 'teruterubozu' ) . '</span>' ) ?>
+        </div>
+
+        <?php endif; ?>
 
     </div>
 
