@@ -29,10 +29,10 @@ $wrapper-lateral-padding: $inuit-global-spacing-unit; /* [2] */
 	margin-right: -50vw;
 	text-align: center; /* [2] */
 
-	> .jetpack-video-wrapper iframe {
-		margin-right: auto !important; /* [2] */
-		margin-left: auto !important; /* [2] */
-	}
+	// > .jetpack-video-wrapper iframe {
+	// 	margin-right: auto !important; /* [2] */
+	// 	margin-left: auto !important; /* [2] */
+	// }
 
 }
 
@@ -85,10 +85,10 @@ $wrapper-lateral-padding: $inuit-global-spacing-unit; /* [2] */
 		margin-left: - $wrapper-lateral-padding !important;
 	}
 
-	> .jetpack-video-wrapper iframe {
-		margin-right: auto !important; /* [2] */
-		margin-left: auto !important; /* [2] */
-	}
+	// > .jetpack-video-wrapper iframe {
+	// 	margin-right: auto !important; /* [2] */
+	// 	margin-left: auto !important; /* [2] */
+	// }
 
 }
 
