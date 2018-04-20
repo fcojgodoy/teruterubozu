@@ -24,8 +24,8 @@ For more information about Teruterubozu please go to https://github.com/fcojgodo
 
 == Features ==
 
-1. Ready for multi-author blog: author page custom design; thumbnail, avatar, biography, city and posts quantity print in front-end. Edit author to set those options.
-2. Custom tag pages: set and print a thumbnail image for tag pages. Edit tag to select custom tag thumbnail.
+1. Ready for multi-author blog: author page custom design; header image, avatar, biography, city and posts quantity print in front-end. Edit author in WordPress dashboard to set those options.
+2. Custom tag pages: set and print a header image for tag pages. Edit tag to select custom tag header image.
 
 == Limitations ==
 
