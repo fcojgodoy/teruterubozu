@@ -27,12 +27,14 @@
 
 	body.home &,
 	body.tag &,
+	body.category &,
 	body.blog & {
 		background-color: #f5f8fa;
 	}
 
 	body.home &,
 	body.tag &,
+	body.category &,
 	body.blog &,
 	body.has-thumbnail & {
 		height: 20vh;

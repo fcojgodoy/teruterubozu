@@ -30,8 +30,8 @@ function teruterubozu_jetpack_setup() {
 		'post-details'    => array(
 			'stylesheet' => 'teruterubozu-style',
 			'date'       => '.posted-on',
-			'categories' => '.cat-links',
-			'tags'       => '.tags-links',
+			'categories' => '.categories',
+			'tags'       => '.tags',
 			'author'     => '.byline',
 			'comment'    => '.comments-link',
 		),

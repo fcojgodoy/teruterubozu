@@ -47,6 +47,15 @@
     </div>
 
 
+<?php elseif ( is_category() ) : ?>
+
+    <div class="xxx-content">
+        <div class="o-wrapper">
+            <h1 class="label-title"> <?php single_cat_title(); ?> </h1>
+        </div>
+    </div>
+
+
 <?php elseif ( is_author() ) : ?>
 
     <img class="xxx-img" src="<?php the_author_meta( 'author_cover_image' ) ?>" alt="">

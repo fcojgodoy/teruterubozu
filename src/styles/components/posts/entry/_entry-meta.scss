@@ -50,8 +50,9 @@
 
 
 
-// Tags group
-.tags {
+// Tags and categories groups
+.tags,
+.categories {
     display: inline-block;
     color: #9EABB3;
 
@@ -70,8 +71,9 @@
 
 
 
-// Tag link
-a[rel="tag"] {
+// Tag and category link
+a[ rel="tag" ],
+a[ rel="category tag" ] {
     @extend %entry-tag-font;
 }
 

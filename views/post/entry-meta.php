@@ -24,6 +24,15 @@
 
             <?php endif; ?>
 
+            <!-- Entry Categories -->
+            <?php if ( has_category() ) : ?>
+
+            <div class="categories">
+                <?php the_category( '<span class="category">' . esc_html_e( 'on ', 'teruterubozu' ) . '</span>' ) ?>
+            </div>
+
+            <?php endif; ?>
+
             <span class="vertical-separator"></span>
 
             <!-- Entry Date -->
