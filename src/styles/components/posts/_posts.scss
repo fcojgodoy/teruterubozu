@@ -3,17 +3,6 @@
     @include inuit-clearfix();
 }
 
-.sticky {
-	display: block;
-}
-
-// Comment by post author
-.bypostauthor {
-  border-left: 4px solid #4a4a4a;
-  padding-left: 20px;
-}
-
-
 .updated:not( .published ) {
 	display: none;
 }

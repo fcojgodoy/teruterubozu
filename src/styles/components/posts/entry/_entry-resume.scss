@@ -19,8 +19,8 @@
 
     // If is sticky
     &.sticky {
+        padding-left: $inuit-global-spacing-unit;
         border-left: 4px solid #4a4a4a;
-        padding-left: 20px;
     }
 
 }
