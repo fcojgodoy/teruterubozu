@@ -11,7 +11,7 @@
  *
  */
 
-.xxx {
+.site-header {
 	position: relative;
 	min-height: 100px;
 	overflow: hidden;
@@ -70,13 +70,13 @@
 
 
 
-.xxx-img {
+.site-header-img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
 
-.xxx-content {
+.site-header-content {
 	position: absolute;
 	top: 0;
 	bottom: 0;
