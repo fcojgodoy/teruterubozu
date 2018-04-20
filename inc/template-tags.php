@@ -7,6 +7,11 @@
  * @package teruterubozu
  */
 
+
+
+
+
+// TODO:
 if ( ! function_exists( 'teruterubozu_posted_on' ) ) :
 	/**
 	 * Prints HTML with meta information for the current post-date/time.
@@ -35,6 +40,11 @@ if ( ! function_exists( 'teruterubozu_posted_on' ) ) :
 	}
 endif;
 
+
+
+
+
+// TODO:
 if ( ! function_exists( 'teruterubozu_posted_by' ) ) :
 	/**
 	 * Prints HTML with meta information for the current author.
@@ -51,6 +61,11 @@ if ( ! function_exists( 'teruterubozu_posted_by' ) ) :
 	}
 endif;
 
+
+
+
+
+// TODO:
 if ( ! function_exists( 'teruterubozu_entry_comment_info' ) ) :
 	/**
 	 * Prints HTML with comments information for the current entry.
@@ -62,7 +77,7 @@ if ( ! function_exists( 'teruterubozu_entry_comment_info' ) ) :
 				 sprintf(
 					 wp_kses(
 						 /* translators: %s: post title */
-						 __( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'teruterubozu' ),
+						 __( 'Leave a comment<span class="screen-reader-text"> on %s</span>', 'teruterubozu' ),
 						 array(
 							 'span' => array(
 								 'class' => array(),
@@ -77,6 +92,11 @@ if ( ! function_exists( 'teruterubozu_entry_comment_info' ) ) :
 	 }
 endif;
 
+
+
+
+
+// TODO:
 if ( ! function_exists( 'teruterubozu_entry_tags' ) ) :
 	/**
 	 * Prints HTML with tags list for comments.
@@ -94,6 +114,11 @@ if ( ! function_exists( 'teruterubozu_entry_tags' ) ) :
 	}
 endif;
 
+
+
+
+
+// TODO:
 if ( ! function_exists( 'teruterubozu_entry_edit_post_link' ) ) :
 	/**
 	 * Prints HTML with link for edit comments.
@@ -121,6 +146,10 @@ if ( ! function_exists( 'teruterubozu_entry_edit_post_link' ) ) :
 endif;
 
 
+
+
+
+// TODO:
 if ( ! function_exists( 'teruterubozu_entry_categories' ) ) :
 	/**
 	* Prints HTML with meta information for the categories.
@@ -139,6 +168,10 @@ if ( ! function_exists( 'teruterubozu_entry_categories' ) ) :
 endif;
 
 
+
+
+
+// TODO:
 if ( ! function_exists( 'teruterubozu_post_thumbnail' ) ) :
 /**
  * Displays an optional post thumbnail.
@@ -175,6 +208,9 @@ function teruterubozu_post_thumbnail() {
 endif;
 
 
+
+
+
 if ( ! function_exists( 'teruterubozu_term_cover' ) ) :
 /**
  * Print tag cover in a img tag.
@@ -188,6 +224,10 @@ function teruterubozu_term_cover() {
 endif;
 
 
+
+
+
+// TODO:
 if ( ! function_exists( 'teruterubozu_post_navigation' ) ) :
 /**
  * Displays a custom post navigation.
@@ -206,6 +246,9 @@ function teruterubozu_post_navigation() {
 	) );
 }
 endif;
+
+
+
 
 
 if ( ! function_exists( 'teruterubozu_numeric_posts_pagination' ) ) :
@@ -230,10 +273,10 @@ function teruterubozu_numeric_posts_pagination() {
 		'prev_next' => false
 	) );
 
-	if (is_array( $page_format ) ) {
+	if ( is_array( $page_format ) ) {
 		$paged = ( get_query_var( 'paged' ) == 0 ) ? 1 : get_query_var( 'paged' );
 		// echo '<div><ul>';
-		echo '<span>' . __( 'Page', 'teruterubozu' ) . ' ' . $paged . ' ' . __( 'of', 'teruterubozu' ) . ' ' . $wp_query->max_num_pages .'</span>';
+		echo '<span>' . esc_html( __( 'Page', 'teruterubozu' ) ) . ' ' . esc_html( $paged ) . ' ' . esc_html( __( 'of ', 'teruterubozu' ) ) . esc_html( $wp_query->max_num_pages ) .'</span>';
 		// foreach ( $page_format as $page ) {
 		//         echo "<li>$page</li>";
 		// }
@@ -241,6 +284,9 @@ function teruterubozu_numeric_posts_pagination() {
 	}
 }
 endif;
+
+
+
 
 
 /**

@@ -15,7 +15,7 @@
 	</div>
 	<div class="navigation-pages o-layout__item u-1/1 u-1/3@tablet u-margin-bottom-small u-margin-bottom-none@tablet">
 
-		<?php teruterubozu_numeric_posts_pagination(); ?>
+		<?php teruterubozu_numeric_posts_pagination() ?>
 
 	</div>
 	<div class="nav-page-link nav-next  o-layout__item u-1/1 u-1/3@tablet u-margin-bottom-small u-margin-bottom-none@tablet">

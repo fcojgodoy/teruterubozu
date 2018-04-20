@@ -37,11 +37,6 @@
     ========================================================================== */
     @include mq( $from: tablet ) {
 
-        /* Add borderleft separator */
-        .tags {
-          margin-right: 8px;
-        }
-
         .entry-date {
             display: inline-block;
         }
@@ -66,15 +61,10 @@
     @include mq( $from: tablet ) {
         @include inuit-font-size( 15px );
 
-        &.right-separator {
-            padding-right: 12px;
-            border-right: 1px solid #d5dbde;
-        }
 
     }
 
 }
-
 
 
 

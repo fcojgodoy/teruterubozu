@@ -13,12 +13,18 @@
         <div class="o-media__body">
 
             <!-- Author Link -->
-            <a class="author-link" rel="author" href="<?php esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) ?>"><?php echo get_the_author() ?></a>
+            <a class="author-link" rel="author" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) ?>"><?php echo get_the_author() ?></a>
 
             <!-- Entry Tags -->
-            <div class="tags right-separator">
+            <?php if ( has_tag() ) : ?>
+
+            <div class="tags">
                 <?php the_tags( '<span class="tags-on">' . esc_html_e( 'on ', 'teruterubozu' ) . '</span>' ) ?>
             </div>
+
+            <?php endif; ?>
+
+            <span class="vertical-separator"></span>
 
             <!-- Entry Date -->
             <time class="entry-date" datetime="<?php the_time( 'c' ) ?>"><?php the_time( get_option( 'date_format' ) ) ?> </time>

@@ -15,12 +15,6 @@ require get_template_directory() . '/inc/setup.php';
 
 
 /**
- * Register widget area.
- */
-// require get_template_directory() . '/inc/widgets.php';
-
-
-/**
  * Set content width.
  */
 require get_template_directory() . '/inc/content-width.php';
@@ -65,13 +59,13 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 
 /**
- * Customizer additions.
+ * Google Fonts.
  */
 require get_template_directory() . '/inc/googlefonts.php';
 
 
 /**
- * Custom the excerpt.
+ * Custom `the excerpt`.
  */
 require get_template_directory() . '/inc/the-excerpt.php';
 
@@ -83,7 +77,7 @@ require get_template_directory() . '/inc/editor.php';
 
 
 /**
- * Add classes to `li` elements in navigations.
+ * Add classes to `li` elements in menu.
  */
 require get_template_directory() . '/inc/add-classes-menu-items.php';
 

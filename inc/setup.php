@@ -74,7 +74,8 @@ if ( ! function_exists( 'teruterubozu_setup' ) ) :
 			'primary_navigation' => esc_html__( 'Primary', 'teruterubozu' ),
 		) );
 
-		/*
+
+        /*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
 		 */
@@ -86,18 +87,6 @@ if ( ! function_exists( 'teruterubozu_setup' ) ) :
 			'caption',
 		) );
 
-		/**
-		* Set up the WordPress core custom background feature.
-		*
-		* @link https://codex.wordpress.org/Custom_Backgrounds
-		*/
-		// add_theme_support( 'custom-background', apply_filters( 'teruterubozu_custom_background_args', array(
-		// 	'default-color' => 'ffffff',
-		// 	'default-image' => '',
-		// ) ) );
-
-		// Add theme support for selective refresh for widgets.
-		// add_theme_support( 'customize-selective-refresh-widgets' );
 
 		/**
 		 * Add support for core custom logo.
@@ -110,6 +99,18 @@ if ( ! function_exists( 'teruterubozu_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
-	}
+
+        // TODO: wtf
+        // add_theme_support( 'gutenberg', array(
+    	// 	'wide-images' => true,
+       	// 	'colors' => array(
+    	// 			'#0073aa',
+    	// 			'#229fd8',
+    	// 			'#eee',
+    	// 			'#444',
+    	// 	),
+    	// ) );
+
+    }
 endif;
 add_action( 'after_setup_theme', 'teruterubozu_setup' );

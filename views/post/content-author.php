@@ -24,11 +24,7 @@ if ( have_posts() ) :
 
     endwhile;
 
-    if ( is_paged() ):
-
     	get_template_part( 'views/navigation/numeric-pagination' );
-
-    endif;
 
 else : ?>
 
