@@ -195,6 +195,12 @@ gulp.task ( 'watch', function () {
 
 
 /* -------------------------------------------------------------------------------------------------
+Production task
+-------------------------------------------------------------------------------------------------- */
+gulp.task ( 'production', gulp.series( 'clean-assets', 'vendors', 'styles-prod', 'scripts', 'scripts-copy', 'fonts' ) );
+
+
+/* -------------------------------------------------------------------------------------------------
 Default task
 -------------------------------------------------------------------------------------------------- */
-gulp.task ( 'default', gulp.series( [ 'clean-assets', 'vendors', 'styles', 'scripts-copy', 'scripts', 'fonts' ], 'watch' ) );
+gulp.task ( 'default', gulp.series( [ 'clean-assets', 'vendors', 'styles', 'scripts', 'scripts-copy', 'fonts' ], 'watch' ) );
