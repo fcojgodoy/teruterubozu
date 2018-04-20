@@ -27,8 +27,9 @@ if ( ! function_exists( 'teruterubozu_fonts_url' ) ) :
 		$subsets   = 'latin,latin-ext';
 
 		/* translators: If there are characters in your language that are not supported by this font family, translate this to 'off'. Do not translate into your own language. */
-		if ( 'off' !== _x( 'on', 'Merriweather font: on or off', 'teruterubozu' ) ) {
+		if ( 'off' !== esc_html_x( 'on', 'Merriweather font: on or off', 'teruterubozu' ) ) {
 			$fonts[] = 'Merriweather:300,300i,700,700i';
+			$fonts[] = 'Open+Sans:300,300i,700,700i';
 		}
 
 		if ( $fonts ) {

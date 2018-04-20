@@ -1,9 +1,10 @@
-$font__libre-baskerville: "Libre Baskerville", Georgia, Cambria, "Times New Roman", serif;
-$font__merriweather: "Merriweather", Georgia, Cambria, "Times New Roman", serif;
-$font__montserrat: "Montserrat", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+$font__libre-baskerville: "Libre Baskerville";
+$font__merriweather: "Merriweather";
 
-$font-family-sans-serif: -apple-system, "Open Sans", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-$font-family-serif: $font__merriweather;
+
+$font-family-sans-serif: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-serif: $font__merriweather, Georgia, Cambria, "Times New Roman", serif;
+
 
 $font-headers: $font-family-sans-serif;
 $font-main: $font-family-serif;
