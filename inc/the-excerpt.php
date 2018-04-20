@@ -4,10 +4,10 @@
  *
  */
 function teruterubozu_excerpt_more() {
-  return ' <a class="excerpt-more" href="' . get_permalink() . '" title="' . __( 'Continue reading', 'teruterubozu' ) . '" rel="bookmark"><span class="screen-reader-text">' . __( 'Continue reading ', 'teruterubozu' ) . '</span>&raquo;</a>';
+    return ' <a class="excerpt-more" href="' . get_permalink() . '" title="' . esc_html__( 'Continue reading', 'teruterubozu' ) . '" rel="bookmark"><span class="screen-reader-text">' . esc_html__( 'Continue reading ', 'teruterubozu' ) . '</span>»</a>';
 }
 
-add_filter('excerpt_more', 'teruterubozu_excerpt_more');
+add_filter( 'excerpt_more', 'teruterubozu_excerpt_more' );
 
 
 /**
@@ -17,7 +17,7 @@ add_filter('excerpt_more', 'teruterubozu_excerpt_more');
  *
  */
 function teruterubozu_custom_excerpt_length( $length ) {
-  return 26;
+    return 26;
 }
 
 add_filter( 'excerpt_length',  'teruterubozu_custom_excerpt_length', 999 );

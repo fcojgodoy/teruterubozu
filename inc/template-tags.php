@@ -52,7 +52,7 @@ function teruterubozu_numeric_posts_pagination() {
 	if ( is_array( $page_format ) ) {
 		$paged = ( get_query_var( 'paged' ) == 0 ) ? 1 : get_query_var( 'paged' );
 		// echo '<div><ul>';
-		echo '<span>' . esc_html( __( 'Page', 'teruterubozu' ) ) . ' ' . esc_html( $paged ) . ' ' . esc_html( __( 'of ', 'teruterubozu' ) ) . esc_html( $wp_query->max_num_pages ) .'</span>';
+		echo '<span>' . esc_html__( 'Page', 'teruterubozu' ) . ' ' . esc_html( $paged ) . ' ' . esc_html__( 'of ', 'teruterubozu' ) . esc_html( $wp_query->max_num_pages ) .'</span>';
 		// foreach ( $page_format as $page ) {
 		//         echo "<li>$page</li>";
 		// }
@@ -81,14 +81,14 @@ endif;
 function teruterubozu_link_pages() {
 
     $args = array (
-        'before'            => '<div class="page-links"><p class="page-links-text">' . __( 'More pages: ', 'teruterubozu' ) . '</p>',
+        'before'            => '<div class="page-links"><p class="page-links-text">' . esc_html__( 'More pages: ', 'teruterubozu' ) . '</p>',
         'after'             => '</div>',
         'link_before'       => '<span class="page-links-links">',
         'link_after'        => '</span>',
         'next_or_number'    => 'next',
         'separator'         => ' | ',
-        'nextpagelink'      => __( 'Next &raquo', 'teruterubozu' ),
-        'previouspagelink'  => __( '&laquo Previous', 'teruterubozu' ),
+        'nextpagelink'      => esc_html__( 'Next »', 'teruterubozu' ),
+        'previouspagelink'  => esc_html__( '« Previous', 'teruterubozu' ),
     );
 
     wp_link_pages( $args );
