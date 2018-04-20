@@ -27,37 +27,3 @@
     }
 
 }
-
-
-
-
-
-// TODO: automattic styling with core css?
-.c-btn--core {
-    min-width: 80px;
-    background-color: #0085ba;
-    color: #fff;
-    padding: 0 10px 1px;
-    border-color: #0073aa #006799 #006799;
-    border-style: solid;
-    border-width: 1px;
-    box-shadow: 0 1px 0 #006799;
-    text-shadow: 0 -1px 1px #006799,1px 0 1px #006799,0 1px 1px #006799,-1px 0 1px #006799;
-    @include inuit-font-size( 13px );
-    transition: none;
-
-    &:hover,
-    &:focus {
-        background-color: #008ec2;
-        color: #fff;
-        border-color: #006799;
-    }
-
-    &:active {
-        text-decoration: none;
-        background: #0073aa;
-        border-color: #006799;
-        box-shadow: inset 0 2px 0 #006799;
-    }
-
-}
