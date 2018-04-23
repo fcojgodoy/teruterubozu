@@ -1,7 +1,7 @@
 
 === Teruterubozu ===
 Contributors: fcojgodoy
-Requires at least: 4.5
+Requires at least: 4.6
 Tested up to: 4.9.5
 Version: 0.2.0-dev.1
 License: GNU General Public License v3 or later
