@@ -10,7 +10,7 @@ Tags: custom-header, custom-logo, custom-menu, editor-style, featured-images, fe
 
 == Description ==
 
-A Wordpress theme inspired by Casper, the Ghost default theme.
+A WordPress theme inspired by Casper, the Ghost default theme.
 
 For more information about Teruterubozu please go to https://github.com/fcojgodoy/teruterubozu.
 
