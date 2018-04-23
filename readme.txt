@@ -29,7 +29,7 @@ For more information about Teruterubozu please go to https://github.com/fcojgodo
 
 == Limitations ==
 
-1. Menu supports up to two level depth.
+1. Menu supports up to three level depth.
 
 == Recommended plugins ==
 
