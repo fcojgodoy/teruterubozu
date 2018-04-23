@@ -11,7 +11,16 @@
 
 <section class="no-results not-found">
 	<header class="page-header">
-		<h1 class="page-title"><?php printf( esc_html__( 'Nothing found for: %s', 'teruterubozu' ), '<span>' . get_search_query() . '</span>' ) ?></h1>
+		<h1 class="page-title">
+
+            <?php
+            printf(
+                /* translators: %s: searching query. */
+                esc_html__( 'Nothing found for: %s', 'teruterubozu' ),
+                '<span>' . get_search_query() . '</span>'
+                )
+            ?>
+        </h1>
 	</header><!-- .page-header -->
 
 	<div class="page-content">

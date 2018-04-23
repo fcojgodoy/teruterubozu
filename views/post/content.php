@@ -20,13 +20,13 @@
     		// Print the_content if <!--more--> quicktag exist and the_excerpt
 			// if it's not.
 		    if( strpos( $post->post_content, '<!--more-->' ) ) {
-				/* translators: %s: Name of current post */
 				the_content( sprintf(
+                    /* translators: %s: Name of current post */
 					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'teruterubozu' ),
 					get_the_title()
 				) );
 		    }
-			
+
 		    else {
 		        the_excerpt();
 		    }
