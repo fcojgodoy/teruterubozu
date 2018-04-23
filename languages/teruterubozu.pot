@@ -21,12 +21,27 @@ msgstr ""
 msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
 msgstr ""
 
-#: 404.php:34
+#: 404.php:36
 msgid "Most Used Categories"
 msgstr ""
 
-#: 404.php:51
+#: 404.php:53
 msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: comments.php:41
+msgid "One comment"
+msgstr ""
+
+#: comments.php:46
+msgctxt "comments title"
+msgid "%1$s comment"
+msgid_plural "%1$s comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:66
+msgid "Comments are closed."
 msgstr ""
 
 #: footer.php:19
@@ -50,77 +65,24 @@ msgstr ""
 msgid "Primary"
 msgstr ""
 
-#: inc/template-tags.php:29
-msgctxt "post date"
-msgid "Published "
-msgstr ""
-
-#: inc/template-tags.php:45
-msgctxt "post author"
-msgid "Written by "
-msgstr ""
-
-#: inc/template-tags.php:65
-msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
-msgstr ""
-
-#. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:88
-msgctxt "list item separator"
-msgid ", "
-msgstr ""
-
-#: inc/template-tags.php:91
-msgid "Tagged %1$s"
-msgstr ""
-
-#: inc/template-tags.php:106, views/page/content-page.php:41
-msgid "Edit <span class=\"screen-reader-text\">%s</span>"
-msgstr ""
-
-#. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:132
-msgid ", "
-msgstr ""
-
-#: inc/template-tags.php:135
-msgid "Posted in %1$s"
-msgstr ""
-
-#: inc/template-tags.php:190
-msgid "Previous: "
-msgstr ""
-
-#: inc/template-tags.php:191
-msgid "Previous post"
-msgstr ""
-
-#: inc/template-tags.php:194
-msgid "Next: "
-msgstr ""
-
-#: inc/template-tags.php:195
-msgid "Next post"
-msgstr ""
-
-#: inc/template-tags.php:227
+#: inc/template-tags.php:55
 msgid "Page"
 msgstr ""
 
-#: inc/template-tags.php:227
-msgid "of"
+#: inc/template-tags.php:55
+msgid "of "
 msgstr ""
 
-#: inc/template-tags.php:253
+#: inc/template-tags.php:84
 msgid "More pages: "
 msgstr ""
 
-#: inc/template-tags.php:259
-msgid "Next &raquo"
+#: inc/template-tags.php:90
+msgid "Next »"
 msgstr ""
 
-#: inc/template-tags.php:260
-msgid "&laquo Previous"
+#: inc/template-tags.php:91
+msgid "« Previous"
 msgstr ""
 
 #: inc/the-excerpt.php:7
@@ -541,15 +503,15 @@ msgstr ""
 msgid "Google +"
 msgstr ""
 
-#: views/header/page-header.php:72
+#: views/header/page-header.php:27
 msgid "Blog"
 msgstr ""
 
-#: views/header/page-header.php:94
+#: views/header/page-header.php:61
 msgid "Menu"
 msgstr ""
 
-#: views/header/page-header.php:101
+#: views/header/page-header.php:67
 msgid "Scroll Down"
 msgstr ""
 
@@ -569,11 +531,11 @@ msgstr ""
 msgid "Older Posts"
 msgstr ""
 
-#: views/navigation/posts-navigation.php:14
+#: views/navigation/posts-navigation.php:17
 msgid "Read this next"
 msgstr ""
 
-#: views/navigation/posts-navigation.php:34
+#: views/navigation/posts-navigation.php:40
 msgid "You might enjoy"
 msgstr ""
 
@@ -581,50 +543,38 @@ msgstr ""
 msgid "Pages:"
 msgstr ""
 
-#: views/post/comments.php:38
-msgid "One comment"
+#: views/page/content-page.php:41
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
-#: views/post/comments.php:43
-msgctxt "comments title"
-msgid "%1$s comment"
-msgid_plural "%1$s comments"
-msgstr[0] ""
-msgstr[1] ""
-
-#: views/post/comments.php:61
-msgid "Comments are closed."
-msgstr ""
-
-#: views/post/content-author.php:16
+#: views/post/content-author.php:35
 msgid "This author has not posts yet."
 msgstr ""
 
-#: views/post/content-none.php:14
+#: views/post/content-none.php:19
 msgid "Nothing found for: %s"
 msgstr ""
 
-#: views/post/content-none.php:25
+#: views/post/content-none.php:34
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: views/post/content-none.php:38
+#: views/post/content-none.php:47
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr ""
 
-#: views/post/content-none.php:44
+#: views/post/content-none.php:53
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr ""
 
-#. translators: %s: Name of current post
 #: views/post/content.php:25
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
-#: views/post/entry-footer.php:36
+#: views/post/entry-footer.php:39
 msgid "Contact"
 msgstr ""
 
-#: views/post/entry-meta.php:20, views/post/entry-meta.php:38
+#: views/post/entry-meta.php:22, views/post/entry-meta.php:47
 msgid "on "
 msgstr ""
