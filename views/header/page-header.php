@@ -6,8 +6,16 @@
 
     <div class="site-header-content">
         <div class="o-wrapper">
+
             <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-            <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+
+            <?php
+            if ( get_bloginfo( 'description', 'display' ) || is_customize_preview() ) : ?>
+                <h2 class="site-description"><?php bloginfo( 'description' ) /* WPCS: xss ok. */ ?></h2>
+            <?php
+            endif;
+            ?>
+
         </div>
     </div>
 
