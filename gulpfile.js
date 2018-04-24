@@ -222,4 +222,4 @@ gulp.task ( 'production', gulp.series( 'clean-assets', 'vendors', 'images', 'sty
 /* -------------------------------------------------------------------------------------------------
 Default task
 -------------------------------------------------------------------------------------------------- */
-gulp.task ( 'default', gulp.series( [ 'clean-assets', 'vendors', 'styles', 'scripts', 'scripts-copy', 'fonts' ], 'watch' ) );
+gulp.task ( 'default', gulp.series( [ 'clean-assets', 'vendors', 'images', 'styles', 'scripts', 'scripts-copy', 'fonts' ], 'watch' ) );
