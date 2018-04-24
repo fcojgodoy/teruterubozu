@@ -17,6 +17,7 @@ const gulp = require ( 'gulp' ),
     jshint = require ( 'gulp-jshint' ),
     postcss = require ( 'gulp-postcss' ),
     sass = require ( 'gulp-sass' ),
+    imagemin = require( 'gulp-imagemin' ),
     sourcemaps = require ( 'gulp-sourcemaps' ),
     sassdoc = require( 'sassdoc' ),
     wpPot = require('gulp-wp-pot');
@@ -37,6 +38,7 @@ const SOURCE = {
     styles: './src/styles/**/*.scss',
     scripts: './src/scripts/**/*.js',
     fonts: './src/fonts/**/*',
+    imgs: './src/imgs/**/*',
     php: [
         './*.php',
         './views/**/*.php',
@@ -58,7 +60,8 @@ const ASSETS_DIR = {
     root: './assets/',
     styles: './assets/styles/',
     scripts: './assets/scripts/',
-    fonts: './assets/fonts/'
+    fonts: './assets/fonts/',
+    imgs: './assets/imgs/'
 };
 
 const VENDORS = {
@@ -81,19 +84,22 @@ gulp.task('pot', function () {
 
 
 /* -------------------------------------------------------------------------------------------------
+SassDoc task
+-------------------------------------------------------------------------------------------------- */
+gulp.task( 'sassdoc', function () {
+    return gulp.src( SOURCE.styles )
+    .pipe(sassdoc());
+});
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------
 Clean asset dir
 -------------------------------------------------------------------------------------------------- */
 gulp.task ( 'clean-assets', function () {
     return del( [ ASSETS_DIR.root ] );
-});
-
-
-/* -------------------------------------------------------------------------------------------------
-SassDoc task
--------------------------------------------------------------------------------------------------- */
-gulp.task( 'sassdoc', function () {
-  return gulp.src( SOURCE.styles )
-    .pipe(sassdoc());
 });
 
 
@@ -107,6 +113,19 @@ gulp.task ( 'vendors', function () {
     ] )
     .pipe ( gulp.dest ( SOURCE_DIR.scripts ) );
 });
+
+
+/* -------------------------------------------------------------------------------------------------
+Images
+-------------------------------------------------------------------------------------------------- */
+gulp.task( 'images', function () {
+    return gulp.src( SOURCE.imgs )
+        .pipe( imagemin( {
+            progressive: true
+
+        } ) )
+        .pipe( gulp.dest( ASSETS_DIR.imgs ) );
+} );
 
 
 /* -------------------------------------------------------------------------------------------------
