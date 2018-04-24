@@ -19,16 +19,47 @@
  * @link https://developer.wordpress.org/reference/functions/add_theme_support/#custom-header
  */
 function teruterubozu_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'teruterubozu_custom_header_args', array(
-		'default-image'          => get_template_directory_uri() . '/assets/imgs/header-cover-default.jpg',
+
+    $args = array(
+        // 'default-image'          => get_template_directory_uri() . '/assets/imgs/header-cover-default.jpg',
 		'default-text-color'     => '000000',
-		'width'                  => 1920,
+		'width'                  => 1600,
 		'flex-width'             => true,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'teruterubozu_header_style',
-	) ) );
+		// 'wp-head-callback'       => 'teruterubozu_header_style',
+    );
+
+	add_theme_support( 'custom-header', apply_filters( 'teruterubozu_custom_header_args', $args ) );
 }
 add_action( 'after_setup_theme', 'teruterubozu_custom_header_setup' );
+
+
+
+
+/**
+ * Register Default Headers.
+ *
+ * @since 0.2.1
+ * @link https://developer.wordpress.org/reference/functions/register_default_headers/
+ */
+function teruterubozu_register_default_headers() {
+
+	$headers = array(
+		'typewriter' => array(
+            'description'   => __( 'Typewriter', 'teruterubozu' ),
+			'url'           => '/assets/imgs/header-cover-default.jpg',
+			'thumbnail_url' => '/assets/imgs/header-cover-default-thumb.jpg',
+		),
+		'bench' => array(
+            'description'   => __( 'Bench', 'teruterubozu' ),
+			'url'           => '/assets/imgs/header-cover-default_2.jpg',
+			'thumbnail_url' => '/assets/imgs/header-cover-default_2-thumb.jpg',
+		),
+	);
+	register_default_headers( $headers );
+
+}
+add_action( 'after_setup_theme', 'teruterubozu_register_default_headers' );
 
 
 
