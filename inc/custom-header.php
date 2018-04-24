@@ -21,7 +21,7 @@
 function teruterubozu_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'teruterubozu_custom_header_args', array(
 		'default-image'          => get_template_directory_uri() . '/assets/imgs/header-cover-default.jpg',
-		'default-text-color'     => 'fff',
+		'default-text-color'     => 'ffffff',
 		'width'                  => 1920,
 		'flex-width'             => true,
 		'flex-height'            => true,
@@ -69,9 +69,9 @@ if ( ! function_exists( 'teruterubozu_header_style' ) ) :
 				// If the user has set a custom color for the text use that.
 				else :
 			?>
-				.site-title,
-				.site-description {
-					color: #<?php echo esc_attr( $header_text_color ); ?> !important;
+				body.home .site-title,
+				body.home .site-description {
+					color: #<?php echo esc_attr( $header_text_color ); ?>;
 				}
 			<?php endif; ?>
 		</style>

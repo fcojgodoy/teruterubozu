@@ -33,9 +33,15 @@
 					'clip': 'auto',
 					'position': 'relative'
 				} );
-				$( '.site-title, .site-description' ).css( {
-					'color': to
-				} );
+				if ( $( 'body.home' ).hasClass( 'has-thumbnail' ) ) {
+					$( '.site-title, .site-description' ).css( {
+						'color': to
+					} );
+				} else {
+					$( '.site-title, .site-description' ).css( {
+						'color': 'rgba(0, 0, 0, 0.8)'
+					} );
+				}
 			}
 		} );
 	} );
