@@ -87,8 +87,12 @@ Source: https://pixabay.com/
 
 == Changelog ==
 
+= 0.2.1 =
+* Released: May xx, 2018
+- Revised code.
+
 = 0.2.0 =
-* Released: April 19, 2018
+* Released: April 23, 2018
 - New main header with srcset attribute for images.
 - Revised code.
 
