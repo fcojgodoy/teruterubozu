@@ -62,6 +62,7 @@ License: The MIT License (MIT)
 Source: https://github.com/christophery/pushy
 
 animated-scroll-to
+License: The MIT License (MIT)
 Source: https://github.com/Stanko/animated-scroll-to
 
 TGM-Plugin-Activation, Copyright (c) 2011, Thomas Griffin
