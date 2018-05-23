@@ -66,7 +66,7 @@
         <div class="custom-logo" itemscope itemtype="http://schema.org/Organization">
             <?php the_custom_logo() ?>
         </div>
-        <a class="menu-btn icon-menu" href="#"> <span class="word"><?php esc_attr_e( 'Menu', 'teruterubozu' ) ?></span> </a>
+        <a class="menu-btn icon-menu" href="#"> <span class="word"><?php esc_html_e( 'Menu', 'teruterubozu' ) ?></span> </a>
     </nav>
 
 
