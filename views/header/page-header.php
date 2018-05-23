@@ -22,13 +22,7 @@
 
 <?php elseif ( is_home() && ! is_front_page() ) : ?>
 
-    <?php
-    // $page_object = get_queried_object();
-    // $page_id     = get_queried_object_id();
-    // // echo $page_object;
-    // echo $page_id;
-    echo get_the_post_thumbnail( get_queried_object_id(), 'full', array( 'class' => 'site-header-img' ) );
-    ?>
+    <?php echo get_the_post_thumbnail( get_queried_object_id(), 'full', array( 'class' => 'site-header-img' ) ); ?>
 
     <div class="site-header-content">
         <div class="o-wrapper">
