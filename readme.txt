@@ -99,9 +99,13 @@ Source: https://fonts.google.com/specimen/Open+Sans
 
 Images, Public Domain
 License: CC0 Public Domain
-Source: https://pixabay.com/
+Source: https://pixabay.com/en/typewriter-author-mechanical-retro-407695/
 
 == Changelog ==
+
+= unrelease =
+* Released: , 2018
+- Fix code errors.
 
 = 0.2.1 =
 * Released: May 03, 2018
