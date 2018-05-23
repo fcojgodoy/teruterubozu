@@ -31,7 +31,6 @@ else : ?>
     <div class="alert alert-warning u-margin-bottom u-margin-bottom-large@tablet">
 
         <?php
-        $author = get_user_by( 'slug', get_query_var( 'author_name' ) );
         esc_html_e( 'This author has not posts yet.', 'teruterubozu' );
         ?>
 
