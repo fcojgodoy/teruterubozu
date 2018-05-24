@@ -27,44 +27,6 @@ endif;
 
 
 
-if ( ! function_exists( 'teruterubozu_numeric_posts_pagination' ) ) :
-/**
-* Create numeric pagination
-*
-* http://www.hudku.com/blog/add-numbered-page-navigation-wordpress-plugin/
-* http://codex.wordpress.org/Function_Reference/paginate_links
-*/
-function teruterubozu_numeric_posts_pagination() {
-
-	global $wp_query;
-
-	$big = 12345678;
-
-	$page_format = paginate_links( array(
-		'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-		'format' => '?paged=%#%',
-		'current' => max( 1, get_query_var( 'paged' ) ),
-		'total' => $wp_query->max_num_pages,
-		'type'  => 'array',
-		'prev_next' => false
-	) );
-
-	if ( is_array( $page_format ) ) {
-		$paged = ( get_query_var( 'paged' ) == 0 ) ? 1 : get_query_var( 'paged' );
-		// echo '<div><ul>';
-		echo '<span>' . esc_html__( 'Page', 'teruterubozu' ) . ' ' . esc_html( $paged ) . ' ' . esc_html__( 'of ', 'teruterubozu' ) . esc_html( $wp_query->max_num_pages ) .'</span>';
-		// foreach ( $page_format as $page ) {
-		//         echo "<li>$page</li>";
-		// }
-		// echo '</ul></div>';
-	}
-}
-endif;
-
-
-
-
-
 /**
  * The formatted output of a list of page links with custom arguments.
  *
