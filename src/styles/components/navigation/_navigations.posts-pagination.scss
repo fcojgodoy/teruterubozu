@@ -1,0 +1,32 @@
+/* ==========================================================================
+   #MAIN MENU
+   ========================================================================== */
+
+/*
+ * Title
+ *
+ */
+
+.nav-links {
+    // display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    > .prev,
+    > .next {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    // > .prev {
+    //     margin-right: auto;
+    // }
+    // 
+    // > .next {
+    //     margin-left: auto;
+    // }
+}
+
+/* 
+========================================================================== */
