@@ -20,3 +20,13 @@
 
 	</div>
 </nav>
+
+<div class="fixme-pagination">
+
+    <?php the_posts_pagination( array(
+        'mid_size' => 0,
+        'prev_text' => __( 'Newer Posts', 'teruterubozu' ),
+        'next_text' => __( 'Older Posts', 'teruterubozu' ),
+    ) ) ?>
+
+</div>
