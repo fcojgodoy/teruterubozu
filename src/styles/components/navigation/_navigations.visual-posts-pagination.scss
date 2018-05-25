@@ -2,7 +2,7 @@
 #VISUAL POST NAVIGATION
 ========================================================================== */
 
-.visual-post-navigation {
+.visual-posts-pagination {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -16,8 +16,8 @@
 
 
 
-.visual-post-navigation-newer,
-.visual-post-navigation-older {
+.visual-posts-pagination-newer,
+.visual-posts-pagination-older {
     display: flex;
     width: 100%;
 }
@@ -30,7 +30,7 @@
  * 1. Position to be able to position your child as absolute.
  * 2. Control images heights.
  */
-.visual-post-navigation-link {
+.visual-posts-pagination-link {
     position: relative; /* [1] */
     width: 100%;
     height: 200px; /* [2] */
@@ -66,7 +66,7 @@
  * 1. Position absolute above its parent.
  * 2. Horizontal and vertically centered content.
  */
-.visual-post-navigation-wrap {
+.visual-posts-pagination-wrap {
     position: absolute; /* [1] */
     top: 0; /* [1] */
     right: 0; /* [1] */
@@ -85,7 +85,7 @@
 /**
  * 1. Fit image to its parent width and height.
  */
-.visual-post-navigation-image {
+.visual-posts-pagination-image {
     width: 100%; /* [1] */
     height: 100%; /* [1] */
     object-fit: cover; /* [1] */
@@ -95,7 +95,7 @@
 
 
 
-.visual-post-navigation-title {
+.visual-posts-pagination-title {
     color: #fff;
     text-align: center;
     @include inuit-font-size( 18px );
@@ -114,7 +114,7 @@
 
 
 
-.visual-post-navigation-button {
+.visual-posts-pagination-button {
     color: rgba(255,255,255,0.8);
     padding: 4px 12px 2px;
     border: 1px solid rgba(255,255,255,0.5);
@@ -129,7 +129,7 @@
         @include inuit-font-size( 11px );
     }
 
-    a:hover > .visual-post-navigation-wrap > & {
+    a:hover > .visual-posts-pagination-wrap > & {
         color: #222;
         background-color:#fff;
 

@@ -1,31 +1,8 @@
-/*--------------------------------------------------------------
-## Links
---------------------------------------------------------------*/
-@import "links";
-
-/*--------------------------------------------------------------
-## Menus
---------------------------------------------------------------*/
-@import "menus";
-
-/*--------------------------------------------------------------
-## Buttons
---------------------------------------------------------------*/
-@import "buttons";
-@import "navigation.special-buttons";
-
-
-
+@import "navigations.links";
+@import "navigations.main-menu";
+@import "navigations.buttons";
+@import "navigations.special-buttons";
 @import "navigations.posts-pagination";
-
-@import "navigations.visual-post-navigation";
-
-/*--------------------------------------------------------------
-## Comments navigation
---------------------------------------------------------------*/
-// @import "comments-navigation";
-
-/*--------------------------------------------------------------
-## Page Links
---------------------------------------------------------------*/
-@import "navigation.page-links";
+@import "navigations.visual-posts-pagination";
+@import "navigations.page-links";
+@import "navigations.comment-nav";
