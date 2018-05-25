@@ -14,15 +14,11 @@
 @import "buttons";
 @import "navigation.special-buttons";
 
-/*--------------------------------------------------------------
-## Numeric pagination
---------------------------------------------------------------*/
-@import "numeric-pagination";
 
-/*--------------------------------------------------------------
-## Posts pagination
---------------------------------------------------------------*/
+
 @import "navigations.posts-pagination";
+
+@import "navigations.visual-post-navigation";
 
 /*--------------------------------------------------------------
 ## Comments navigation

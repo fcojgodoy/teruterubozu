@@ -1,0 +1,128 @@
+/* ==========================================================================
+#VISUAL POST NAVIGATION
+========================================================================== */
+
+.visual-post-navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    @include mq( $from: tablet ) {
+        flex-wrap: nowrap;
+    }
+}
+
+
+
+
+
+.visual-post-navigation-newer,
+.visual-post-navigation-older {
+    display: flex;
+    width: 100%;
+}
+
+
+
+
+
+/**
+ * 1. Position to be able to position your child as absolute.
+ * 2. Control images heights.
+ */
+.visual-post-navigation-link {
+    position: relative; /* [1] */
+    width: 100%;
+    height: 200px; /* [2] */
+    
+    @include mq( $from: tablet ) {
+        min-height: 300px;
+    }
+    
+    // cover translucent layer
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,0.6);
+        transition: all 0.5s ease;
+    }
+    
+    &:hover:before {
+        background: rgba(0,0,0,0.7);
+    }
+    
+}
+
+
+
+
+
+/**
+ * 1. Position absolute above its parent.
+ * 2. Horizontal and vertically centered content.
+ */
+.visual-post-navigation-wrap {
+    position: absolute; /* [1] */
+    top: 0; /* [1] */
+    right: 0; /* [1] */
+    bottom: 0; /* [1] */
+    left: 0; /* [1] */
+    display: flex; /* [2] */
+    flex-direction: column; /* [2] */
+    justify-content: center; /* [2] */
+    align-items: center; /* [2] */
+}
+
+
+
+
+
+/**
+ * 1. Fit image to its parent width and height.
+ */
+.visual-post-navigation-image {
+    width: 100%; /* [1] */
+    height: 100%; /* [1] */
+    object-fit: cover; /* [1] */
+}
+
+
+
+
+
+.visual-post-navigation-title {
+    color: #fff;
+    text-align: center;
+}
+
+
+
+.visual-post-navigation-button {
+    // FIXME: font size and padding when in mobile is one column
+    color: rgba(255,255,255,0.8);
+    // padding: 3px 12px;
+    border: 1px solid rgba(255,255,255,0.5);
+
+    @include inuit-font-size( 11px, 13px );
+    // @include inuit-font-size( 9px, 11px );
+    font-family: $font-family-sans-serif;
+    text-transform: uppercase;
+
+    transition: all 0.5s ease;
+
+
+    // @include mq( $from: tablet ){
+    // }
+
+    a:hover > .visual-post-navigation-wrap > & {
+        color: #222;
+        background-color:#fff;
+
+        transition: all 0.2s ease;
+    }
+}
