@@ -36,7 +36,7 @@
     height: 200px; /* [2] */
     
     @include mq( $from: tablet ) {
-        min-height: 300px;
+        min-height: 300px; /* [2] */
     }
     
     // cover translucent layer
@@ -98,26 +98,36 @@
 .visual-post-navigation-title {
     color: #fff;
     text-align: center;
+    @include inuit-font-size( 18px );
+
+    @include mq( $from: tablet ){
+        @include inuit-font-size( 24px );
+    }
+
+    @include mq( $from: desktop ){
+        @include inuit-font-size( 28px );
+    }
+
 }
 
 
 
+
+
 .visual-post-navigation-button {
-    // FIXME: font size and padding when in mobile is one column
     color: rgba(255,255,255,0.8);
-    // padding: 3px 12px;
+    padding: 4px 12px 2px;
     border: 1px solid rgba(255,255,255,0.5);
 
-    @include inuit-font-size( 11px, 13px );
-    // @include inuit-font-size( 9px, 11px );
+    @include inuit-font-size( 9px, 11px );
     font-family: $font-family-sans-serif;
     text-transform: uppercase;
 
     transition: all 0.5s ease;
 
-
-    // @include mq( $from: tablet ){
-    // }
+    @include mq( $from: tablet ){
+        @include inuit-font-size( 11px );
+    }
 
     a:hover > .visual-post-navigation-wrap > & {
         color: #222;
