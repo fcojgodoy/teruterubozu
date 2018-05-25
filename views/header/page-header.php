@@ -49,7 +49,7 @@
     </div>
 
 
-<?php elseif ( is_author() ) : ?>
+<?php elseif ( is_author() && the_author_meta( 'author_cover_image' ) ) : ?>
 
     <img class="site-header-img" src="<?php the_author_meta( 'author_cover_image' ) ?>" alt="">
 
