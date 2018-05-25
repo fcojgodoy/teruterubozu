@@ -216,7 +216,7 @@ gulp.task ( 'watch', function () {
 /* -------------------------------------------------------------------------------------------------
 Production task
 -------------------------------------------------------------------------------------------------- */
-gulp.task ( 'production', gulp.series( 'clean-assets', 'vendors', 'images', 'styles-prod', 'scripts', 'scripts-copy', 'fonts' ) );
+gulp.task ( 'production', gulp.series( 'clean-assets', 'vendors', 'images', 'styles-prod', 'scripts', 'scripts-copy', 'fonts', 'pot' ) );
 
 
 /* -------------------------------------------------------------------------------------------------
