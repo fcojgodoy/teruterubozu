@@ -94,10 +94,13 @@
 
 
 
-
+/**
+ * 1. Break word before it overflow its container
+ */
 .visual-posts-pagination-title {
     color: #fff;
     text-align: center;
+    max-width: 100%; /* [1] */
     @include inuit-font-size( 18px );
 
     @include mq( $from: tablet ){
