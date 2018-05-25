@@ -17,9 +17,9 @@ if ( ! function_exists( 'teruterubozu_term_cover' ) ) :
  */
 function teruterubozu_term_cover() {
     $term_cover_image_url = get_term_meta( get_queried_object()->term_id, 'term_cover_image', true);
-    ?>
+    if ( $term_cover_image_url ) :?>
         <img class="site-header-img" src="<?php echo esc_url( $term_cover_image_url ) ?>" alt="">
-    <?php
+    <?php endif;
 }
 endif;
 

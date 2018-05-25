@@ -43,8 +43,10 @@
 
     <div class="site-header-content">
         <div class="o-wrapper">
-            <h1 class="label-title"> <?php single_tag_title(); ?> </h1>
-            <h2 class="label-description"> <?php echo term_description(); ?> </h2>
+            <h1 class="label-title"> <?php single_tag_title() ?> </h1>
+            <?php if ( term_description() ) : ?>
+                <h2 class="label-description"> <?php echo term_description() ?> </h2>
+            <?php endif ?>
         </div>
     </div>
 
