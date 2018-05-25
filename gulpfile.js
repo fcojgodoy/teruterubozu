@@ -165,8 +165,8 @@ styles TASK: Sass - Sourcemaps - Autoprefixer
 gulp.task ( 'styles', function () {
     return gulp.src ( SOURCE.styles )
     .pipe ( sourcemaps.init () )
-    .pipe ( sass ().on ( 'error', sass.logError) )
-    .pipe ( postcss ( [
+    .pipe ( sass( {outputStyle: 'nested'} ).on ( 'error', sass.logError) )
+    .pipe ( postcss( [
         autoprefixer ( 'last 2 versions', '>1%' )
     ]))
     .pipe ( sourcemaps.write ( './maps' ) )
