@@ -106,6 +106,7 @@ Source: https://pixabay.com/en/typewriter-author-mechanical-retro-407695/
 = unrelease =
 * Released: , 2018
 - Fix code errors.
+- Style for new comment cookies consent input
 
 = 0.2.1 =
 * Released: May 03, 2018
