@@ -100,17 +100,6 @@ if ( ! function_exists( 'teruterubozu_setup' ) ) :
 			'flex-height' => true,
 		) );
 
-        // TODO: wtf
-        // add_theme_support( 'gutenberg', array(
-    	// 	'wide-images' => true,
-       	// 	'colors' => array(
-    	// 			'#0073aa',
-    	// 			'#229fd8',
-    	// 			'#eee',
-    	// 			'#444',
-    	// 	),
-    	// ) );
-
     }
 endif;
 add_action( 'after_setup_theme', 'teruterubozu_setup' );
