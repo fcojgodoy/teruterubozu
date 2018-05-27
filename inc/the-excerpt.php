@@ -4,7 +4,7 @@
  *
  */
 function teruterubozu_excerpt_more() {
-    return ' <a class="excerpt-more" href="' . get_permalink() . '" title="' . esc_html__( 'Continue reading', 'teruterubozu' ) . '" rel="bookmark"><span class="screen-reader-text">' . esc_html__( 'Continue reading ', 'teruterubozu' ) . '</span>»</a>';
+    return ' <a class="excerpt-more" href="' . get_permalink() . '" title="' . esc_html__( 'Continue reading', 'teruterubozu' ) . '" rel="bookmark"><span class="screen-reader-text">' . esc_html__( 'Continue reading ', 'teruterubozu' ) . '</span>&raquo;</a>';
 }
 
 add_filter( 'excerpt_more', 'teruterubozu_excerpt_more' );

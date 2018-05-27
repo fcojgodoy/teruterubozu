@@ -6,9 +6,11 @@
 
         <h1 class="author-title"><?php the_author() ?></h1>
 
-        <h2 class="author-bio author-bio--lg">
-            <?php echo esc_html( get_the_author_meta( 'description' ) ) ?>
-        </h2>
+        <?php if ( get_the_author_meta( 'description' ) ) : ?>
+            <h2 class="author-bio author-bio--lg">
+                <?php echo esc_html( get_the_author_meta( 'description' ) ) ?>
+            </h2>
+        <?php endif; ?>
 
         <div class="author-meta">
 

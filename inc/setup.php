@@ -94,22 +94,11 @@ if ( ! function_exists( 'teruterubozu_setup' ) ) :
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
 		add_theme_support( 'custom-logo', array(
-			'height'      => 250,
-			'width'       => 250,
+			'height'      => 50,
+			'width'       => 200,
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
-
-        // TODO: wtf
-        // add_theme_support( 'gutenberg', array(
-    	// 	'wide-images' => true,
-       	// 	'colors' => array(
-    	// 			'#0073aa',
-    	// 			'#229fd8',
-    	// 			'#eee',
-    	// 			'#444',
-    	// 	),
-    	// ) );
 
     }
 endif;

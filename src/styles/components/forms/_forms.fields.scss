@@ -26,6 +26,10 @@ textarea {
 	}
 }
 
+input[type="checkbox"] {
+	margin-right: 7px;
+}
+
 label {
 	font-family: $font-family-sans-serif;
 	@include inuit-font-size( 12px );

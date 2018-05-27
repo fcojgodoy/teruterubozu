@@ -25,7 +25,7 @@ get_header(); ?>
 					?></h1>
 				</header><!-- .page-header -->
 
-                <?php get_template_part( 'views/navigation/numeric-pagination' );
+                <?php get_template_part( 'views/navigation/posts-pagination' );
 
 				/* Start the Loop */
 				while ( have_posts() ) : the_post();
@@ -39,7 +39,7 @@ get_header(); ?>
 
 				endwhile;
 
-				get_template_part( 'views/navigation/numeric-pagination' );
+				get_template_part( 'views/navigation/posts-pagination' );
 
 			else :
 

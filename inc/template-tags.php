@@ -17,9 +17,9 @@ if ( ! function_exists( 'teruterubozu_term_cover' ) ) :
  */
 function teruterubozu_term_cover() {
     $term_cover_image_url = get_term_meta( get_queried_object()->term_id, 'term_cover_image', true);
-    ?>
+    if ( $term_cover_image_url ) :?>
         <img class="site-header-img" src="<?php echo esc_url( $term_cover_image_url ) ?>" alt="">
-    <?php
+    <?php endif;
 }
 endif;
 
@@ -49,8 +49,8 @@ function teruterubozu_link_pages() {
         'link_after'        => '</span>',
         'next_or_number'    => 'next',
         'separator'         => ' | ',
-        'nextpagelink'      => esc_html__( 'Next »', 'teruterubozu' ),
-        'previouspagelink'  => esc_html__( '« Previous', 'teruterubozu' ),
+        'nextpagelink'      => esc_html__( 'Next &raquo;', 'teruterubozu' ),
+        'previouspagelink'  => esc_html__( '&laquo; Previous', 'teruterubozu' ),
     );
 
     wp_link_pages( $args );

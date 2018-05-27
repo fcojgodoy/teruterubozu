@@ -13,7 +13,7 @@ if ( have_posts() ) :
 
     if ( is_paged() ):
 
-    	get_template_part( 'views/navigation/numeric-pagination' );
+    	get_template_part( 'views/navigation/posts-pagination' );
 
     endif;
 
@@ -24,7 +24,7 @@ if ( have_posts() ) :
 
     endwhile;
 
-    	get_template_part( 'views/navigation/numeric-pagination' );
+    	get_template_part( 'views/navigation/posts-pagination' );
 
 else : ?>
 

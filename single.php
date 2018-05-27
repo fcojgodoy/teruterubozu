@@ -23,7 +23,7 @@ get_header(); ?>
 
 </div><!-- #content -->
 
-<?php get_template_part( 'views/navigation/posts-navigation' ) ?>
+<?php get_template_part( 'views/navigation/visual-posts-pagination' ) ?>
 
 <?php
 

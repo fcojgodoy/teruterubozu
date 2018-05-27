@@ -1,9 +1,7 @@
 table {
-    // @extend .table-striped;
-
     margin: 1.75em 0;
-    font-size: 17.1px;
     line-height: 20px;
+    font-size: 0.9rem;
 
     th {
         color:#000;
@@ -11,7 +9,11 @@ table {
 
     th,
     td {
-        padding: 8px;
+        padding: 5px;
+        
+        @include mq( $from: tablet ) {
+            padding: 8px;
+        };
     }
 
     // Zebra-striping

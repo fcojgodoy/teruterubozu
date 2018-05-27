@@ -2,8 +2,8 @@
 === Teruterubozu ===
 Contributors: fcojgodoy
 Requires at least: 4.6
-Tested up to: 4.9.5
-Version: 0.2.2
+Tested up to: 4.9.6
+Version: 0.2.3
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags: custom-header, custom-logo, custom-menu, editor-style, featured-images, featured-image-header, flexible-header, full-width-template, one-column, sticky-post, threaded-comments, translation-ready, blog, photography
@@ -102,6 +102,11 @@ License: CC0 Public Domain
 Source: https://pixabay.com/en/typewriter-author-mechanical-retro-407695/
 
 == Changelog ==
+
+= 0.2.3 =
+* Released: May 25, 2018
+- Improve HTML and PHP code.
+- Slight changes of style.
 
 = 0.2.2 =
 * Released: May 25, 2018

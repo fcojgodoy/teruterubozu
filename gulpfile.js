@@ -140,7 +140,6 @@ gulp.task ( 'scripts', function () {
     .pipe ( jshint.reporter ( 'default' ) )
     .pipe ( concat ( 'main.js') )
     .pipe ( rename ( { suffix: '.min'} ) )
-    .pipe ( uglify() )
     .pipe ( gulp.dest ( ASSETS_DIR.scripts ) );
 });
 
@@ -149,6 +148,36 @@ gulp.task ( 'scripts', function () {
 script copy
 -------------------------------------------------------------------------------------------------- */
 gulp.task ( 'scripts-copy', function () {
+    return gulp.src ( [
+        SOURCE_DIR.scripts + 'customizer.js',
+    ] )
+    .pipe ( jshint () )
+    .pipe ( jshint.reporter ( 'default' ) )
+    .pipe ( gulp.dest ( ASSETS_DIR.scripts ) );
+});
+
+
+/* -------------------------------------------------------------------------------------------------
+script prod
+-------------------------------------------------------------------------------------------------- */
+gulp.task ( 'scripts-prod', function () {
+    return gulp.src ( [
+        SOURCE.scripts,
+        '!' + SOURCE_DIR.scripts + 'customizer.js',
+    ] )
+    .pipe ( jshint () )
+    .pipe ( jshint.reporter ( 'default' ) )
+    .pipe ( concat ( 'main.js') )
+    .pipe ( rename ( { suffix: '.min'} ) )
+    .pipe ( uglify() )
+    .pipe ( gulp.dest ( ASSETS_DIR.scripts ) );
+});
+
+
+/* -------------------------------------------------------------------------------------------------
+script copy prod
+-------------------------------------------------------------------------------------------------- */
+gulp.task ( 'scripts-copy-prod', function () {
     return gulp.src ( [
         SOURCE_DIR.scripts + 'customizer.js',
     ] )
@@ -165,8 +194,8 @@ styles TASK: Sass - Sourcemaps - Autoprefixer
 gulp.task ( 'styles', function () {
     return gulp.src ( SOURCE.styles )
     .pipe ( sourcemaps.init () )
-    .pipe ( sass ().on ( 'error', sass.logError) )
-    .pipe ( postcss ( [
+    .pipe ( sass( {outputStyle: 'nested'} ).on ( 'error', sass.logError) )
+    .pipe ( postcss( [
         autoprefixer ( 'last 2 versions', '>1%' )
     ]))
     .pipe ( sourcemaps.write ( './maps' ) )
@@ -216,7 +245,7 @@ gulp.task ( 'watch', function () {
 /* -------------------------------------------------------------------------------------------------
 Production task
 -------------------------------------------------------------------------------------------------- */
-gulp.task ( 'production', gulp.series( 'clean-assets', 'vendors', 'images', 'styles-prod', 'scripts', 'scripts-copy', 'fonts' ) );
+gulp.task ( 'production', gulp.series( 'clean-assets', 'vendors', 'images', 'styles-prod', 'scripts-prod', 'scripts-copy-prod', 'fonts', 'pot' ) );
 
 
 /* -------------------------------------------------------------------------------------------------

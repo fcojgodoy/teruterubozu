@@ -43,6 +43,21 @@
 
     }
 
+
+
+
+
+    /* Line separator, show only from tablet @see utilities-main
+    ========================================================================== */
+    .vertical-separator {
+        display: none;
+
+        @include mq( $from: tablet ) {
+            display: inline;
+        }
+
+    }
+
 }
 
 
@@ -87,6 +102,10 @@ time {
     font-size: 0.8125rem;
 }
 
+
+
+
+
 // Author link
 .author-link {
     @extend %entry-tag-font;
@@ -101,6 +120,10 @@ time {
         font-size: 1.5rem;
     }
 }
+
+
+
+
 
 %entry-tag-font {
     color: #9EABB3;

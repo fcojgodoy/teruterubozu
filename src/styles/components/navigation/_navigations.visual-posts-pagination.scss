@@ -1,0 +1,141 @@
+/* ==========================================================================
+#VISUAL POST NAVIGATION
+========================================================================== */
+
+.visual-posts-pagination {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    @include mq( $from: tablet ) {
+        flex-wrap: nowrap;
+    }
+}
+
+
+
+
+
+.visual-posts-pagination-newer,
+.visual-posts-pagination-older {
+    display: flex;
+    width: 100%;
+}
+
+
+
+
+
+/**
+ * 1. Position to be able to position your child as absolute.
+ * 2. Control images heights.
+ */
+.visual-posts-pagination-link {
+    position: relative; /* [1] */
+    width: 100%;
+    height: 200px; /* [2] */
+    
+    @include mq( $from: tablet ) {
+        min-height: 300px; /* [2] */
+    }
+    
+    // cover translucent layer
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,0.6);
+        transition: all 0.5s ease;
+    }
+    
+    &:hover:before {
+        background: rgba(0,0,0,0.7);
+    }
+    
+}
+
+
+
+
+
+/**
+ * 1. Position absolute above its parent.
+ * 2. Horizontal and vertically centered content.
+ */
+.visual-posts-pagination-wrap {
+    position: absolute; /* [1] */
+    top: 0; /* [1] */
+    right: 0; /* [1] */
+    bottom: 0; /* [1] */
+    left: 0; /* [1] */
+    display: flex; /* [2] */
+    flex-direction: column; /* [2] */
+    justify-content: center; /* [2] */
+    align-items: center; /* [2] */
+}
+
+
+
+
+
+/**
+ * 1. Fit image to its parent width and height.
+ */
+.visual-posts-pagination-image {
+    width: 100%; /* [1] */
+    height: 100%; /* [1] */
+    object-fit: cover; /* [1] */
+}
+
+
+
+
+/**
+ * 1. Break word before it overflow its container
+ */
+.visual-posts-pagination-title {
+    color: #fff;
+    text-align: center;
+    max-width: 100%; /* [1] */
+    @include inuit-font-size( 18px );
+
+    @include mq( $from: tablet ){
+        @include inuit-font-size( 24px );
+    }
+
+    @include mq( $from: desktop ){
+        @include inuit-font-size( 28px );
+    }
+
+}
+
+
+
+
+
+.visual-posts-pagination-button {
+    color: rgba(255,255,255,0.8);
+    padding: 4px 12px 2px;
+    border: 1px solid rgba(255,255,255,0.5);
+
+    @include inuit-font-size( 9px, 11px );
+    font-family: $font-family-sans-serif;
+    text-transform: uppercase;
+
+    transition: all 0.5s ease;
+
+    @include mq( $from: tablet ){
+        @include inuit-font-size( 11px );
+    }
+
+    a:hover > .visual-posts-pagination-wrap > & {
+        color: #222;
+        background-color:#fff;
+
+        transition: all 0.2s ease;
+    }
+}

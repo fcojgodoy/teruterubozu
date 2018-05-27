@@ -7,26 +7,42 @@
  *
  */
 
-.nav-links {
-    // display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    
-    > .prev,
-    > .next {
-        margin-right: auto;
-        margin-left: auto;
+/* Align btns */
+.posts-pagination {
+    text-align: center;
+
+    @include mq( $from: tablet ) {
+        
+        .posts-pagination-next-link {
+            text-align: right;
+        }
+        
+        .posts-pagination-prev-link {
+            text-align: left;
+        }
+        
     }
     
-    // > .prev {
-    //     margin-right: auto;
-    // }
-    // 
-    // > .next {
-    //     margin-left: auto;
-    // }
 }
 
-/* 
-========================================================================== */
+/* Extend btn class to posts_navigation links */
+.posts-pagination-link a {
+    @extend .c-btn;
+    @extend .c-btn--ghost;
+    @extend .c-btn--primary;
+}
+
+
+
+
+
+/* Add arrow */
+.posts-pagination-next-link a:after{
+    content: " \2192";
+}
+
+.posts-pagination-prev-link a:before{
+    content: "\2190 ";
+}
+
+

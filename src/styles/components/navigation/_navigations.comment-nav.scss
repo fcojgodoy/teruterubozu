@@ -1,0 +1,37 @@
+.comment-navigation {
+
+    @extend .o-layout;
+    text-align: center;
+    
+    .nav-previous,
+    .nav-next {
+        @extend .o-layout__item;
+        margin-bottom: $inuit-global-spacing-unit;
+    }
+
+    /* Extend btn class to the_comments_navigation links */
+    .nav-previous a,
+    .nav-next a {
+        @extend .c-btn;
+        @extend .c-btn--ghost;
+        @extend .c-btn--primary;
+        @extend .c-btn--small;
+    }
+    
+    @include mq( $from: tablet ) {
+        .nav-previous,
+        .nav-next {
+            width: 50% !important;
+        }
+        
+        .nav-next {
+            text-align: right;
+        }
+        
+        .nav-previous {
+            text-align: left;
+        }
+        
+    }
+
+}
