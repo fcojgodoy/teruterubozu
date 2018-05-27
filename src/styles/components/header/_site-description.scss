@@ -3,29 +3,21 @@
    ========================================================================== */
 
 .site-description {
-    color: rgba(0, 0, 0, 0.5);
     display: none;
-    margin: 0;
-
-    font-family: $font-family-serif;
-    @include inuit-font-size( 14px );
-    font-weight: 400;
-    line-height: 1.5em;
-    letter-spacing: 0.01rem;
-
-    @include mq( $from: tablet ) {
-        display: block;
-        font-size: 18px;
-    }
 
     @include mq( $from: desktop ) {
-        font-size: 20px;
+        display: block;
+        margin: 0;
+        color: rgba(0, 0, 0, 0.5);
+        font-family: $font-family-serif;
+        @include inuit-font-size( 20px );
+        font-weight: 400;
+        line-height: 1.5em;
+        letter-spacing: 0.01rem;
     }
 
     // Modifier: animation only in front-page
     .home:not(.paged) & {
-        display: block;
-
         animation: fade-in-down 0.9s both;
         animation-delay: 0.1s;
     }

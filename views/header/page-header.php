@@ -9,15 +9,18 @@
 
             <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
 
-            <?php
-            if ( get_bloginfo( 'description', 'display' ) || is_customize_preview() ) : ?>
+            <?php if ( ! is_paged() && ( get_bloginfo( 'description', 'display' ) || is_customize_preview() ) ) : ?>
                 <h2 class="site-description"><?php bloginfo( 'description' ) /* WPCS: xss ok. */ ?></h2>
-            <?php
-            endif;
-            ?>
+            <?php endif; ?>
 
         </div>
     </div>
+
+    <?php if ( ! is_paged() && get_header_image() ) : ?>
+
+        <a class="scroll-down-arrow icon-arrow-left radial-gradient" href="#content" onclick="animateScrollTo( document.querySelector( '#content' ) )"><span hidden><?php esc_html_e( 'Scroll Down', 'teruterubozu' ) ?></span></a>
+
+    <?php endif; ?>
 
 
 <?php elseif ( is_home() && ! is_front_page() ) : ?>
@@ -59,18 +62,16 @@
 
 
     <nav class="navbar">
-        <div class="custom-logo" itemscope itemtype="http://schema.org/Organization">
-            <?php the_custom_logo() ?>
-        </div>
+
+        <?php if( has_custom_logo() ) : ?>
+
+            <div class="custom-logo" itemscope itemtype="http://schema.org/Organization">
+                    <?php the_custom_logo() ?>
+            </div>
+
+        <?php endif; ?>
+
         <a class="menu-btn icon-menu" href="#"> <span class="word"><?php esc_html_e( 'Menu', 'teruterubozu' ) ?></span> </a>
     </nav>
-
-
-<?php if ( ! is_paged() && get_header_image() ) : ?>
-
-    <a class="scroll-down-arrow icon-arrow-left radial-gradient" href="#content" onclick="animateScrollTo( document.querySelector( '#content' ) )"><span hidden><?php esc_html_e( 'Scroll Down', 'teruterubozu' ) ?></span></a>
-
-<?php endif; ?>
-
 
 </header>
