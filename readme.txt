@@ -104,7 +104,7 @@ Source: https://pixabay.com/en/typewriter-author-mechanical-retro-407695/
 == Changelog ==
 
 = 0.2.3 =
-* Released: May 25, 2018
+* Released: May 27, 2018
 - Improve HTML and PHP code.
 - Slight changes of style.
 
