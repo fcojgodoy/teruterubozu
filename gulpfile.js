@@ -140,7 +140,6 @@ gulp.task ( 'scripts', function () {
     .pipe ( jshint.reporter ( 'default' ) )
     .pipe ( concat ( 'main.js') )
     .pipe ( rename ( { suffix: '.min'} ) )
-    .pipe ( uglify() )
     .pipe ( gulp.dest ( ASSETS_DIR.scripts ) );
 });
 
@@ -149,6 +148,36 @@ gulp.task ( 'scripts', function () {
 script copy
 -------------------------------------------------------------------------------------------------- */
 gulp.task ( 'scripts-copy', function () {
+    return gulp.src ( [
+        SOURCE_DIR.scripts + 'customizer.js',
+    ] )
+    .pipe ( jshint () )
+    .pipe ( jshint.reporter ( 'default' ) )
+    .pipe ( gulp.dest ( ASSETS_DIR.scripts ) );
+});
+
+
+/* -------------------------------------------------------------------------------------------------
+script prod
+-------------------------------------------------------------------------------------------------- */
+gulp.task ( 'scripts-prod', function () {
+    return gulp.src ( [
+        SOURCE.scripts,
+        '!' + SOURCE_DIR.scripts + 'customizer.js',
+    ] )
+    .pipe ( jshint () )
+    .pipe ( jshint.reporter ( 'default' ) )
+    .pipe ( concat ( 'main.js') )
+    .pipe ( rename ( { suffix: '.min'} ) )
+    .pipe ( uglify() )
+    .pipe ( gulp.dest ( ASSETS_DIR.scripts ) );
+});
+
+
+/* -------------------------------------------------------------------------------------------------
+script copy prod
+-------------------------------------------------------------------------------------------------- */
+gulp.task ( 'scripts-copy-prod', function () {
     return gulp.src ( [
         SOURCE_DIR.scripts + 'customizer.js',
     ] )
@@ -216,7 +245,7 @@ gulp.task ( 'watch', function () {
 /* -------------------------------------------------------------------------------------------------
 Production task
 -------------------------------------------------------------------------------------------------- */
-gulp.task ( 'production', gulp.series( 'clean-assets', 'vendors', 'images', 'styles-prod', 'scripts', 'scripts-copy', 'fonts', 'pot' ) );
+gulp.task ( 'production', gulp.series( 'clean-assets', 'vendors', 'images', 'styles-prod', 'scripts-prod', 'scripts-copy-prod', 'fonts', 'pot' ) );
 
 
 /* -------------------------------------------------------------------------------------------------
