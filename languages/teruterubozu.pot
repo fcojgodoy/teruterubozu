@@ -70,11 +70,11 @@ msgid "More pages: "
 msgstr ""
 
 #: inc/template-tags.php:52
-msgid "Next »"
+msgid "Next &raquo;"
 msgstr ""
 
 #: inc/template-tags.php:53
-msgid "« Previous"
+msgid "&laquo; Previous"
 msgstr ""
 
 #: inc/the-excerpt.php:7
@@ -479,7 +479,7 @@ msgstr ""
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: views/header/author-header.php:28
+#: views/header/author-header.php:30
 msgid "posts"
 msgstr ""
 
@@ -495,16 +495,16 @@ msgstr ""
 msgid "Google +"
 msgstr ""
 
-#: views/header/page-header.php:29
+#: views/header/page-header.php:21
+msgid "Scroll Down"
+msgstr ""
+
+#: views/header/page-header.php:32
 msgid "Blog"
 msgstr ""
 
-#: views/header/page-header.php:63
+#: views/header/page-header.php:74
 msgid "Menu"
-msgstr ""
-
-#: views/header/page-header.php:69
-msgid "Scroll Down"
 msgstr ""
 
 #: views/navigation/menu.php:18
@@ -515,19 +515,19 @@ msgstr ""
 msgid "Subscribe"
 msgstr ""
 
-#: views/navigation/numeric-pagination.php:13
+#: views/navigation/posts-pagination.php:13
 msgid "Newer Posts"
 msgstr ""
 
-#: views/navigation/numeric-pagination.php:19
+#: views/navigation/posts-pagination.php:19
 msgid "Older Posts"
 msgstr ""
 
-#: views/navigation/posts-navigation.php:15
+#: views/navigation/visual-posts-pagination.php:15
 msgid "Read this next"
 msgstr ""
 
-#: views/navigation/posts-navigation.php:35
+#: views/navigation/visual-posts-pagination.php:35
 msgid "You might enjoy"
 msgstr ""
 
@@ -563,7 +563,7 @@ msgstr ""
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
-#: views/post/entry-footer.php:39
+#: views/post/entry-footer.php:43
 msgid "Contact"
 msgstr ""
 
