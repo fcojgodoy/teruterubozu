@@ -15,3 +15,12 @@
         margin-top: -20px;
     }
 }
+
+.entry-title > a {
+    color: $color-text-secondary;
+    
+    &:hover,
+    &:focus {
+        color: $color-link-hover;
+    }
+}
