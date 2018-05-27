@@ -107,6 +107,7 @@ Source: https://pixabay.com/en/typewriter-author-mechanical-retro-407695/
 * Released: , 2018
 - Fix code errors.
 - Style for new comment cookies consent input
+- Improve main page header, title and description
 
 = 0.2.1 =
 * Released: May 03, 2018
