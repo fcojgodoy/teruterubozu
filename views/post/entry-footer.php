@@ -12,21 +12,25 @@
                 <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author"><?php echo get_the_author(); ?></a>
             </h4>
 
-            <p class="author-bio u-margin-bottom">
-                <?php echo esc_html( get_the_author_meta( 'description' ) ) ?>
-            </p>
+            <?php if ( get_the_author_meta( 'description' ) ) : ?>
+                <p class="author-bio u-margin-bottom">
+                    <?php echo esc_html( get_the_author_meta( 'description' ) ) ?>
+                </p>
+            <?php endif; ?>
 
-            <div class="author-links u-padding-bottom-small">
-                <?php if ( get_the_author_meta( 'location' ) ) : ?>
-                    <em class="author-location icon-location u-margin-bottom-small"><?php echo esc_html( get_the_author_meta( 'location' ) ) ?></em>
-                <?php endif ; ?>
+            <?php if ( get_the_author_meta( 'location' ) || get_the_author_meta( 'url' ) ) : ?>
+                <div class="author-links u-padding-bottom-small">
+                    <?php if ( get_the_author_meta( 'location' ) ) : ?>
+                        <em class="author-location icon-location u-margin-bottom-small"><?php echo esc_html( get_the_author_meta( 'location' ) ) ?></em>
+                    <?php endif ; ?>
 
-                <?php if ( get_the_author_meta( 'url' ) ) : ?>
-                    <em class="author-web icon-link u-margin-bottom-small">
-                        <a href="<?php echo esc_url( get_the_author_meta( 'url' ) ) ?>"><?php echo esc_html( get_the_author_meta( 'url' ) ) ?></a>
-                    </em>
-                <?php endif; ?>
-            </div>
+                    <?php if ( get_the_author_meta( 'url' ) ) : ?>
+                        <em class="author-web icon-link u-margin-bottom-small">
+                            <a href="<?php echo esc_url( get_the_author_meta( 'url' ) ) ?>"><?php echo esc_html( get_the_author_meta( 'url' ) ) ?></a>
+                        </em>
+                    <?php endif; ?>
+                </div>
+            <?php endif; ?>
 
         </div>
 
