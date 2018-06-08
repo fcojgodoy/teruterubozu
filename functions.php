@@ -45,6 +45,12 @@ require get_template_directory() . '/inc/template-functions.php';
 
 
 /**
+ * Add theme modifications
+ */
+require get_template_directory() . '/inc/theme-mods.php';
+
+
+/**
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
