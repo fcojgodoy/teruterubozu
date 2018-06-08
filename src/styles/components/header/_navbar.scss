@@ -24,16 +24,20 @@
 }
 
 
-.custom-logo {
+.custom-logo-link {
     display: inline-block;
 
-    // Make sure logo link wraps around logo image.
-    .custom-logo-link {
+    .custom-logo {
     	display: inline-block;
-        width: 70%;
-        height: 70%;
+        width: 50%;
+        height: 50%;
 
         @include mq( $from: tablet ) {
+            width: 70%;
+            height: 70%;
+        }
+
+        @include mq( $from: desktop ) {
             width: 100%;
             height: 100%;
         }
