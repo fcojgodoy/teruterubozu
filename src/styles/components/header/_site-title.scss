@@ -2,6 +2,6 @@
   #SITE TITLE
   ========================================================================== */
 
-.site-title a {
-    @include inuit-font-size( 12px );
+.site-title {
+    @include inuit-font-size( 13px );
 }
