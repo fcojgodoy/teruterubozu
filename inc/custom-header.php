@@ -21,7 +21,6 @@
 function teruterubozu_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'teruterubozu_custom_header_args', array(
 		'default-image'          => get_template_directory_uri() . '/assets/imgs/header-cover-default.jpg',
-        // 'header-text'            => false,
 		'default-text-color'     => 'ffffff',
 		'width'                  => 1920,
 		'flex-width'             => true,
@@ -34,14 +33,14 @@ add_action( 'after_setup_theme', 'teruterubozu_custom_header_setup' );
 
 
 
-$teruterubozu_header_images = array(
+
+register_default_headers( array(
     'sunset' => array(
         'url'           => get_template_directory_uri() . '/assets/imgs/header-cover-default.jpg',
         'thumbnail_url' => get_template_directory_uri() . '/assets/imgs/header-cover-default-thumb.jpg',
         'description'   => 'Old typewritter',
     ) 
-);
-register_default_headers( $teruterubozu_header_images );
+) );
 
 
 
@@ -68,12 +67,12 @@ if ( ! function_exists( 'teruterubozu_header_style' ) ) :
 
 		// If we get this far, we have custom styles. Let's do this.
 		?>
-		<style>
+		<style type="text/css">
 			<?php
 				// Has the text been hidden?
 				if ( ! display_header_text() ) :
 			?>
-				.site-title a,
+				.site-title,
 				.site-description {
 					position: absolute;
 					clip: rect(1px, 1px, 1px, 1px);
