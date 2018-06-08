@@ -7,10 +7,10 @@
     <div class="site-header-content">
         <div class="o-wrapper">
 
-            <h1 class="site-title"><?php echo get_theme_mod( 'header-main-text', '' ) ?></h1>
+            <h1 class="site-header-title"><?php echo get_theme_mod( 'header-main-text', '' ) ?></h1>
 
             <?php if ( ! is_paged() && ( get_theme_mod( 'header-secondary-text', '' ) || is_customize_preview() ) ) : ?>
-                <h2 class="site-description"><?php echo get_theme_mod( 'header-secondary-text', '' ) ?></h2>
+                <h2 class="site-header-description"><?php echo get_theme_mod( 'header-secondary-text', '' ) ?></h2>
             <?php endif; ?>
 
         </div>
@@ -33,7 +33,6 @@
             <h2 class="site-title u-h4"><?php bloginfo( 'name' ) ?></h2>
         </div>
     </div>
-
 
 <?php elseif ( is_singular() && has_post_thumbnail() ) : ?>
 

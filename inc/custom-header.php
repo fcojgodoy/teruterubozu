@@ -25,7 +25,7 @@ function teruterubozu_custom_header_setup() {
 		'width'                  => 1920,
 		'flex-width'             => true,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'teruterubozu_header_style',
+		// 'wp-head-callback'       => 'teruterubozu_header_style',
 	) ) );
 }
 add_action( 'after_setup_theme', 'teruterubozu_custom_header_setup' );
@@ -60,8 +60,8 @@ if ( ! function_exists( 'teruterubozu_header_style' ) ) :
 				// Has the text been hidden?
 				if ( ! display_header_text() ) :
 			?>
-				.site-title,
-				.site-description {
+				.site-header-title,
+				.site-header-description {
 					position: absolute;
 					clip: rect(1px, 1px, 1px, 1px);
 				}
@@ -69,8 +69,8 @@ if ( ! function_exists( 'teruterubozu_header_style' ) ) :
 				// If the user has set a custom color for the text use that.
 				else :
 			?>
-				body.home .site-title,
-				body.home .site-description {
+				body.home .site-header-title,
+				body.home .site-header-description {
 					color: #<?php echo esc_attr( $header_text_color ); ?>;
 				}
 			<?php endif; ?>
