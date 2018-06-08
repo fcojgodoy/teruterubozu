@@ -53,7 +53,7 @@ require get_template_directory() . '/inc/theme-mods.php';
 /**
  * Customizer additions.
  */
-require get_template_directory() . '/inc/customizer.php';
+// require get_template_directory() . '/inc/customizer.php';
 
 
 /**

@@ -21,6 +21,7 @@
 function teruterubozu_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'teruterubozu_custom_header_args', array(
 		'default-image'          => get_template_directory_uri() . '/assets/imgs/header-cover-default.jpg',
+        // 'header-text'            => false,
 		'default-text-color'     => 'ffffff',
 		'width'                  => 1920,
 		'flex-width'             => true,
@@ -29,6 +30,18 @@ function teruterubozu_custom_header_setup() {
 	) ) );
 }
 add_action( 'after_setup_theme', 'teruterubozu_custom_header_setup' );
+
+
+
+
+$teruterubozu_header_images = array(
+    'sunset' => array(
+        'url'           => get_template_directory_uri() . '/assets/imgs/header-cover-default.jpg',
+        'thumbnail_url' => get_template_directory_uri() . '/assets/imgs/header-cover-default-thumb.jpg',
+        'description'   => 'Old typewritter',
+    ) 
+);
+register_default_headers( $teruterubozu_header_images );
 
 
 
@@ -60,7 +73,7 @@ if ( ! function_exists( 'teruterubozu_header_style' ) ) :
 				// Has the text been hidden?
 				if ( ! display_header_text() ) :
 			?>
-				.site-title,
+				.site-title a,
 				.site-description {
 					position: absolute;
 					clip: rect(1px, 1px, 1px, 1px);
@@ -69,8 +82,8 @@ if ( ! function_exists( 'teruterubozu_header_style' ) ) :
 				// If the user has set a custom color for the text use that.
 				else :
 			?>
-				body.home .site-title,
-				body.home .site-description {
+				.site-title a,
+				.site-description {
 					color: #<?php echo esc_attr( $header_text_color ); ?>;
 				}
 			<?php endif; ?>
