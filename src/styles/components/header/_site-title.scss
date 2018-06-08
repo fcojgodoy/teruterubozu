@@ -4,4 +4,11 @@
 
 .site-title {
     @include inuit-font-size( 13px, 14px );
+
+    // Modifier: styles if main-header has thumbnail.
+    body.has-thumbnail & > a {
+        color: #fff;
+        text-shadow: 0px 0px 5px rgba(137, 137, 137, 1);
+    }
+
 }
