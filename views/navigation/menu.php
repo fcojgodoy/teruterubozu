@@ -27,7 +27,7 @@
             endif;
         ?>
 
-        <a href="<?php bloginfo( 'atom_url' ); ?>" class="subscribe-button"><?php esc_html_e( 'Subscribe', 'teruterubozu' ) ?></a>
+        <!-- <a href="<?php bloginfo( 'atom_url' ); ?>" class="subscribe-button"><?php esc_html_e( 'Subscribe', 'teruterubozu' ) ?></a> -->
 
     </div>
 

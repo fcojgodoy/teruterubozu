@@ -124,7 +124,7 @@
 ========================================================================== */
 
 .main-menu-list {
-	height: calc( 100vh - 160px );
+	// height: calc( 100vh - 160px );
 	// padding: 60px 9% 5%;
 	background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
 	padding: {
@@ -137,8 +137,7 @@
 	}
 	list-style: none;
 	counter-reset: item;
-	overflow-x: hidden;
-	overflow-y: auto;
+	overflow: hidden;
 
 	&:first-child {
 		margin-top: 0;
@@ -149,7 +148,7 @@
 	}
 
 	@include mq( $from: tablet ) {
-		height: calc( 100vh - 190px );
+		// height: calc( 100vh - 190px );
 		// padding: 90px 10% 5%;
 		margin-top: 90px !important;
 	}
