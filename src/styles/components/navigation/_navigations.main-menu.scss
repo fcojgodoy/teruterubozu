@@ -167,7 +167,6 @@
 	padding-right: 25px;
 
 	a {
-		overflow: hidden;
 		padding: 3px 0;
 
 		color: #B8B8B8;
@@ -175,8 +174,6 @@
 		text-overflow: ellipsis;
 		text-decoration: none;
 		letter-spacing: 0.1px;
-		white-space: nowrap;
-		// line-height: 1.2rem;16.9px
 
 		transition: color 0.3s ease;
 
