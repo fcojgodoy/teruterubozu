@@ -41,7 +41,7 @@ Piklist provides help to create custom header images for tags and authors pages.
 
 == Development ==
 
-This theme is develop at GitHub:
+The source code of this theme is available in GitHub:
 https://github.com/fcojgodoy/teruterubozu
 
 
