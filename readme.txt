@@ -103,6 +103,10 @@ Source: https://pixabay.com/en/typewriter-author-mechanical-retro-407695/
 
 == Changelog ==
 
+= UNRELEASE =
+* Released: Jul 12, 2018
+- Fix navigation menu depth level 3 not showing properly 
+
 = 0.2.3 =
 * Released: May 27, 2018
 - Improve HTML and PHP code.
