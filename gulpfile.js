@@ -158,7 +158,7 @@ gulp.task ( 'scripts-copy', function () {
 
 
 /* -------------------------------------------------------------------------------------------------
-script prod
+script prod minified
 -------------------------------------------------------------------------------------------------- */
 gulp.task ( 'scripts-prod', function () {
     return gulp.src ( [
@@ -175,6 +175,21 @@ gulp.task ( 'scripts-prod', function () {
 
 
 /* -------------------------------------------------------------------------------------------------
+script prod not minified
+-------------------------------------------------------------------------------------------------- */
+gulp.task ( 'scripts-prod-not-minified', function () {
+    return gulp.src ( [
+        SOURCE.scripts,
+        '!' + SOURCE_DIR.scripts + 'customizer.js',
+    ] )
+    .pipe ( jshint () )
+    .pipe ( jshint.reporter ( 'default' ) )
+    .pipe ( concat ( 'main.js') )
+    .pipe ( gulp.dest ( ASSETS_DIR.scripts ) );
+});
+
+
+/* -------------------------------------------------------------------------------------------------
 script copy prod
 -------------------------------------------------------------------------------------------------- */
 gulp.task ( 'scripts-copy-prod', function () {
@@ -184,6 +199,20 @@ gulp.task ( 'scripts-copy-prod', function () {
     .pipe ( jshint () )
     .pipe ( jshint.reporter ( 'default' ) )
     .pipe ( uglify() )
+    .pipe ( rename ( { suffix: '.min'} ) )
+    .pipe ( gulp.dest ( ASSETS_DIR.scripts ) );
+});
+
+
+/* -------------------------------------------------------------------------------------------------
+script copy prod not minified
+-------------------------------------------------------------------------------------------------- */
+gulp.task ( 'scripts-copy-prod-not-minified', function () {
+    return gulp.src ( [
+        SOURCE_DIR.scripts + 'customizer.js',
+    ] )
+    .pipe ( jshint () )
+    .pipe ( jshint.reporter ( 'default' ) )
     .pipe ( gulp.dest ( ASSETS_DIR.scripts ) );
 });
 
@@ -198,6 +227,7 @@ gulp.task ( 'styles', function () {
     .pipe ( postcss( [
         autoprefixer ( 'last 2 versions', '>1%' )
     ]))
+    .pipe ( rename ( { suffix: '.min'} ) )
     .pipe ( sourcemaps.write ( './maps' ) )
     .pipe ( gulp.dest ( ASSETS_DIR.styles ) );
 });
@@ -211,6 +241,20 @@ gulp.task ( 'styles-prod', function () {
     .pipe ( sass ( {
         outputStyle: 'compressed'
     }).on ( 'error', sass.logError) )
+    .pipe ( postcss ( [
+        autoprefixer ( 'last 2 versions', '>1%' )
+    ]))
+    .pipe ( rename ( { suffix: '.min'} ) )
+    .pipe ( gulp.dest ( ASSETS_DIR.styles ) );
+});
+
+
+/* -------------------------------------------------------------------------------------------------
+styles-prod TASK: Sass - Autoprefixer
+-------------------------------------------------------------------------------------------------- */
+gulp.task ( 'styles-prod-not-minified', function () {
+    return gulp.src ( SOURCE.styles )
+    .pipe ( sass ().on ( 'error', sass.logError) )
     .pipe ( postcss ( [
         autoprefixer ( 'last 2 versions', '>1%' )
     ]))
@@ -245,7 +289,7 @@ gulp.task ( 'watch', function () {
 /* -------------------------------------------------------------------------------------------------
 Production task
 -------------------------------------------------------------------------------------------------- */
-gulp.task ( 'production', gulp.series( 'clean-assets', 'vendors', 'images', 'styles-prod', 'scripts-prod', 'scripts-copy-prod', 'fonts', 'pot' ) );
+gulp.task ( 'production', gulp.series( 'clean-assets', 'vendors', 'images', 'styles-prod', 'styles-prod-not-minified', 'scripts-prod', 'scripts-prod-not-minified', 'scripts-copy-prod', 'scripts-copy-prod-not-minified', 'fonts', 'pot' ) );
 
 
 /* -------------------------------------------------------------------------------------------------

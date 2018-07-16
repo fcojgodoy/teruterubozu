@@ -2,7 +2,7 @@
 === Teruterubozu ===
 Contributors: fcojgodoy
 Requires at least: 4.6
-Tested up to: 4.9.6
+Tested up to: 4.9.7
 Version: 0.2.4
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl.html
@@ -104,9 +104,11 @@ Source: https://pixabay.com/en/typewriter-author-mechanical-retro-407695/
 == Changelog ==
 
 = 0.2.4 =
-* Released: Jul 12, 2018
-- Fix navigation menu depth level 3 not showing properly 
+* Released: Jul 16, 2018
+- Fix navigation menu depth level 3 not showing properly
+- Removed subscribe button in menu
 - Logo dimensions fixed
+- Add unminified styles and scripts
 
 = 0.2.3 =
 * Released: May 27, 2018

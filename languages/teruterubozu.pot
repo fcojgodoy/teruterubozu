@@ -85,6 +85,26 @@ msgstr ""
 msgid "Continue reading "
 msgstr ""
 
+#: inc/theme-mods.php:12
+msgid "Header"
+msgstr ""
+
+#: inc/theme-mods.php:25
+msgid "Header main text"
+msgstr ""
+
+#: inc/theme-mods.php:26
+msgid "This is the main text in home page header section."
+msgstr ""
+
+#: inc/theme-mods.php:42
+msgid "Header secondary text"
+msgstr ""
+
+#: inc/theme-mods.php:43
+msgid "This is the secondary text in home page header section."
+msgstr ""
+
 #: inc/user-contactmethods.php:13
 msgid "Facebook ID"
 msgstr ""
@@ -503,16 +523,12 @@ msgstr ""
 msgid "Blog"
 msgstr ""
 
-#: views/header/page-header.php:74
+#: views/header/page-header.php:79
 msgid "Menu"
 msgstr ""
 
 #: views/navigation/menu.php:18
 msgid "MENU"
-msgstr ""
-
-#: views/navigation/menu.php:30
-msgid "Subscribe"
 msgstr ""
 
 #: views/navigation/posts-pagination.php:13
