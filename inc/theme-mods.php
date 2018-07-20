@@ -14,7 +14,7 @@ function themeslug_customize_register( $wp_customize ) {
     $wp_customize -> add_setting(
         'header-main-text',
         array(
-            'default' => 'Modify in Header section within Customize',
+            'default' => __( 'Modify in Header section within Customize', 'teruterubozu' ),
         )
     );
     
@@ -31,7 +31,7 @@ function themeslug_customize_register( $wp_customize ) {
     $wp_customize -> add_setting(
         'header-secondary-text',
         array(
-            'default' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            'default' => __( 'This text can also be modified within the Header section of the Customize', 'teruterubozu' ),
         )
     );
     
