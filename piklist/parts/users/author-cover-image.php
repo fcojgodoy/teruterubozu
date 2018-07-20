@@ -8,8 +8,8 @@ piklist( 'field', array(
     ,'field' => 'author_cover_image'
     ,'label' => __( 'Select your cover image', 'teruterubozu' )
     ,'options' => array(
-        'modal_title' => 'Add File(s)'
-        ,'button' => 'Add'
+        'modal_title' => __( 'Select your cover image', 'teruterubozu' )
+        ,'button' => __( 'Add image', 'teruterubozu' )
         ,'preview_size' => 'full'
         ,'save' => 'url'
     )

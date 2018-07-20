@@ -15,10 +15,10 @@
 
     <div class="pushy-content">
 
-        <h3 class="main-menu-title"> <?php esc_html_e('MENU', 'teruterubozu') ?> </h3>
+        <h3 class="main-menu-title"><?php esc_html_e('MENU', 'teruterubozu') ?></h3>
 
         <a href="#" class="main-menu-close pushy-link">
-            <span hidden>Close</span>
+            <span hidden><?php esc_html_e( 'Close', 'teruterubozu' ) ?></span>
         </a>
 
         <?php

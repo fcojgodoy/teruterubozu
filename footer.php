@@ -17,7 +17,7 @@
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name') ?></a> &copy; <?php echo esc_html( date('Y') ) ?>
 			</div>
 			<div class="o-layout__item u-1/2 poweredby"><?php esc_html_e( 'Proudly published with ', 'teruterubozu' ) ?>
-				<a href="https://wordpress.org">WordPress</a>
+				<a href="https://wordpress.org"><?php esc_html_e( 'WordPress', 'teruterubozu' ) ?></a>
 			</div>
 		</div>
 	</footer><!-- #colophon -->
