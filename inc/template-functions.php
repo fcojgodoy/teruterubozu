@@ -41,18 +41,3 @@ function teruterubozu_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'teruterubozu_pingback_header' );
-
-
-/**
- * ALLOWED MIME TYPES
- *
- * Allowed mime types and file extensions.
- *
- * @link https://developer.wordpress.org/reference/hooks/upload_mimes/
- */
-function teruterubozu_upload_mimes($mimes = array()) {
-    $mimes['svg'] = 'image/svg+xml';
-    return $mimes;
-}
-
-add_filter('upload_mimes', 'teruterubozu_upload_mimes');
