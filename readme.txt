@@ -110,6 +110,7 @@ Source: https://pixabay.com/en/typewriter-author-mechanical-retro-407695/
 - The excerpt filters not make changes to the admin
 - Escape get_theme_mod output
 - Fix license text
+- Remove user-contactmethods function
 
 = 0.2.4 =
 * Released: Jul 16, 2018
@@ -117,7 +118,6 @@ Source: https://pixabay.com/en/typewriter-author-mechanical-retro-407695/
 - Removed subscribe button in menu
 - Logo dimensions fixed
 - Add unminified styles and scripts
-- Remove user-contactmethods function
 
 = 0.2.3 =
 * Released: May 27, 2018
