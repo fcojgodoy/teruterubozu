@@ -111,6 +111,7 @@ Source: https://pixabay.com/en/typewriter-author-mechanical-retro-407695/
 - Escape get_theme_mod output
 - Fix license text
 - Remove user-contactmethods function
+- Set default value to 'header-main-text' and 'header-secondary-text' theme mods
 
 = 0.2.4 =
 * Released: Jul 16, 2018
