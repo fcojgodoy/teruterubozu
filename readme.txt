@@ -104,7 +104,7 @@ Source: https://pixabay.com/en/typewriter-author-mechanical-retro-407695/
 == Changelog ==
 
 = 0.2.5 =
-* Released: Jul XX, 2018
+* Released: Jul 23, 2018
 - Fix missing translation functions
 - Remove mimes type function
 - The excerpt filters not make changes to the admin
