@@ -81,12 +81,6 @@ require get_template_directory() . '/inc/add-classes-menu-items.php';
 
 
 /**
- * Add user contact methods
- */
-require get_template_directory() . '/inc/user-contactmethods.php';
-
-
-/**
  * Required plugins activation.
  */
 require get_template_directory() . '/inc/plugins-activation/class-tgm-plugin-activation.php';
