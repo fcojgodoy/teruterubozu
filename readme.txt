@@ -3,7 +3,7 @@
 Contributors: fcojgodoy
 Requires at least: 4.6
 Tested up to: 4.9.7
-Version: 0.2.4
+Version: 0.2.5
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags: custom-header, custom-logo, custom-menu, editor-style, featured-images, featured-image-header, flexible-header, full-width-template, one-column, sticky-post, threaded-comments, translation-ready, blog, photography
@@ -103,12 +103,21 @@ Source: https://pixabay.com/en/typewriter-author-mechanical-retro-407695/
 
 == Changelog ==
 
+= 0.2.5 =
+* Released: Jul XX, 2018
+- Fix missing translation functions
+- Remove mimes type function
+- The excerpt filters not make changes to the admin
+- Escape get_theme_mod output
+- Fix license text
+
 = 0.2.4 =
 * Released: Jul 16, 2018
 - Fix navigation menu depth level 3 not showing properly
 - Removed subscribe button in menu
 - Logo dimensions fixed
 - Add unminified styles and scripts
+- Remove user-contactmethods function
 
 = 0.2.3 =
 * Released: May 27, 2018
