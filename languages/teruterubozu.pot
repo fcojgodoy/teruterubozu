@@ -48,6 +48,10 @@ msgstr ""
 msgid "Proudly published with "
 msgstr ""
 
+#: footer.php:20
+msgid "WordPress"
+msgstr ""
+
 #: header.php:31
 msgid "Skip to content"
 msgstr ""
@@ -77,16 +81,20 @@ msgstr ""
 msgid "&laquo; Previous"
 msgstr ""
 
-#: inc/the-excerpt.php:7
+#: inc/the-excerpt.php:10
 msgid "Continue reading"
 msgstr ""
 
-#: inc/the-excerpt.php:7
+#: inc/the-excerpt.php:10
 msgid "Continue reading "
 msgstr ""
 
 #: inc/theme-mods.php:12
 msgid "Header"
+msgstr ""
+
+#: inc/theme-mods.php:17
+msgid "Modify in Header section within Customize"
 msgstr ""
 
 #: inc/theme-mods.php:25
@@ -97,28 +105,16 @@ msgstr ""
 msgid "This is the main text in home page header section."
 msgstr ""
 
+#: inc/theme-mods.php:34
+msgid "This text can also be modified within the Header section of the Customize"
+msgstr ""
+
 #: inc/theme-mods.php:42
 msgid "Header secondary text"
 msgstr ""
 
 #: inc/theme-mods.php:43
 msgid "This is the secondary text in home page header section."
-msgstr ""
-
-#: inc/user-contactmethods.php:13
-msgid "Facebook ID"
-msgstr ""
-
-#: inc/user-contactmethods.php:14
-msgid "Twitter Username"
-msgstr ""
-
-#: inc/user-contactmethods.php:15
-msgid "Google+ ID"
-msgstr ""
-
-#: inc/user-contactmethods.php:20
-msgid "Your location"
 msgstr ""
 
 #: inc/plugins-activation/class-tgm-plugin-activation.php:328
@@ -499,20 +495,20 @@ msgstr ""
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: views/header/author-header.php:30
-msgid "posts"
-msgstr ""
-
-#: views/header/author-socialcontact.php:17
+#: views/author/author-socialcontact.php:17
 msgid "Twitter"
 msgstr ""
 
-#: views/header/author-socialcontact.php:25
+#: views/author/author-socialcontact.php:25
 msgid "Facebook"
 msgstr ""
 
-#: views/header/author-socialcontact.php:33
+#: views/author/author-socialcontact.php:33
 msgid "Google +"
+msgstr ""
+
+#: views/header/author-header.php:30
+msgid "posts"
 msgstr ""
 
 #: views/header/page-header.php:21
@@ -529,6 +525,10 @@ msgstr ""
 
 #: views/navigation/menu.php:18
 msgid "MENU"
+msgstr ""
+
+#: views/navigation/menu.php:21
+msgid "Close"
 msgstr ""
 
 #: views/navigation/posts-pagination.php:13
