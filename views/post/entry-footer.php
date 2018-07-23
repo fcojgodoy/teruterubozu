@@ -18,10 +18,10 @@
                 </p>
             <?php endif; ?>
 
-            <?php if ( get_the_author_meta( 'location' ) || get_the_author_meta( 'url' ) ) : ?>
+            <?php if ( get_the_author_meta( 'city' ) || get_the_author_meta( 'url' ) ) : ?>
                 <div class="author-links u-padding-bottom-small">
-                    <?php if ( get_the_author_meta( 'location' ) ) : ?>
-                        <em class="author-location icon-location u-margin-bottom-small"><?php echo esc_html( get_the_author_meta( 'location' ) ) ?></em>
+                    <?php if ( get_the_author_meta( 'city' ) ) : ?>
+                        <em class="author-location icon-location u-margin-bottom-small"><?php echo esc_html( get_the_author_meta( 'city' ) ) ?></em>
                     <?php endif ; ?>
 
                     <?php if ( get_the_author_meta( 'url' ) ) : ?>
@@ -44,7 +44,7 @@
 
             </h4>
 
-            <?php get_template_part( 'views/header/author-socialcontact' ) ?>
+            <?php get_template_part( 'views/author/author-socialcontact' ) ?>
 
         </div>
 

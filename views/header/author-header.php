@@ -16,8 +16,8 @@
 
             <ul class="o-list-inline">
 
-                <?php if ( get_the_author_meta( 'location' ) ) : ?>
-                    <li class="author-location icon-location o-list-inline__item u-margin-bottom u-margin-bottom-large@tablet"><?php echo esc_html( get_the_author_meta( 'location' ) ) ?></li>
+                <?php if ( get_the_author_meta( 'city' ) ) : ?>
+                    <li class="author-location icon-location o-list-inline__item u-margin-bottom u-margin-bottom-large@tablet"><?php echo esc_html( get_the_author_meta( 'city' ) ) ?></li>
                 <?php endif ; ?>
 
                 <?php if ( get_the_author_meta( 'url' ) ) : ?>
