@@ -76,6 +76,11 @@ function teruterubozu_register_required_plugins() {
 			'slug'      => 'piklist',
 			'required'  => false,
 		),
+		array(
+			'name'      => 'WP Add User Contact Fields',
+			'slug'      => 'wp-add-user-contact-fields',
+			'required'  => false,
+		),
 
 	);
 

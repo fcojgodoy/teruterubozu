@@ -104,7 +104,7 @@ Source: https://pixabay.com/en/typewriter-author-mechanical-retro-407695/
 == Changelog ==
 
 = 0.2.5 =
-* Released: Jul 23, 2018
+* Released: Jul 24, 2018
 - Fix missing translation functions
 - Remove mimes type function
 - The excerpt filters not make changes to the admin
@@ -112,6 +112,7 @@ Source: https://pixabay.com/en/typewriter-author-mechanical-retro-407695/
 - Fix license text
 - Remove user-contactmethods function
 - Set default value to 'header-main-text' and 'header-secondary-text' theme mods
+- Register WP Add User Contact Fields plugin as recommended
 
 = 0.2.4 =
 * Released: Jul 16, 2018
