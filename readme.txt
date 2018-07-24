@@ -3,7 +3,7 @@
 Contributors: fcojgodoy
 Requires at least: 4.6
 Tested up to: 4.9.7
-Version: 0.2.5
+Version: 0.2.6
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags: custom-header, custom-logo, custom-menu, editor-style, featured-images, featured-image-header, flexible-header, full-width-template, one-column, sticky-post, threaded-comments, translation-ready, blog, photography
