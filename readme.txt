@@ -33,11 +33,16 @@ For more information about Teruterubozu please go to https://github.com/fcojgodo
 
 == Recommended plugins ==
 
-This themes come with suggested plugin Piklist. That plugin is recommended by Teruterubozu to provide additional functionality to your site.
+This theme recommends the following plugins:
 
 Piklist
 Source: https://piklist.com/
-Piklist provides help to create custom header images for tags and authors pages.
+Piklist provides help to select and display custom header images for tags and authors pages.
+
+WP Add User Contact Fields
+Source: https://wordpress.org/plugins/wp-add-user-contact-fields/
+WP Add User Contact Fields allows to select and display contact information of the authors.
+
 
 == Development ==
 
@@ -102,6 +107,10 @@ License: CC0 Public Domain
 Source: https://pixabay.com/en/typewriter-author-mechanical-retro-407695/
 
 == Changelog ==
+
+= 0.2.6 =
+* Released: Jul 24, 2018
+- Improve recommended plugins info in the readme file
 
 = 0.2.5 =
 * Released: Jul 24, 2018
