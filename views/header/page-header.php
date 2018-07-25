@@ -7,7 +7,16 @@
     <div class="site-header-content">
         <div class="o-wrapper">
 
-            <h1 class="site-header-title"><?php esc_html_e( get_theme_mod( 'header-main-text', __( 'Modify in Header section within Customize', 'teruterubozu' ) ) ) ?></h1>
+            <h1 class="site-header-title">
+                <?php 
+                    $teruterubozu_header_main_text = get_theme_mod( 'header-main-text', 'Modify in Header section within Customize' );
+                    $teruterubozu_header_main_text_string = (string)$teruterubozu_header_main_text;
+                    esc_html_e( 
+                        $teruterubozu_header_main_text_string,
+                        'teruterubozu'
+                    )
+                ?>
+            </h1>
 
             <?php if ( ! is_paged() || is_customize_preview() ) : ?>
                 <h2 class="site-header-description"><?php esc_html_e( get_theme_mod( 'header-secondary-text', __( 'This text can also be modified within the Header section of the Customize', 'teruterubozu' ) ) ) ?></h2>
