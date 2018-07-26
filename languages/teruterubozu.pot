@@ -93,27 +93,27 @@ msgstr ""
 msgid "Header"
 msgstr ""
 
-#: inc/theme-mods.php:17
+#: inc/theme-mods.php:17, views/header/page-header.php:10
 msgid "Modify in Header section within Customize"
 msgstr ""
 
-#: inc/theme-mods.php:25
+#: inc/theme-mods.php:26
 msgid "Header main text"
 msgstr ""
 
-#: inc/theme-mods.php:26
+#: inc/theme-mods.php:27
 msgid "This is the main text in home page header section."
 msgstr ""
 
-#: inc/theme-mods.php:34
+#: inc/theme-mods.php:35, views/header/page-header.php:13
 msgid "This text can also be modified within the Header section of the Customize"
 msgstr ""
 
-#: inc/theme-mods.php:42
+#: inc/theme-mods.php:44
 msgid "Header secondary text"
 msgstr ""
 
-#: inc/theme-mods.php:43
+#: inc/theme-mods.php:45
 msgid "This is the secondary text in home page header section."
 msgstr ""
 

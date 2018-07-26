@@ -15,6 +15,7 @@ function themeslug_customize_register( $wp_customize ) {
         'header-main-text',
         array(
             'default' => __( 'Modify in Header section within Customize', 'teruterubozu' ),
+            'sanitize_callback' => 'sanitize_text_field'
         )
     );
     
@@ -32,6 +33,7 @@ function themeslug_customize_register( $wp_customize ) {
         'header-secondary-text',
         array(
             'default' => __( 'This text can also be modified within the Header section of the Customize', 'teruterubozu' ),
+            'sanitize_callback' => 'sanitize_text_field'
         )
     );
     
