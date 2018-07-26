@@ -85,7 +85,7 @@ if ( ! function_exists( 'teruterubozu_header_style' ) ) :
 				.site-description,
                 .site-header-title,
                 .site-header-description {
-					color: #<?php echo esc_attr( $header_text_color ); ?>;
+					color: #<?php echo esc_attr( $header_text_color ); ?>!important;
 				}
 			<?php endif; ?>
 		</style>
