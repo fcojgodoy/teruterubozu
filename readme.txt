@@ -3,7 +3,7 @@
 Contributors: fcojgodoy
 Requires at least: 4.6
 Tested up to: 4.9.7
-Version: 0.2.6
+Version: 0.2.7
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags: custom-header, custom-logo, custom-menu, editor-style, featured-images, featured-image-header, flexible-header, full-width-template, one-column, sticky-post, threaded-comments, translation-ready, blog, photography
@@ -107,6 +107,10 @@ License: CC0 Public Domain
 Source: https://pixabay.com/en/typewriter-author-mechanical-retro-407695/
 
 == Changelog ==
+
+= 0.2.7 =
+* Released: Jul 26, 2018
+- Fix lack of text-domain
 
 = 0.2.6 =
 * Released: Jul 24, 2018
