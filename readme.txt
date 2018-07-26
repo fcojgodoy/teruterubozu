@@ -108,9 +108,11 @@ Source: https://pixabay.com/en/typewriter-author-mechanical-retro-407695/
 
 == Changelog ==
 
-= 0.2.7 =
+= 0.2.7 = UNRELEASE
 * Released: Jul 26, 2018
 - Fix lack of text-domain
+- Escaping theme mod correctly
+- Removing selective refresh in Customize
 
 = 0.2.6 =
 * Released: Jul 24, 2018
