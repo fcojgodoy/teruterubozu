@@ -6,7 +6,7 @@
  * @since 0.2.2
  */
 
-function themeslug_customize_register( $wp_customize ) {
+function teruterubozu_customize_register( $wp_customize ) {
 
     // Change 'Header Image' section name
     $wp_customize -> get_section( 'header_image' ) -> title = __( 'Header', 'teruterubozu' );
@@ -49,7 +49,7 @@ function themeslug_customize_register( $wp_customize ) {
 
 }
 
-add_action( 'customize_register', 'themeslug_customize_register' );
+add_action( 'customize_register', 'teruterubozu_customize_register' );
 
 
 ?>
