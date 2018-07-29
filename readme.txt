@@ -113,6 +113,7 @@ Source: https://pixabay.com/en/typewriter-author-mechanical-retro-407695/
 - PHP 5.2 supported
 - Fix wrong escape function
 - Fix text escaped twice
+- Remove setup / installation instructions from front-end
 
 = 0.2.7 =
 * Released: Jul 26, 2018
