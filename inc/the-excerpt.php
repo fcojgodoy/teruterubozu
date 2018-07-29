@@ -7,7 +7,7 @@ function teruterubozu_excerpt_more( $more ) {
     if ( is_admin() ) :
         return $more;
     else :
-        return ' <a class="excerpt-more" href="' . get_permalink() . '" title="' . esc_html__( 'Continue reading', 'teruterubozu' ) . '" rel="bookmark"><span class="screen-reader-text">' . esc_html__( 'Continue reading ', 'teruterubozu' ) . '</span>&raquo;</a>';
+        return ' <a class="excerpt-more" href="' . get_permalink() . '" title="' . esc_attr__( 'Continue reading', 'teruterubozu' ) . '" rel="bookmark"><span class="screen-reader-text">' . esc_html__( 'Continue reading ', 'teruterubozu' ) . '</span>&raquo;</a>';
     endif;
 }
 

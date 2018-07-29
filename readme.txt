@@ -111,6 +111,7 @@ Source: https://pixabay.com/en/typewriter-author-mechanical-retro-407695/
 = 0.2.8 = UNRELEASE
 * Released: Jul XX, 2018
 - PHP 5.2 supported
+- Fix wrong escape function
 
 = 0.2.7 =
 * Released: Jul 26, 2018
