@@ -8,7 +8,7 @@
         <a class="visual-posts-pagination-link" href="<?php echo esc_url( get_permalink( get_adjacent_post( false, '', false ) ) ) ?>">
             <?php
             if ( has_post_thumbnail( $teruterubozu_next_post->ID ) ) :
-                echo get_the_post_thumbnail( $teruterubozu_next_post->ID, '', [ 'class' => 'visual-posts-pagination-image'] );
+                echo get_the_post_thumbnail( $teruterubozu_next_post->ID, '', array( 'class' => 'visual-posts-pagination-image' ) );
             endif;
             ?> 
             <div class="visual-posts-pagination-wrap u-padding">
@@ -28,7 +28,7 @@
         <a class="visual-posts-pagination-link" href="<?php echo esc_url( get_permalink( get_adjacent_post( false, '', true ) ) ) ?>">
             <?php
             if ( has_post_thumbnail( $teruterubozu_prev_post->ID ) ) :
-                echo get_the_post_thumbnail( $teruterubozu_prev_post->ID, '', [ 'class' => 'visual-posts-pagination-image']  );
+                echo get_the_post_thumbnail( $teruterubozu_prev_post->ID, '', array( 'class' => 'visual-posts-pagination-image' ) );
             endif;
             ?>            
             <div class="visual-posts-pagination-wrap u-padding">

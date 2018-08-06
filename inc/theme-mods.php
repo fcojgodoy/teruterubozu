@@ -6,7 +6,7 @@
  * @since 0.2.2
  */
 
-function themeslug_customize_register( $wp_customize ) {
+function teruterubozu_customize_register( $wp_customize ) {
 
     // Change 'Header Image' section name
     $wp_customize -> get_section( 'header_image' ) -> title = __( 'Header', 'teruterubozu' );
@@ -14,7 +14,7 @@ function themeslug_customize_register( $wp_customize ) {
     $wp_customize -> add_setting(
         'header-main-text',
         array(
-            'default' => __( 'Modify in Header section within Customize', 'teruterubozu' ),
+            'default' => __( 'Teruterubozu', 'teruterubozu' ),
             'sanitize_callback' => 'sanitize_text_field'
         )
     );
@@ -32,7 +32,7 @@ function themeslug_customize_register( $wp_customize ) {
     $wp_customize -> add_setting(
         'header-secondary-text',
         array(
-            'default' => __( 'This text can also be modified within the Header section of the Customize', 'teruterubozu' ),
+            'default' => __( 'Beautiful and simple theme prepared for readability', 'teruterubozu' ),
             'sanitize_callback' => 'sanitize_text_field'
         )
     );
@@ -89,7 +89,7 @@ function themeslug_customize_register( $wp_customize ) {
 
 }
 
-add_action( 'customize_register', 'themeslug_customize_register' );
+add_action( 'customize_register', 'teruterubozu_customize_register' );
 
 
 /**

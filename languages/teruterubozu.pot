@@ -94,7 +94,7 @@ msgid "Header"
 msgstr ""
 
 #: inc/theme-mods.php:17, views/header/page-header.php:10
-msgid "Modify in Header section within Customize"
+msgid "Teruterubozu"
 msgstr ""
 
 #: inc/theme-mods.php:26
@@ -106,7 +106,7 @@ msgid "This is the main text in home page header section."
 msgstr ""
 
 #: inc/theme-mods.php:35, views/header/page-header.php:13
-msgid "This text can also be modified within the Header section of the Customize"
+msgid "Beautiful and simple theme prepared for readability"
 msgstr ""
 
 #: inc/theme-mods.php:44
