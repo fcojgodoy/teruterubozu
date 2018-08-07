@@ -93,7 +93,7 @@ msgstr ""
 msgid "Header"
 msgstr ""
 
-#: inc/theme-mods.php:17, views/header/page-header.php:10
+#: inc/theme-mods.php:17, views/header/page-hero.php:10
 msgid "Teruterubozu"
 msgstr ""
 
@@ -105,7 +105,7 @@ msgstr ""
 msgid "This is the main text in home page header section."
 msgstr ""
 
-#: inc/theme-mods.php:35, views/header/page-header.php:13
+#: inc/theme-mods.php:35, views/header/page-hero.php:13
 msgid "Beautiful and simple theme prepared for readability"
 msgstr ""
 
@@ -115,6 +115,22 @@ msgstr ""
 
 #: inc/theme-mods.php:45
 msgid "This is the secondary text in home page header section."
+msgstr ""
+
+#: inc/theme-mods.php:65
+msgid "Hero text color"
+msgstr ""
+
+#: inc/theme-mods.php:66
+msgid "This is the Hero header text color."
+msgstr ""
+
+#: inc/theme-mods.php:85
+msgid "Blog Hero text color"
+msgstr ""
+
+#: inc/theme-mods.php:86
+msgid "This is the Blog Hero text color."
 msgstr ""
 
 #: inc/plugins-activation/class-tgm-plugin-activation.php:328
@@ -511,15 +527,15 @@ msgstr ""
 msgid "posts"
 msgstr ""
 
-#: views/header/page-header.php:21
+#: views/header/page-hero.php:21
 msgid "Scroll Down"
 msgstr ""
 
-#: views/header/page-header.php:32
+#: views/header/page-hero.php:32
 msgid "Blog"
 msgstr ""
 
-#: views/header/page-header.php:79
+#: views/header/page-hero.php:82
 msgid "Menu"
 msgstr ""
 
