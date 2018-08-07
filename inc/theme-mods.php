@@ -62,14 +62,14 @@ function teruterubozu_customize_register( $wp_customize ) {
         array(
             'type' => 'color',
             'section' => 'colors',
-            'label' => __( 'Hero header text color', 'teruterubozu' ),
-            'description' => __( 'This is the hero header text color.', 'teruterubozu' ),
+            'label' => __( 'Hero text color', 'teruterubozu' ),
+            'description' => __( 'This is the Hero header text color.', 'teruterubozu' ),
         )
     );
 
     
     $wp_customize -> add_setting(
-        'blog-header-text-color',
+        'blog-hero-text-color',
         array(
             // 'default' => '#ffffff',
             'sanitize_callback' => 'sanitize_hex_color'
@@ -78,12 +78,12 @@ function teruterubozu_customize_register( $wp_customize ) {
 
     
     $wp_customize -> add_control(
-        'blog-header-text-color',
+        'blog-hero-text-color',
         array(
             'type' => 'color',
             'section' => 'colors',
-            'label' => __( 'Blog page header text color', 'teruterubozu' ),
-            'description' => __( 'This is the blog header text color.', 'teruterubozu' ),
+            'label' => __( 'Blog Hero text color', 'teruterubozu' ),
+            'description' => __( 'This is the Blog Hero text color.', 'teruterubozu' ),
         )
     );
 
@@ -93,7 +93,7 @@ add_action( 'customize_register', 'teruterubozu_customize_register' );
 
 
 /**
- * Output CSS for blog page header text color with wp_add_inline_style
+ * Output CSS for blog page hero text color with wp_add_inline_style
  */
 function mytheme_customizer_css() {
 
@@ -101,11 +101,12 @@ function mytheme_customizer_css() {
 	$handle = 'teruterubozu-style';  // Swap in your CSS Stylesheet ID
 	//$css = '';
 	$hero_text_color = get_theme_mod( 'hero-text-color' ); // Assigning it to a variable to keep the markup clean.
-	$blog_header_text_color = get_theme_mod( 'blog-header-text-color' ); // Assigning it to a variable to keep the markup clean.
+	$blog_header_text_color = get_theme_mod( 'blog-hero-text-color' ); // Assigning it to a variable to keep the markup clean.
+    $tag_hero_text_color = get_theme_mod( 'term_cover_color_text' );
 	$css = ( $blog_header_text_color !== '') ? sprintf('
-    	.blog-page-title,
-        .blog-page-subtitle {
-    		color : %s;
+    	.blog-hero-title,
+        .blog-hero-subtitle {
+    		color : %s !important;
     	}
 	', $blog_header_text_color ) : '';
 	if ( $css ) {
@@ -113,7 +114,7 @@ function mytheme_customizer_css() {
 	}
 	$css2 = ( $hero_text_color !== '') ? sprintf('
     	.hero-title,
-        .hero-description {
+        .hero-subtitle {
     		color : %s !important;
     	}
 	', $hero_text_color ) : '';

@@ -10,7 +10,7 @@
             <h1 class="hero-title"><?php echo esc_html( get_theme_mod( 'header-main-text', __( 'Modify in Header section within Customize', 'teruterubozu' ) ) ) ?></h1>
 
             <?php if ( ! is_paged() || is_customize_preview() ) : ?>
-                <h2 class="hero-description"><?php echo esc_html( get_theme_mod( 'header-secondary-text', __( 'This text can also be modified within the Header section of the Customize', 'teruterubozu' ) ) ) ?></h2>
+                <h2 class="hero-subtitle"><?php echo esc_html( get_theme_mod( 'header-secondary-text', __( 'This text can also be modified within the Header section of the Customize', 'teruterubozu' ) ) ) ?></h2>
             <?php endif; ?>
 
         </div>
@@ -29,8 +29,8 @@
 
     <div class="hero-content">
         <div class="o-wrapper">
-            <h1 class="blog-page-title u-h6"><?php esc_html_e( 'Blog', 'teruterubozu' ) ?></h1>
-            <h2 class="blog-page-subtitle u-h4"><?php bloginfo( 'name' ) ?></h2>
+            <h1 class="blog-hero-title u-h1"><?php esc_html_e( 'Blog', 'teruterubozu' ) ?></h1>
+            <h2 class="blog-hero-subtitle u-h3"><?php bloginfo( 'name' ) ?></h2>
         </div>
     </div>
 
@@ -60,8 +60,10 @@
 <?php endif; ?>
 
 
+    <!-- Navbar -->
     <nav class="navbar">
 
+        <!-- Site branding -->
         <div class="site-branding">
 
             <?php
@@ -76,6 +78,7 @@
 
         </div><!-- .site-branding -->
 
+        <!-- Menu button -->
         <a class="menu-btn icon-menu" href="#"> <span class="word"><?php esc_html_e( 'Menu', 'teruterubozu' ) ?></span> </a>
 
     </nav>

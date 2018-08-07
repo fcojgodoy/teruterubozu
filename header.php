@@ -30,4 +30,4 @@
 	<!-- Screen reader text -->
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'teruterubozu' ); ?></a>
 
-	<?php get_template_part( 'views/header/page', 'header' ) ?>
+	<?php get_template_part( 'views/header/page', 'hero' ) ?>
