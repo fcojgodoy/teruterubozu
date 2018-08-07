@@ -2,7 +2,7 @@
 === Teruterubozu ===
 Contributors: fcojgodoy
 Requires at least: 4.6
-Tested up to: 4.9.7
+Tested up to: 4.9.8
 Version: 0.2.8
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl.html
@@ -107,6 +107,12 @@ License: CC0 Public Domain
 Source: https://pixabay.com/en/typewriter-author-mechanical-retro-407695/
 
 == Changelog ==
+
+= 0.2.9 = UNRELEASE
+* Released: Aug XX, 2018
+- Reordering hero element
+- Choose color for Hero title and subtitle
+- Choose color for Blog page Hero title and subtitle
 
 = 0.2.8 =
 * Released: Jul 29, 2018
