@@ -113,6 +113,8 @@ Source: https://pixabay.com/en/typewriter-author-mechanical-retro-407695/
 - Reordering hero element
 - Choose color for Hero title and subtitle
 - Choose color for Blog page Hero title and subtitle
+- Fix output before header
+- Remove breakpoints ad
 
 = 0.2.8 =
 * Released: Jul 29, 2018
