@@ -96,9 +96,6 @@ if ( ! function_exists( 'teruterubozu_setup' ) ) :
 		add_theme_support( 'custom-logo', array(
 			'height'      => 50,
 			'width'       => 200,
-            // 'header-text' => array( 'site-title' ),
-			// 'flex-width'  => true,
-			// 'flex-height' => true,
 		) );
 
     }
