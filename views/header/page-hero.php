@@ -7,10 +7,10 @@
     <div class="hero-content">
         <div class="o-wrapper">
 
-            <h1 class="hero-title"><?php echo esc_html( get_theme_mod( 'header-main-text', __( 'Modify in Header section within Customize', 'teruterubozu' ) ) ) ?></h1>
+            <h1 class="hero-title"><?php echo esc_html( get_theme_mod( 'header-main-text', __( 'Teruterubozu', 'teruterubozu' ) ) ) ?></h1>
 
             <?php if ( ! is_paged() || is_customize_preview() ) : ?>
-                <h2 class="hero-subtitle"><?php echo esc_html( get_theme_mod( 'header-secondary-text', __( 'This text can also be modified within the Header section of the Customize', 'teruterubozu' ) ) ) ?></h2>
+                <h2 class="hero-subtitle"><?php echo esc_html( get_theme_mod( 'header-secondary-text', __( 'Beautiful and simple theme prepared for readability', 'teruterubozu' ) ) ) ?></h2>
             <?php endif; ?>
 
         </div>
