@@ -108,8 +108,8 @@ Source: https://pixabay.com/en/typewriter-author-mechanical-retro-407695/
 
 == Changelog ==
 
-= 0.2.9 = UNRELEASE
-* Released: Aug XX, 2018
+= 0.2.9 =
+* Released: Aug 08, 2018
 - Reordering hero element
 - Choose color for Hero title and subtitle
 - Choose color for Blog page Hero title and subtitle
