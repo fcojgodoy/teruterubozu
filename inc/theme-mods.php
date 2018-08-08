@@ -95,7 +95,7 @@ add_action( 'customize_register', 'teruterubozu_customize_register' );
 /**
  * Output CSS for blog page hero text color with wp_add_inline_style
  */
-function mytheme_customizer_css() {
+function teruterubozu_customizer_css() {
 
 	// wp_enqueue_style( 'theme-mod-text-color', get_template_directory_uri() . '/assets/styles/theme.min.css' ); //Enqueue your main stylesheet
 	$handle = 'teruterubozu-style';  // Swap in your CSS Stylesheet ID
@@ -124,7 +124,7 @@ function mytheme_customizer_css() {
 
 }
 
-add_action( 'wp_enqueue_scripts', 'mytheme_customizer_css' );
+add_action( 'wp_enqueue_scripts', 'teruterubozu_customizer_css' );
 
 
 ?>
